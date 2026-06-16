@@ -1,0 +1,86 @@
+[
+  {
+    "company": "Salesforce",
+    "company_url": "https://www.salesforce.com/company/careers/",
+    "role": "Software Engineer Intern (Futureforce - Summer 2027)",
+    "location": "Bangalore / Hyderabad, India",
+    "apply_link": "https://www.salesforce.com/company/careers/university-recruiting/"
+  },
+  {
+    "company": "Google",
+    "company_url": "https://careers.google.com/",
+    "role": "Software Engineering Intern, Summer 2026",
+    "location": "Hyderabad, Telangana, India",
+    "apply_link": "https://careers.google.com/jobs/results/1234567890/"
+  },
+  {
+    "company": "Microsoft",
+    "company_url": "https://careers.microsoft.com/v2/global/en/students/internships.html",
+    "role": "Software Engineer Internship 2026",
+    "location": "Bangalore / Hyderabad / Pune / Noida / Gurugram / Mumbai, India",
+    "apply_link": "https://careers.microsoft.com/v2/global/en/students/internships.html"
+  },
+  {
+    "company": "Cisco",
+    "company_url": "https://www.cisco.com/c/en/us/about/careers/jobs.html",
+    "role": "Software Engineer \u2013 (Summer Internship) \u2013 India Engineering",
+    "location": "Bangalore, India",
+    "apply_link": "https://jobs.cisco.com/jobs/Software-Engineer-Intern-Summer-Internship-India-Engineering-1449112"
+  },
+  {
+    "company": "Sustainability Economics.ai",
+    "company_url": "https://sustainabilityeconomics.ai/",
+    "role": "Machine Learning Intern",
+    "location": "Bengaluru, Karnataka, India",
+    "apply_link": "https://www.talent.com/view?id=1e51b689a770&context=search&src=search"
+  },
+  {
+    "company": "CAW.Tech (CAW Studios)",
+    "company_url": "https://cawstudios.com/careers/",
+    "role": "AI / ML Engineer Intern (LangChain, RAG, Agentic AI)",
+    "location": "Hyderabad, India",
+    "apply_link": "https://cawstudios.com/careers/"
+  },
+  {
+    "company": "AVK Tech",
+    "company_url": "https://avktech.in/careers",
+    "role": "AI / ML Product Engineer Intern (NLP, LLM, Product)",
+    "location": "Hyderabad, India",
+    "apply_link": "https://avktech.in/careers"
+  },
+  {
+    "company": "Soothsayer Analytics",
+    "company_url": "https://www.soothsayeranalytics.com/careers/",
+    "role": "AI Intern (Data Science, ML)",
+    "location": "Hyderabad, India",
+    "apply_link": "https://www.soothsayeranalytics.com/careers/"
+  },
+  {
+    "company": "Harman",
+    "company_url": "https://www.harman.com/careers",
+    "role": "AI & Machine Learning Intern 2026",
+    "location": "Bangalore, India",
+    "apply_link": "https://www.harman.com/careers"
+  },
+  {
+    "company": "Tektronix",
+    "company_url": "https://www.tek.com/en/careers",
+    "role": "Software & AI Intern 2026",
+    "location": "Bangalore, India",
+    "apply_link": "https://www.tek.com/en/careers"
+  },
+  {
+    "company": "Axil Nexa Pvt. Ltd.",
+    "company_url": "https://axilnexa.com/careers",
+    "role": "AI/ML Java Python Node.js Engineer Intern",
+    "location": "Gurugram, India",
+    "apply_link": "https://axilnexa.com/careers"
+  },
+  {
+    "company": "Quest Global",
+    "company_url": "https://www.quest-global.com/careers/",
+    "role": "AI Intern 2026",
+    "location": "Hyderabad & Bangalore, India",
+    "apply_link": "https://www.quest-global.com/careers/"
+  }
+]

@@ -1,0 +1,16 @@
+# Credentials and Tokens
+token.json
+credentials.json
+.env
+
+# Logs
+run.log
+run_history.log
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local drafts / outputs
+tailored_resumes/
