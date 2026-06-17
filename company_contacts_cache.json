@@ -278,5 +278,159 @@
     "email_source_url": "https://wellfound.com/companies/alchemyst-ai/jobs",
     "email_found_on_web": true,
     "reasoning": "The official website domain for Alchemyst AI is `getalchemystai.com`. The email `founders@getalchemystai.com` was found on the Wellfound job opportunities page for Alchemyst AI, where it is suggested for individuals to 'get in touch' if they don't see their role. This email is also present in the footer of the company's website, which includes a link to their careers page. This indicates it serves as a contact point for talent and recruiting inquiries, aligning with the specified criteria."
+  },
+  "newpage digital healthcare solutions": {
+    "company_domain": "newpage.io",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website is newpage.io. A general contact email, info@newpage.io, is listed on the 'Contact us' and 'Services' pages. However, a specific careers, recruiting, or talent contact email (e.g., jobs@company.com, careers@company.com) was not explicitly found on the website or in associated job postings. The company appears to use application portals for job applications."
+  },
+  "futureacad": {
+    "company_domain": null,
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "A search for the company 'Futureacad' using the provided URL hint (https://futureacad.org) did not yield an active official website with that domain. Other entities found, such as 'FutureAcad' (futureacad.com) and 'Future Academy Pty Ltd' (futureacademy.edu.au), are educational institutions with general contact emails (e.g., info@futureacad.com, info@futureacademy.edu.au, charbel.tadros@futureacademy.edu.au). These emails do not explicitly serve as careers, recruiting, or talent contact emails according to the specified criteria. Therefore, no verified careers or recruiting email for 'Futureacad' on the specified domain hint was found."
+  },
+  "reptape": {
+    "company_domain": "redtapeindia.com",
+    "contact_email": "hr@redtapeindia.com",
+    "email_source_url": "https://www.redtapeindia.com/careers",
+    "email_found_on_web": true,
+    "reasoning": "The company name appears to be 'Redtape' (not 'Reptape' as per the hint). The official domain for Redtape is redtapeindia.com. An HR email, hr@redtapeindia.com, was found on their official careers page."
+  },
+  "ideas to impacts": {
+    "company_domain": "ideastoimpacts.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain is ideastoimpacts.com. A general contact email, info@ideastoimpacts.com, was found on the 'Contact Us' and 'Innovation Hub' pages of the website. However, no specific careers, recruiting, or talent contact email was explicitly mentioned on the website or in job postings. As per instructions, general information emails are not considered verified careers emails."
+  },
+  "infrrd": {
+    "company_domain": "infrrd.ai",
+    "contact_email": "pavithra@infrrd.ai",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-hrdDb4ZNdCGts4-r7iRBzzRAf6Ze17sl5rRZP-3-RZ2wDGxvFzEKadl03DdJifakIzj4bOzJH1QFRMtxLVfHqR2nz29EuSDw96ygeAhZK-ZjIBUlr_g3ariVimsGoOtw6fUZi7ui2X7U0BusmrzC",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Infrrd is infrrd.ai. A recruiting email, pavithra@infrrd.ai, was explicitly found in an 'Infrrd Off Campus Drive 2025' job posting for Trainee Software Engineer positions, where candidates were instructed to send their resumes to this address. This email directly serves a recruiting/talent acquisition purpose."
+  },
+  "stratzi.ai": {
+    "company_domain": "stratzi.ai",
+    "contact_email": "hiring@stratzi.ai",
+    "email_source_url": "https://www.stratzi.ai/careers",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Stratzi.AI is 'stratzi.ai'. The careers page on their website explicitly states 'Drop us a line at hiring@stratzi.ai' for job-related inquiries."
+  },
+  "radical technologies": {
+    "company_domain": "radicaltechnologies.co.in",
+    "contact_email": "placements@radicaltechnologies.co.in",
+    "email_source_url": "https://radicaltechnologies.co.in/contact-us",
+    "email_found_on_web": true,
+    "reasoning": "The official website for Radical Technologies is radicaltechnologies.co.in. The 'Contact Us' page on this domain explicitly lists 'placements@radicaltechnologies.co.in' for 'Job Openings (For students)' and 'Recruitment | HR | Payroll (For Companies)'."
+  },
+  "relx": {
+    "company_domain": "relx.com",
+    "contact_email": "manilacareers@reedelsevier.com",
+    "email_source_url": "https://www.relx.com/careers",
+    "email_found_on_web": true,
+    "reasoning": "The official website for RELX is relx.com. The careers page on relx.com provides specific contact emails for career inquiries for Reed Elsevier Philippines, which is part of RELX. The email 'manilacareers@reedelsevier.com' is explicitly listed as a career contact."
+  },
+  "cubic": {
+    "company_domain": "cubic.com",
+    "contact_email": "internshipopportunities@cubic.com",
+    "email_source_url": "https://www.cubic.com/careers/internships",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Cubic Corporation is cubic.com. The email address 'internshipopportunities@cubic.com' is explicitly provided on the Cubic careers page for internships, which falls under talent contact."
+  },
+  "astronomer": {
+    "company_domain": "astronomer.io",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Astronomer is astronomer.io. While the company's career pages were found, no explicit careers, recruiting, or talent contact email (e.g., jobs@company.com, careers@company.com) was listed on the website or in the search results. The search results indicated that official correspondence comes from @astronomer.io or @ashbyhq.com domains, but no specific careers-related email address was provided. Other emails found, such as press@astronomer.io and escalations@astronomer.io, are not relevant to career inquiries based on the user's instructions."
+  },
+  "the campbell's company": {
+    "company_domain": "campbells.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for The Campbell's Company is campbells.com. After reviewing the careers page and contact us pages on their website, no specific careers, recruiting, or talent contact email was explicitly found. The careers page mentions a 'recruiting assistant' but no direct email address. The contact us page provides a form for product-related inquiries and a phone number, but no general email address for career-related communication."
+  },
+  "dover": {
+    "company_domain": null,
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The user's hint points to a company named \"Dover\" that is described as building a \"recruiting orchestration platform\" and an Applicant Tracking System (ATS). While a careers site (jobs.dover.com) is mentioned, a distinct root domain for this specific company is not clearly identified in the search results. The domain dover.com is associated with Dover Corporation, a large diversified global manufacturer. No specific careers, recruiting, or talent contact email was found for the Dover company (recruiting platform) in the search results. Other companies named \"Dover,\" such as Dover & Company (dovercompany.com) and Dover Chemical Corporation (doverchem.com), were found, but their business descriptions do not align with the context of the provided hint."
+  },
+  "cadence design systems": {
+    "company_domain": "cadence.com",
+    "contact_email": "staffing@cadence.com",
+    "email_source_url": "https://www.cadence.com/en_US/careers/jobs.html",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Cadence Design Systems is cadence.com. On their careers page, an email address 'staffing@cadence.com' is provided for individuals experiencing difficulty using the job site or needing to request a reasonable accommodation. This email is explicitly mentioned on their careers page and is related to recruiting/talent inquiries."
+  },
+  "ul solutions": {
+    "company_domain": "ul.com",
+    "contact_email": "talent.acquisition@ul.com",
+    "email_source_url": "https://careers.ul.com/global/en/jointalentcommunity",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for UL Solutions is ul.com, as indicated by their career pages and various directory listings. The careers, recruiting, or talent contact email was found on the 'Join Our Talent Community' page within their external career site. This page explicitly states, 'You may contact the UL Solutions Recruiting Team at the following e-mail address talent.acquisition@ul.com at any time, to request that personal information be deleted or to withdraw consent from further communications from UL Solutions.'. This email is specifically for recruiting and is not a legal, privacy, security, abuse, fraud-reporting, billing, developer support, or customer support/service email."
+  },
+  "lexisnexis risk solutions": {
+    "company_domain": "risk.lexisnexis.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain is risk.lexisnexis.com. The careers pages and contact us page (risk.lexisnexis.com/careers and risk.lexisnexis.com/about-us/contact-us) explicitly direct interested individuals to visit the careers section to learn more and apply for open positions, and provide a phone number for applicant support regarding accommodations. No explicit public careers, recruiting, or talent contact email was found on the official website or in the search results."
+  },
+  "neighborly": {
+    "company_domain": "neighborly.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Multiple companies named 'Neighborly' were found. Based on the provided hint (simplify.jobs link) and descriptions of being a 'trusted home services family' and 'world's largest home services company', the intended company is the Neighborly home services franchisor. Its official website is neighborly.com and its careers page is found on neighborlybrands.com. Neither of these official websites, nor their associated careers or contact pages, explicitly list a public careers, recruiting, or talent contact email address. The career pages typically direct users to browse job openings or fill out contact forms without providing a direct email."
+  },
+  "illinois tool works": {
+    "company_domain": "www.itw.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Illinois Tool Works is www.itw.com. While the website has extensive career sections and a 'Join Our Talent Community' feature, it does not explicitly provide a dedicated careers, recruiting, or talent contact email. Instead, it directs users to apply through their online application portals or join their talent community to receive updates on employment opportunities. An 'Info@' email was found for a division (ITW Heartland), but this is not a general careers email for the parent company. No other specific careers, recruiting, or talent contact emails were found on the web that meet the specified criteria."
+  },
+  "arine": {
+    "company_domain": "arine.io",
+    "contact_email": "info@arine.io",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGiy9DkgUCWU8gfF-Am0RWZY2XgEZ_xiEqPD_sdcaWfXHinyn8O93afEYXhoaZ3xPlGwwq37nvPU1bIBBDSnfwmZACBqwyuRKZc_7xAMpXkuKbQ8c5Y4MF2X8=",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Arine is arine.io, as indicated by multiple search results. The 'Contact Us' page on their website (arine.io) lists 'info@arine.io' as an email address to 'connect with a member of our team, to learn more about Arine and our solutions, or to explore career opportunities'. Although it is a general info email, its explicit mention for career inquiries makes it a valid contact for talent. Furthermore, a recruitment scam alert states that 'All hiring communications will come from an @arine.io email', reinforcing that arine.io is the domain for recruitment-related communication."
+  },
+  "nec software solutions": {
+    "company_domain": "necsws.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No explicit careers, recruiting, or talent contact email was found on the official website (necsws.com) or related job postings. The company appears to direct job seekers to an application portal (SmartRecruiters) for career inquiries. The search results for \"site:necsws.com careers contact email\" and \"site:necsws.com HR email\" did not yield a specific contact email address for recruitment."
+  },
+  "intel": {
+    "company_domain": "intel.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Intel's official website is intel.com. Their careers section is primarily handled through an application portal, jobs.intel.com, which redirects to myworkdayjobs.com/Intel. While several Intel-domain emails were found, such as AskHRquery@intel.com, these are specifically for former employees regarding benefits, or other administrative purposes, and not for general career, recruiting, or talent inquiries from prospective candidates. There is no publicly listed general contact email for Intel's careers, recruiting, or talent department on their official domain. Intel explicitly warns against recruitment scams and states that their recruiters will not solicit candidates through non-Intel email addresses."
+  },
+  "primetals technologies": {
+    "company_domain": "primetals.com",
+    "contact_email": "praktikum.at@primetals.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEH_cDao7gpGn3GusCycskBPVMUUYa0xpMPSJv18zySCayEAaQl7pJQBtCtGELmEPXGk-20rdVyFFR8-Py2ZaZAYuHTkMo3dRVKf3Bv7r4lNaJWdRoHfED6ipLwk0FyasNx-bafDu38SLyt5_epKEiNt_p0",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Primetals Technologies is primetals.com. An email address for talent contact, specifically for internship and thesis applications in Austria, was found as 'praktikum.at@primetals.com'. This email is explicitly mentioned on their website for recruiting students and aligns with the criteria for a careers, recruiting, or talent contact email."
+  },
+  "pebl": {
+    "company_domain": "hellopebl.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Pebl (formerly Velocity Global), an Employer of Record platform, is hellopebl.com. While various job postings and a careers page were found (e.g.,), no explicit careers, recruiting, or talent contact email (such as jobs@company.com or careers@company.com) was listed on their official website or associated careers pages. General support and information emails were found (e.g., support@pebl.me and info@hellopebl.com), but these do not meet the criteria for a careers-specific contact email."
   }
 }
