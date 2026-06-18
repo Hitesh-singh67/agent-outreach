@@ -432,5 +432,33 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website for Pebl (formerly Velocity Global), an Employer of Record platform, is hellopebl.com. While various job postings and a careers page were found (e.g.,), no explicit careers, recruiting, or talent contact email (such as jobs@company.com or careers@company.com) was listed on their official website or associated careers pages. General support and information emails were found (e.g., support@pebl.me and info@hellopebl.com), but these do not meet the criteria for a careers-specific contact email."
+  },
+  "ibm": {
+    "company_domain": "ibm.com",
+    "contact_email": "recrops@ca.ibm.com",
+    "email_source_url": "https://www.ibm.com/careers/",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for IBM is ibm.com. While IBM's career pages primarily direct individuals to application portals and a talent network, a specific email address, recrops@ca.ibm.com, is provided on their careers page for individuals with disabilities who require reasonable accommodation in the recruitment process. This email directly serves a function within the recruitment process. Other general emails like talent@ibm.com and Entrylevelhiring@ibm.com have been noted as unmonitored, and the company generally advises that recruiters may not contact applicants directly due to the volume of applications. Another recruitment-related email, ukcat@uk.ibm.com, is mentioned for requests for accessible document formats related to talent acquisition services, but recrops@ca.ibm.com is more directly for 'reasonable accommodation in the recruitment process'."
+  },
+  "iherb": {
+    "company_domain": "iherb.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for iHerb is iherb.com. While various careers pages and job postings were found, no direct careers, recruiting, or talent contact email for general inquiries or direct applications was explicitly provided. The email 'staffingvendors@iherb.com' is specifically for staffing agencies and explicitly advises against direct contact by candidates. The 'info@iherb.com' email is listed for app support, which is not relevant to careers. The career sites primarily direct users to apply through their online portals or create job alerts."
+  },
+  "knowbe4": {
+    "company_domain": "knowbe4.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for KnowBe4 is knowbe4.com. While the careers page (knowbe4.com/careers or knowbe4.com/jobs) is available and encourages applicants to 'See Open Positions', no specific careers, recruiting, or talent contact email address was explicitly found on their website or in related job postings. The 'Contact Us' page lists only general sales and support emails (sales@knowbe4.com, support@knowbe4.com), which do not fit the criteria. The careers blog allows users to subscribe for updates with career advice from recruiters, but this is not a direct contact email for recruitment inquiries."
+  },
+  "beyondsoft": {
+    "company_domain": "beyondsoft.com",
+    "contact_email": "hr@beyondsoft.com",
+    "email_source_url": "https://www.jobzmall.com/companies/beyondsoft/faq",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Beyondsoft is 'beyondsoft.com'. A career-related email address, 'hr@beyondsoft.com', was explicitly found on JobzMall, stated as an email for career-related questions and inquiries. While Beyondsoft's official career and contact pages direct users to apply through application portals or fill out a general contact form, the 'hr@beyondsoft.com' address is specifically identified as being for career inquiries. Other emails found, such as 'voe@us.beyondsoft.com' are for verification of employment, 'fraudreporting@us.beyondsoft.com' is for fraud reporting, and 'bci_privacysupport@us.beyondsoft.com' is for privacy support, none of which are suitable for general careers, recruiting, or talent contact."
   }
 }
