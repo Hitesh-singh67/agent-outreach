@@ -433,109 +433,46 @@
     "email_found_on_web": false,
     "reasoning": "The official website for Pebl (formerly Velocity Global), an Employer of Record platform, is hellopebl.com. While various job postings and a careers page were found (e.g.,), no explicit careers, recruiting, or talent contact email (such as jobs@company.com or careers@company.com) was listed on their official website or associated careers pages. General support and information emails were found (e.g., support@pebl.me and info@hellopebl.com), but these do not meet the criteria for a careers-specific contact email."
   },
-  "anakin": {
-    "company_domain": "anakin.ai",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website domain for the company Anakin (AI platform/competitive intelligence) is anakin.ai. No explicit careers, recruiting, or talent contact email (e.g., jobs@company.com, careers@company.com) was found on the web. The company lists job opportunities on platforms like Y Combinator's Work at a Startup and Instahyre, which typically direct applicants to online application portals rather than providing direct email contacts. Other emails found, such as support@anakin.ai and team@mail.anakin.ai, are designated for customer support, general inquiries, feedback, or legal notices, and do not fit the criteria for a talent acquisition email."
-  },
-  "lseg": {
-    "company_domain": "lseg.com",
-    "contact_email": "peopleservices@lseg.com",
-    "email_source_url": "https://www.lseg.com/en/contact-us",
+  "ibm": {
+    "company_domain": "ibm.com",
+    "contact_email": "recrops@ca.ibm.com",
+    "email_source_url": "https://www.ibm.com/careers/",
     "email_found_on_web": true,
-    "reasoning": "The official website domain for LSEG is lseg.com. The email 'peopleservices@lseg.com' is listed on their 'Contact Us' page under 'Employment verification and HR requests', which aligns with the request for an HR or talent contact email."
+    "reasoning": "The official website domain for IBM is ibm.com. While IBM's career pages primarily direct individuals to application portals and a talent network, a specific email address, recrops@ca.ibm.com, is provided on their careers page for individuals with disabilities who require reasonable accommodation in the recruitment process. This email directly serves a function within the recruitment process. Other general emails like talent@ibm.com and Entrylevelhiring@ibm.com have been noted as unmonitored, and the company generally advises that recruiters may not contact applicants directly due to the volume of applications. Another recruitment-related email, ukcat@uk.ibm.com, is mentioned for requests for accessible document formats related to talent acquisition services, but recrops@ca.ibm.com is more directly for 'reasonable accommodation in the recruitment process'."
   },
-  "magna": {
-    "company_domain": "magna.com",
-    "contact_email": "talentattraction@magna.com",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGK0WyedOHAon57-kh75ejocjtYApfWKe7Qk3JW3cfEAag0WYIpR-SDZhIajmQpXL2kJIc5ba-uXXRmE6PLYFpMaME73xxhdQNv5qEpcf2XBG-eTFEdcLCnF93frhI72rvcAsNDc4sqreX7zgwW4uoXMM-5p92ZNu-0_SfSiY2PwUXdcbsP9a5B8t-kc_WE3k6EOOgbE8hIX6xtfLDiknhVqRLHHx714Grdf_OQQ4yiMk9bZ07Xwm3qt23MazgRfiobpxwOXbsQWNk",
+  "iherb": {
+    "company_domain": "iherb.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for iHerb is iherb.com. While various careers pages and job postings were found, no direct careers, recruiting, or talent contact email for general inquiries or direct applications was explicitly provided. The email 'staffingvendors@iherb.com' is specifically for staffing agencies and explicitly advises against direct contact by candidates. The 'info@iherb.com' email is listed for app support, which is not relevant to careers. The career sites primarily direct users to apply through their online portals or create job alerts."
+  },
+  "knowbe4": {
+    "company_domain": "knowbe4.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for KnowBe4 is knowbe4.com. While the careers page (knowbe4.com/careers or knowbe4.com/jobs) is available and encourages applicants to 'See Open Positions', no specific careers, recruiting, or talent contact email address was explicitly found on their website or in related job postings. The 'Contact Us' page lists only general sales and support emails (sales@knowbe4.com, support@knowbe4.com), which do not fit the criteria. The careers blog allows users to subscribe for updates with career advice from recruiters, but this is not a direct contact email for recruitment inquiries."
+  },
+  "beyondsoft": {
+    "company_domain": "beyondsoft.com",
+    "contact_email": "hr@beyondsoft.com",
+    "email_source_url": "https://www.jobzmall.com/companies/beyondsoft/faq",
     "email_found_on_web": true,
-    "reasoning": "The official website domain for Magna International Inc. is magna.com. The email address 'talentattraction@magna.com' was explicitly found in the 'Magna Global Recruiting Privacy Information' document on magna.com, listed as a contact for the 'Central responsible department' for recruitment, making it a verified talent/recruiting contact email."
-  },
-  "quantexa": {
-    "company_domain": "quantexa.com",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website for Quantexa is quantexa.com. Quantexa explicitly states on its 'Start With Us' careers page that applications cannot be made via email and directs candidates to apply through their job portal. No dedicated careers, recruiting, or talent contact email was found on their official website or related career pages; only application portals are provided for job submissions. Other emails found, such as 'community@quantexa.com', are for community support and not for recruitment purposes."
-  },
-  "sprinklr": {
-    "company_domain": "sprinklr.com",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website domain for Sprinklr is sprinklr.com. Extensive searching of Sprinklr's career pages and contact sections did not reveal a public, general careers, recruiting, or talent contact email. The career pages direct users to explore job openings, implying an application portal. While a recruitment scam alert mentions that official communication will come from a verified Sprinklr domain (e.g., @sprinklr.com) and that their first touch will be via their official careers page or a verified recruiter on LinkedIn or email, it does not provide a generic careers or recruiting email address. Other emails found, such as ir@sprinklr.com (Investor Relations), pr@sprinklr.com (Corporate Communications), security@sprinklr.com (for reporting recruitment scams), and tickets@sprinklr.com (App Support), do not meet the criteria for a careers, recruiting, or talent contact email."
-  },
-  "nerdwallet": {
-    "company_domain": "nerdwallet.com",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website domain for NerdWallet is nerdwallet.com. Extensive searching of NerdWallet's careers pages and related job postings on various platforms (such as Indeed, FlexJobs, Built In, Zippia, Virtual Vocations) did not yield an explicitly stated careers, recruiting, or talent contact email. While a general email format (firstinitiallast@nerdwallet.com) was mentioned on a third-party site for finding contacts, it was not presented as a dedicated careers or recruiting email directly from NerdWallet. Customer support emails (e.g., support@nerdwallet.com) were found but are excluded by the instructions. The job application processes appear to be handled through online portals rather than direct email contact."
-  },
-  "plexsys": {
-    "company_domain": "plexsys.com",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website domain for Plexsys is plexsys.com. The careers pages (e.g., 'Current Position Openings', 'Join Our Team') list job opportunities but do not provide a dedicated careers, recruiting, or talent contact email. The 'Contact Us' page offers general inquiry emails (info@plexsys.com) and marketing-related emails (marketing@plexsys.com) but no specific email for HR or recruitment. Some job postings instruct applicants to submit resumes through the 'Contact Us' page or direct them to apply via external job platforms, implying that there is no public-facing careers email address."
-  },
-  "amagi": {
-    "company_domain": "amagi.com",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website for Amagi, a company specializing in cloud-based SaaS technology for broadcast and streaming TV, is amagi.com. While a careers section exists on their website, and various job postings are listed on external sites, no explicit careers, recruiting, or talent contact email address was found. Other contact emails like `privacy@amagi.com`, `ir@amagi.com`, `compliance@amagi.com`, `pr@amagi.com`, and `support@amagi.com` were found, but these are excluded based on the prompt's instructions. An email address `contact@amagi.io` was found on a careers page, but this belongs to a different company, 'AMAGI,' an enterprise software agency using the domain amagi.io."
-  },
-  "tekion": {
-    "company_domain": "tekion.com",
-    "contact_email": "HR_North_America@tekion.com",
-    "email_source_url": "https://www.tekion.com/legal/applicant-and-candidate-privacy-notice",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Tekion is tekion.com. The Applicant and Candidate Privacy Notice on Tekion's website lists regional HR email addresses for job applicants to contact regarding their personal information or privacy notice questions. Specifically, 'HR_North_America@tekion.com' is provided for job applicants and/or candidates located in North America for questions or requests about updating their Personal Information or how Tekion manages their Personal Information in the context of their application for employment. This email directly pertains to the talent/recruiting process for applicants."
-  },
-  "aveva": {
-    "company_domain": "www.aveva.com",
-    "contact_email": "returnship@aveva.com",
-    "email_source_url": "https://www.aveva.com/en/about/careers/empowher/",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for AVEVA is www.aveva.com. A specific careers-related email, returnship@aveva.com, is explicitly provided on their official website on the 'EmpowHER@AVEVA' page for inquiries about their returnship program, which is a talent acquisition initiative for individuals restarting their professional journey."
-  },
-  "bswift india (black box careers)": {
-    "company_domain": "bswift.com",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website domain for bswift is bswift.com. While bswift has career pages and job postings for India, no explicit careers, recruiting, or talent contact email was found on the website or in associated job postings. Applications are directed through online portals like Greenhouse. The term 'Black Box Careers' appears to refer to a separate company, Black Box (blackbox.com), which offers an email (HRSS@blackbox.com) specifically for 'accommodation to use our online application process'. This type of email falls under the exclusion criteria as a support/service email for the application process, not a general careers or recruiting contact."
-  },
-  "entrupy": {
-    "company_domain": "www.entrupy.com",
-    "contact_email": null,
-    "email_source_url": null,
-    "email_found_on_web": false,
-    "reasoning": "The official website for Entrupy is www.entrupy.com. While a careers page exists on their website, it lists job openings but does not provide a general careers, recruiting, or talent contact email address. Other found emails like 'support@entrupy.com' are for customer support and are explicitly excluded by the instructions. No other explicit careers or recruiting email was found on the company's website or in job postings."
-  },
-  "adobe": {
-    "company_domain": "adobe.com",
-    "contact_email": "erc@adobe.com",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlC_H-mBsWbeJEP9R0rQjwi4ct0mLGKs8BHbSlP6nerLJ23KwPROWqlx-GOe-Xd2-5ZZ85zJUhvXOm_ok7HtGtVqFyaEsqF8gMKyrS69F6DAQoEjhqWBS9bNmVQV7PM5kKTCNwm4q7FyfWsezNyVOh_BN4n10cf4rJZpK4pZ6Y0-lkgm4ql2o5",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Adobe is adobe.com. The Employee Resources Center (erc@adobe.com) is listed as the contact for questions regarding Adobe's Career Opportunities website and its policy, as well as for information concerning applicant privacy in relation to recruiting new talent. This email address directly relates to career opportunities and the recruitment process."
+    "reasoning": "The official website domain for Beyondsoft is 'beyondsoft.com'. A career-related email address, 'hr@beyondsoft.com', was explicitly found on JobzMall, stated as an email for career-related questions and inquiries. While Beyondsoft's official career and contact pages direct users to apply through application portals or fill out a general contact form, the 'hr@beyondsoft.com' address is specifically identified as being for career inquiries. Other emails found, such as 'voe@us.beyondsoft.com' are for verification of employment, 'fraudreporting@us.beyondsoft.com' is for fraud reporting, and 'bci_privacysupport@us.beyondsoft.com' is for privacy support, none of which are suitable for general careers, recruiting, or talent contact."
   },
   "gen digital": {
     "company_domain": "gendigital.com",
     "contact_email": null,
     "email_source_url": null,
     "email_found_on_web": false,
-    "reasoning": "No public careers, recruiting, or talent contact email was explicitly found on the official website or related job postings. The website refers to job application portals for employment and mentions an 'HR Service Exchange' for accommodation requests."
+    "reasoning": "The official website for Gen Digital is gendigital.com. While the careers pages (e.g., https://www.gendigital.com/careers) mention contacting 'HR Service Exchange' for accommodation requests during the application process, no explicit email address for careers, recruiting, or talent was found on the official website or in the search results. The job postings direct applicants to 'See all open jobs', indicating an application portal rather than a direct email contact. An email address 'gdc_info@generaldigital.com' was found, but it belongs to 'General Digital Corporation', a different entity from 'Gen Digital'. Another email 'eb_sales@nortonlifelock...' was found, but it is a sales email and not relevant to careers."
   },
   "bugcrowd": {
     "company_domain": "bugcrowd.com",
     "contact_email": "careers@bugcrowd.com",
     "email_source_url": "https://www.bugcrowd.com/about/careers/",
     "email_found_on_web": true,
-    "reasoning": "The official website domain for Bugcrowd is bugcrowd.com. The careers page explicitly states, 'If you can't find what you're looking for, get in touch at careers@bugcrowd.com.' This email address is specifically for career-related inquiries."
+    "reasoning": "The careers page explicitly states 'If you can't find what you're looking for, get in touch at careers@bugcrowd.com.'"
   }
 }
