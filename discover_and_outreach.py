@@ -427,6 +427,51 @@ def fetch_job_description(url):
     except Exception as e:
         return ""
 
+def check_gmail_token_valid(non_interactive=False):
+    """Pre-flight check: verifies Gmail token can be refreshed BEFORE burning API calls.
+    Returns True if token is usable, False/exits if not."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    token_path = os.path.join(script_dir, 'token.json')
+    credentials_path = os.path.join(script_dir, 'credentials.json')
+
+    if not os.path.exists(token_path):
+        if non_interactive:
+            print("\n[-] FATAL: token.json not found and running in non-interactive mode.")
+            print("[*] ACTION REQUIRED: Run the script locally once to authenticate, then update")
+            print("    the GMAIL_TOKEN_JSON GitHub secret with the new token.json contents.")
+            sys.exit(1)
+        print("[*] No Gmail token found. Will authenticate during the send phase.")
+        return True  # Will be handled by get_gmail_service
+
+    try:
+        creds = Credentials.from_authorized_user_file(token_path, SCOPES)
+        if creds and creds.valid:
+            print("[+] Gmail token is valid.")
+            return True
+        if creds and creds.expired and creds.refresh_token:
+            print("[*] Gmail token expired. Testing refresh...")
+            creds.refresh(Request())
+            # Save refreshed token
+            with open(token_path, 'w') as f:
+                f.write(creds.to_json())
+            print("[+] Gmail token refreshed successfully.")
+            return True
+    except Exception as e:
+        print(f"[-] Gmail token refresh failed: {e}")
+
+    if non_interactive:
+        print("\n[-] FATAL: Gmail token is expired/revoked and cannot be refreshed in non-interactive mode.")
+        print("[*] ACTION REQUIRED:")
+        print("    1. Run locally:  python discover_and_outreach.py")
+        print("    2. Complete the browser OAuth flow.")
+        print("    3. Copy the new token.json contents into your GitHub repo secret GMAIL_TOKEN_JSON.")
+        print("    4. The daily cron will then work automatically.")
+        sys.exit(1)
+    else:
+        print("[*] Token needs re-authentication. Will handle during the send phase.")
+        return True
+
+
 def get_gmail_service(non_interactive=False):
     """Authenticates the user and returns the Gmail API service instance."""
     creds = None
@@ -449,8 +494,11 @@ def get_gmail_service(non_interactive=False):
         
         if not creds:
             if non_interactive:
-                print("\n[-] Error: Gmail credentials are expired or invalid, and the pipeline is running in non-interactive mode.")
-                print("[*] Please run this script manually in interactive mode once to complete the Gmail OAuth authorization.")
+                print("\n[-] FATAL: Gmail credentials are expired/invalid in non-interactive mode.")
+                print("[*] ACTION REQUIRED:")
+                print("    1. Run locally:  python discover_and_outreach.py")
+                print("    2. Complete the browser OAuth flow.")
+                print("    3. Copy the new token.json contents into your GitHub repo secret GMAIL_TOKEN_JSON.")
                 sys.exit(1)
                 
             if not os.path.exists(credentials_path):
@@ -533,8 +581,94 @@ def send_gmail_email(service, to_email, subject, body_text, resume_path=None):
         print(f"[-] Failed to send email to {to_email}: {e}")
         return None
 
+def send_summary_to_candidate(service, matched_companies, was_sent):
+    """Sends a summary of today's outreach activities to the candidate's own email."""
+    try:
+        from datetime import datetime
+        to_email = "hiteshkumarsingh6395@gmail.com"
+        date_str = datetime.now().strftime('%Y-%m-%d')
+        subject = f"Daily Outreach Summary - {date_str}"
+        
+        body_lines = [
+            "Hello Hitesh,",
+            "",
+            f"The Daily Outreach Pipeline has completed its run for today ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')}).",
+            "",
+            f"Mode: {'Direct Email Sending' if was_sent else 'Draft Staging in Inbox'}",
+            f"Total companies processed today: {len(matched_companies)}",
+            "",
+        ]
+        
+        if matched_companies:
+            body_lines.append("Details of matches:")
+            body_lines.append("=" * 40)
+            for comp, info in matched_companies.items():
+                body_lines.append(f"- Company: {comp}")
+                body_lines.append(f"  Role: {info['role']}")
+                body_lines.append(f"  Contact Email: {info['contact_email']}")
+                body_lines.append(f"  Resume Type: {'Tailored' if info.get('tailored_resume') and 'tailored' in str(info['tailored_resume']) else 'Original'}")
+                body_lines.append(f"  Status: {'SENT' if was_sent else 'STAGED AS DRAFT'}")
+                body_lines.append("")
+        else:
+            body_lines.append("No job postings matched your profile or had contact emails discovered today.")
+            
+        body_lines.append("\nBest regards,")
+        body_lines.append("Your Automated Outreach Assistant Bot")
+        
+        body_text = "\n".join(body_lines)
+        
+        message = EmailMessage()
+        message.set_content(body_text)
+        message["To"] = to_email
+        message["Subject"] = subject
+        
+        encoded_message = base64.urlsafe_b64encode(message.as_bytes()).decode()
+        create_message = {"raw": encoded_message}
+        
+        service.users().messages().send(userId="me", body=create_message).execute()
+        print("[+] Status summary email successfully sent to your inbox!")
+    except Exception as e:
+        print(f"[-] Failed to send status summary email to candidate: {e}")
+
+def _discover_contact_via_openrouter(company, company_url=None):
+    """Fallback: uses OpenRouter free tier to discover company contact emails when Gemini quota is exhausted.
+    NOTE: OpenRouter models don't have live web search, so this relies on the model's training data knowledge."""
+    url_hint = f" (possible URL/domain hint: {company_url})" if company_url else ""
+    prompt = f"""Find the official website domain and the actual careers, recruiting, or talent contact email for the company "{company}"{url_hint}.
+
+Look for:
+1. Careers page or contact page on their website.
+2. Known contact emails like jobs@company.com, careers@company.com, recruiting@company.com, hr@company.com, talent@company.com.
+3. Do NOT guess or fabricate an email. If the company only uses application portals (Greenhouse, Lever, Workday) and you don't know a public careers email, set "contact_email" to null.
+4. Do NOT return legal, privacy, security, abuse, billing, developer support, or customer support emails. If only these types of emails are known, set "contact_email" to null.
+
+Respond with a JSON object with these keys:
+- "company_domain": string or null
+- "contact_email": string or null
+- "email_source_url": string or null
+- "email_found_on_web": boolean
+- "reasoning": string
+"""
+    schema_props = {
+        "company_domain": {"type": ["string", "null"]},
+        "contact_email": {"type": ["string", "null"]},
+        "email_source_url": {"type": ["string", "null"]},
+        "email_found_on_web": {"type": "boolean"},
+        "reasoning": {"type": "string"}
+    }
+    try:
+        result = openrouter_chat(prompt, json_schema_properties=schema_props, temperature=0.1)
+        if isinstance(result, dict):
+            return result
+        return None
+    except Exception as e:
+        print(f"  [!] OpenRouter contact discovery also failed: {e}")
+        return None
+
+
 def discover_company_contact(client, company, company_url=None):
-    """Uses a local cache file first, then gemini-2.5-flash with Google Search grounding to discover verified contact emails."""
+    """Uses a local cache file first, then gemini-2.5-flash with Google Search grounding to discover verified contact emails.
+    Falls back to OpenRouter free tier if Gemini quota is exhausted."""
     global gemini_quota_exceeded
     company_clean = str(company).strip().lower()
     
@@ -558,8 +692,23 @@ def discover_company_contact(client, company, company_url=None):
             print(f"  [!] Failed to read contact cache: {e}")
             
     if gemini_quota_exceeded:
-        print(f"  └─ Skipping Gemini Search: Daily API quota is exhausted. (Cache only mode)")
-        return None
+        # Fallback to OpenRouter instead of giving up entirely
+        print(f"  └─ Gemini quota exhausted. Falling back to OpenRouter for '{company}' contact discovery...")
+        data = _discover_contact_via_openrouter(company, company_url)
+        if data:
+            # Save to cache
+            try:
+                cache = {}
+                if os.path.exists(cache_path):
+                    with open(cache_path, 'r', encoding='utf-8') as f:
+                        cache = json.load(f)
+                cache[company_clean] = data
+                with open(cache_path, 'w', encoding='utf-8') as f:
+                    json.dump(cache, f, indent=2)
+                print(f"  [+] Saved '{company}' details to local contact cache (via OpenRouter).")
+            except Exception as cache_err:
+                print(f"  [!] Failed to save contact to cache: {cache_err}")
+        return data
             
     print(f"  └─ Searching for '{company}' contact details via Google Search Grounding...")
     
@@ -633,10 +782,25 @@ Do not output anything else.
             
         return data
     except Exception as e:
-        print(f"  [!] Email discovery search failed: {e}")
+        print(f"  [!] Gemini email discovery failed: {e}")
         if "quota" in str(e).lower() or "429" in str(e) or "resource_exhausted" in str(e).lower():
-            print("  [!] Detecting persistent API rate-limiting or quota exhaustion. Switching to cache-only mode.")
+            print("  [!] Gemini quota exhausted. Switching to OpenRouter fallback for contact discovery...")
             gemini_quota_exceeded = True
+            # Immediately try OpenRouter fallback for THIS company instead of returning None
+            data = _discover_contact_via_openrouter(company, company_url)
+            if data:
+                try:
+                    cache = {}
+                    if os.path.exists(cache_path):
+                        with open(cache_path, 'r', encoding='utf-8') as f:
+                            cache = json.load(f)
+                    cache[company_clean] = data
+                    with open(cache_path, 'w', encoding='utf-8') as f:
+                        json.dump(cache, f, indent=2)
+                    print(f"  [+] Saved '{company}' details to local contact cache (via OpenRouter).")
+                except Exception as cache_err:
+                    print(f"  [!] Failed to save contact to cache: {cache_err}")
+            return data
         return None
 
 def generate_tailored_text(client, resume_text, company, role, job_desc_text, company_domain):
@@ -873,6 +1037,11 @@ def main():
     # Initialize Google GenAI client
     client = genai.Client()
 
+    # 1b. Pre-flight: verify Gmail token BEFORE burning API calls
+    if not args.dry_run:
+        print("\n[*] Pre-flight check: verifying Gmail token...")
+        check_gmail_token_valid(args.non_interactive)
+
     # 2. Fetch listings
     simplify_postings = fetch_simplify_postings()
     india_searched_postings = search_india_internships(client)
@@ -938,8 +1107,8 @@ def main():
             if company in matched_companies:
                 continue
                 
-            if gemini_quota_exceeded:
-                print(f"  [-] Skipping evaluation for {company}: Gemini API daily quota is exhausted.")
+            if gemini_quota_exceeded and not os.environ.get("OPENROUTER_API_KEY"):
+                print(f"  [-] Skipping evaluation for {company}: Both Gemini and OpenRouter are unavailable.")
                 continue
                 
             role = p['role']
@@ -1054,12 +1223,11 @@ Ensure that the drafted email is strictly under 130 words.
 
     print(f"\n[+] Staging Complete! Discovered {len(matched_companies)} matching companies.")
 
-    if not matched_companies:
-        print("[-] No companies matched the requirements. Exiting.")
-        return
-
     # 3. Inbox Staging or Direct Sending
     if args.dry_run:
+        if not matched_companies:
+            print("[-] No companies matched the requirements. Exiting.")
+            return
         print("\n" + "="*80)
         print("DRY RUN MODE: Outputting outreach drafts to terminal.")
         print("="*80)
@@ -1077,6 +1245,11 @@ Ensure that the drafted email is strictly under 130 words.
         gmail_service = get_gmail_service(args.non_interactive)
         print("[+] Gmail connection established!")
         
+        if not matched_companies:
+            print("[-] No companies matched the requirements.")
+            send_summary_to_candidate(gmail_service, {}, args.send)
+            return
+
         if args.send:
             print("\n[*] Sending outreach emails directly via Gmail...")
             for comp, info in matched_companies.items():
@@ -1095,6 +1268,8 @@ Ensure that the drafted email is strictly under 130 words.
                 if draft:
                     print(f"     [+] Successfully staged draft (ID: {draft['id']})")
             print("\n[+] All outreach drafts have been successfully staged in your Gmail Inbox!")
+        
+        send_summary_to_candidate(gmail_service, matched_companies, args.send)
 
 if __name__ == '__main__':
     main()
