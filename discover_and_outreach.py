@@ -1090,9 +1090,9 @@ def main():
 
     matched_companies = {}  # Combined final matches: company_name -> match_info
     
-    # Target: 2 India matches, 1 Abroad matches (optimized to stay within Gemini Free Tier limits of 20 requests/day)
-    target_india = 2
-    target_abroad = 1
+    # Target: 15 India matches, 10 Abroad matches
+    target_india = 15
+    target_abroad = 10
     
     # helper evaluation run
     def evaluate_postings_list(postings_list, target_count, target_label, is_india):
