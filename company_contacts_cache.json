@@ -460,5 +460,19 @@
     "email_source_url": "https://www.jobzmall.com/companies/beyondsoft/faq",
     "email_found_on_web": true,
     "reasoning": "The official website domain for Beyondsoft is 'beyondsoft.com'. A career-related email address, 'hr@beyondsoft.com', was explicitly found on JobzMall, stated as an email for career-related questions and inquiries. While Beyondsoft's official career and contact pages direct users to apply through application portals or fill out a general contact form, the 'hr@beyondsoft.com' address is specifically identified as being for career inquiries. Other emails found, such as 'voe@us.beyondsoft.com' are for verification of employment, 'fraudreporting@us.beyondsoft.com' is for fraud reporting, and 'bci_privacysupport@us.beyondsoft.com' is for privacy support, none of which are suitable for general careers, recruiting, or talent contact."
+  },
+  "gen digital": {
+    "company_domain": "gendigital.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Gen Digital is gendigital.com. While the careers pages (e.g., https://www.gendigital.com/careers) mention contacting 'HR Service Exchange' for accommodation requests during the application process, no explicit email address for careers, recruiting, or talent was found on the official website or in the search results. The job postings direct applicants to 'See all open jobs', indicating an application portal rather than a direct email contact. An email address 'gdc_info@generaldigital.com' was found, but it belongs to 'General Digital Corporation', a different entity from 'Gen Digital'. Another email 'eb_sales@nortonlifelock...' was found, but it is a sales email and not relevant to careers."
+  },
+  "bugcrowd": {
+    "company_domain": "bugcrowd.com",
+    "contact_email": "careers@bugcrowd.com",
+    "email_source_url": "https://www.bugcrowd.com/about/careers/",
+    "email_found_on_web": true,
+    "reasoning": "The careers page explicitly states 'If you can't find what you're looking for, get in touch at careers@bugcrowd.com.'"
   }
 }
