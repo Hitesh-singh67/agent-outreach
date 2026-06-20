@@ -474,5 +474,96 @@
     "email_source_url": "https://www.bugcrowd.com/about/careers/",
     "email_found_on_web": true,
     "reasoning": "The careers page explicitly states 'If you can't find what you're looking for, get in touch at careers@bugcrowd.com.'"
+  },
+  "whatfix": {
+    "company_domain": "whatfix.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Whatfix is whatfix.com. While several career pages are available, such as whatfix.com/careers/ and whatfix.com/jobs/, they direct applicants to an online application system (powered by Trakstar Hire) or encourage applying directly through their platform. No explicit, public email address for careers, recruiting, or talent was found on their official website or in other search results. A 'Candidate Alert' on their careers page explicitly warns against unofficial email communications for job offers, further indicating that they do not use a public careers email. The email 'sales@whatfix.com' was found but is for sales inquiries, not recruitment."
+  },
+  "availity": {
+    "company_domain": "availity.com",
+    "contact_email": "AvailityHR@Availity.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHvQcNsUjKTgcvdZZx6-K0Om0Q9tsrfMakVrBZFGbyK6VJj61PHI0wVvWqZO3hMf6eZvS6yeNCD8qXBgB14FqucZve94XdcWw0GsamRor8i1cjMx9IL2LrjioR9yg==",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Availity is availity.com. The careers page on Availity's website lists 'AvailityHR@Availity.com' as an email contact for those with disabilities needing accommodation or assistance in completing any portion of the application process. The same page also mentions 'recruiting@availity.com' for reporting recruitment scams."
+  },
+  "aveva": {
+    "company_domain": "www.aveva.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for AVEVA is www.aveva.com. A thorough search of the AVEVA careers page, 'How we hire' page, and the general 'Contact Us' page did not reveal a specific public careers, recruiting, or talent contact email address. The company's hiring process as described on its 'How we hire' page mentions interaction with a recruiter but does not provide a general email for this purpose. The 'Contact Us' page provides a form for general inquiries and a link to customer support, but no dedicated email for recruitment. Job postings on external sites like Indeed and ZipRecruiter typically direct applicants to an online application system. Therefore, no verified careers or recruiting email was found on the web."
+  },
+  "vir innovations": {
+    "company_domain": "virinnovations.in",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Vir Innovations is virinnovations.in. While the website lists 'info@virinnovations.in' under its contact section, this is a general inquiry email and not a specific careers, recruiting, or talent contact email. Searches for careers or job postings on platforms like Wellfound and Instahyre indicate that Vir Innovations utilizes application portals for recruitment and does not explicitly provide a public careers or recruiting email address. No other verified careers-specific email was found on the web."
+  },
+  "xobin": {
+    "company_domain": "xobin.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Xobin is xobin.com. While a 'Careers' page exists at https://www.xobin.com/careers, and a 'Contact Us' page lists a general inquiry email (contact@xobin.com), no specific careers, recruiting, or talent contact email (e.g., jobs@company.com, careers@company.com, recruiting@company.com, hr@company.com, talent@company.com) was explicitly found on their website or in the search results. The career page appears to use an application portal (Powered by Xobin) for job applications. Other emails found, such as integrations@xobin.com, are not relevant to careers or talent acquisition."
+  },
+  "rtx": {
+    "company_domain": "rtx.com",
+    "contact_email": "rtxrecruiting@rtx.com",
+    "email_source_url": "https://www.rtx.com/contacts",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for RTX is rtx.com. The email address 'rtxrecruiting@rtx.com' is explicitly provided on the RTX 'Contacts' page for 'special assistance or accommodations while seeking employment'. This email is also mentioned on RTX's career portal for inquiries related to job applications and issues with the careers website."
+  },
+  "generac": {
+    "company_domain": "generac.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Generac's official website is generac.com. While an email address (askHR@generac.com) is provided on their careers pages for reasonable accommodation requests during the application process, it is explicitly stated that 'Only messages sent for this purpose will be considered'. This email is for a specific support function related to accessibility in applying for jobs and not a general careers, recruiting, or talent contact email as per the defined criteria. Generac primarily directs job seekers to their online application portals and talent networks."
+  },
+  "aci worldwide": {
+    "company_domain": "aciworldwide.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for ACI Worldwide is aciworldwide.com. While searching for careers, recruiting, or talent contact information, the career pages (e.g., aciworldwide.com/careers) primarily direct users to job openings and a 'Join Our Talent Community' which involves submitting an email address to receive updates, rather than providing a direct contact email for recruitment inquiries. Email format examples like 'First.Last@aciworldwide.com' were found, but no generic, publicly listed email specifically for careers, recruiting, or talent acquisition was identified. An email like 'career@aciworldwide.co.in' was flagged as part of a scam and was therefore disregarded. Other emails found were for media contacts and not relevant to careers."
+  },
+  "magna": {
+    "company_domain": "www.magna.com",
+    "contact_email": "talentattraction@magna.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9xHoYsYQHK0VslPh5n41PalTmJbpULWTDH4_8ESpVXFm8Hsj_GQxvZKiAaiUAbQlO--GAClmJOrRn3j78qP2_fbWLsm7TdUPntKRiDoyJSdgYaRxfTOxxV0vkRHCge-39rf0Of7slDxpISq4VQno9Ev2FOybf7ijTEOE821Xfx3ZSSJjYjSYR4FRFGFQamrGPF4GhshQc4x0rZqzpqHi8i4mvm434D9dnRecIOKggmRKSy95xT6NyjflCyWXEESy4D_zpv8VaRDoS",
+    "email_found_on_web": true,
+    "reasoning": "The official website for Magna International Inc. is www.magna.com. The email 'talentattraction@magna.com' is explicitly listed in their 'Magna Global Recruiting Privacy Information' document as a contact for their Talent Attraction team for questions or concerns about the recruitment process."
+  },
+  "general dynamics mission systems": {
+    "company_domain": "gdmissionsystems.com",
+    "contact_email": "GDMSCareers@gd-ms.com",
+    "email_source_url": "https://www.gdmissionsystems.com/careers/connect-with-us",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for General Dynamics Mission Systems is gdmissionsystems.com. The careers and recruiting contact email, GDMSCareers@gd-ms.com, is explicitly provided on their 'Connect With Our Recruiters' page, under the section 'Like to Email? Contact Jeff directly at GDMSCareers@gd-ms.com.'. This email is designated for career-related inquiries."
+  },
+  "sony": {
+    "company_domain": "sony.com",
+    "contact_email": "talenthelp@am.sony.com",
+    "email_source_url": "https://www.sony.com/en/sony/careers/",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Sony Group Corporation is sony.com. The email 'talenthelp@am.sony.com' is explicitly provided on Sony's careers pages for assistance with the online application system, accessibility issues, and accommodation requests related to the application and hiring process. This email directly pertains to talent acquisition and recruiting support."
+  },
+  "viridien": {
+    "company_domain": "viridiengroup.com",
+    "contact_email": "hrmailbox@cgg.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4GfuPwaMAjl_WmaOQITM2_DFWPplm-ZD8B4YDuCKJ-KP5E0OtiPQR2HByP2A8-Vb7lXFT7vNIq8rr20g-JYbpeHOtzJKqkuAyNOiXb6fTOvwxGRoYm1vTIWbVV_L0haoV5eMEbB1c_8IhEaTQ7sPSVNpo",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Viridien is viridiengroup.com. On the 'Get to Know Us - Viridien' page, the company provides 'hrmailbox@cgg.com' as a contact for inquiries about other locations and benefits. The company's digital fraud warning explicitly states that emails from viridiengroup.com or cgg.com domains are legitimate for communications, including recruitment-related matters. This indicates that 'hrmailbox@cgg.com' is a verified talent/HR contact email."
+  },
+  "tempo": {
+    "company_domain": "tempo.io",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Tempo Software is tempo.io. While there is a 'Join our team' section on their About Us page, and job postings on third-party sites like Built In and Remote Rocketship, no explicit careers, recruiting, or talent contact email was found on their official website or within the search results. The job postings direct to application portals (e.g., tempo.recruiterbox.com). The email service@temposoftware.com is for general service inquiries and changing usernames, not for careers."
   }
 }
