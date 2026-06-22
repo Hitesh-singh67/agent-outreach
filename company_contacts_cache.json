@@ -565,5 +565,40 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website for Tempo Software is tempo.io. While there is a 'Join our team' section on their About Us page, and job postings on third-party sites like Built In and Remote Rocketship, no explicit careers, recruiting, or talent contact email was found on their official website or within the search results. The job postings direct to application portals (e.g., tempo.recruiterbox.com). The email service@temposoftware.com is for general service inquiries and changing usernames, not for careers."
+  },
+  "hp": {
+    "company_domain": "hp.com",
+    "contact_email": "hr@hp.com",
+    "email_source_url": "https://www.jobzmall.com/company/hewlett-packard-hp/faq/#:~:text=How%20do%20I%20contact%20HP's%20Human%20Resources%20department%3F,website%20at%20www.hp.com%2Fgo%2Fhr.",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for HP is hp.com. The email address 'hr@hp.com' is listed as a way to contact HP's Human Resources department, which falls under the scope of a careers, recruiting, or talent contact email."
+  },
+  "atlys": {
+    "company_domain": "atlys.com",
+    "contact_email": "talent@atlys.com",
+    "email_source_url": "https://www.atlys.com/careers/join-us",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Atlys is atlys.com. A careers-related email, talent@atlys.com, was found on their 'Join Atlys' Notion page, which is linked from their careers section, with the instruction 'Don't see any open position that is a fit?. Email us at talent@atlys.com'."
+  },
+  "kodryx ai": {
+    "company_domain": "kodryx.ai",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Kodryx AI is kodryx.ai. While the website has a careers section with job openings and an application form, no explicit careers, recruiting, or talent contact email was found. A general contact email, contact@kodryx.ai, was found for collaborations and partnerships, but this does not fit the criteria for a talent acquisition email."
+  },
+  "techolution": {
+    "company_domain": "techolution.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Techolution is techolution.com. While the website has a 'Careers' section, no specific careers, recruiting, or talent contact email (e.g., jobs@company.com, careers@company.com, recruiting@company.com, hr@company.com, talent@company.com) was found. The emails found, such as innovate@techolution.com and legal@techolution.com, do not fit the specified criteria, and kalyan.sreepada@techolution.com appears to be a general or personal contact rather than a dedicated careers email."
+  },
+  "adp private limited": {
+    "company_domain": "adp.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for ADP, including its 'Private Limited' operations (ADP India), is adp.com. Several pages related to careers, such as 'India - ADP Careers', 'Technology Careers at ADP', and the general 'ADP Careers', are hosted on adp.com or careers.adp.com. However, a specific careers, recruiting, or talent contact email address (e.g., jobs@company.com, careers@company.com) was not found on the official website or in related search results. The career pages consistently direct users to visit the ADP Global Careers website to view job openings, apply online, and check the status of applications, indicating a reliance on application portals rather than direct email contact for recruitment. Other contact emails found were for media relations or directed to sales or internal HR for existing employees, which do not fit the criteria for a public careers/recruiting email."
   }
 }
