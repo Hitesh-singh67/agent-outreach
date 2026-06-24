@@ -600,5 +600,82 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website domain for ADP, including its 'Private Limited' operations (ADP India), is adp.com. Several pages related to careers, such as 'India - ADP Careers', 'Technology Careers at ADP', and the general 'ADP Careers', are hosted on adp.com or careers.adp.com. However, a specific careers, recruiting, or talent contact email address (e.g., jobs@company.com, careers@company.com) was not found on the official website or in related search results. The career pages consistently direct users to visit the ADP Global Careers website to view job openings, apply online, and check the status of applications, indicating a reliance on application portals rather than direct email contact for recruitment. Other contact emails found were for media relations or directed to sales or internal HR for existing employees, which do not fit the criteria for a public careers/recruiting email."
+  },
+  "future agi": {
+    "company_domain": "futureagi.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Future AGI is futureagi.com. A careers page exists at futureagi.com/careers, and information regarding their hiring process is available. However, after reviewing the available search results, no explicit careers, recruiting, or talent contact email (e.g., jobs@company.com, careers@company.com) was found. The website lists a general contact email (hello@futureagi.com) and other specific departmental emails such as sales@, support@, security@, partnerships@, and press@, but these do not meet the criteria for a dedicated careers or recruiting email and are therefore excluded as per the instructions."
+  },
+  "aidash": {
+    "company_domain": "aidash.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for AiDash is aidash.com. A thorough search for careers, recruiting, or talent contact emails did not yield any explicit email addresses on their website or in job postings. Several job portals list openings for AiDash, and the recruitment process described often involves introductory calls with recruiters and application through their respective platforms. One source explicitly stated that the 'Company Email ID' for AiDash is 'Not Available'. No email address matching the criteria (e.g., jobs@company.com, careers@company.com, recruiting@company.com, hr@company.com, talent@company.com) was found."
+  },
+  "lilly": {
+    "company_domain": "lilly.com",
+    "contact_email": null,
+    "email_source_url": "https://careers.lilly.com/job-search-results/?country=India",
+    "email_found_on_web": false,
+    "reasoning": "The careers page for Lilly was found at https://careers.lilly.com/. While the careers site is extensive, no direct contact email for recruitment or talent acquisition was publicly listed. The site primarily directs users to apply through their online portal. Therefore, the contact_email is set to null."
+  },
+  "experiqs": {
+    "company_domain": "experiqs.com",
+    "contact_email": null,
+    "email_source_url": "https://experiqs.com/careers/",
+    "email_found_on_web": false,
+    "reasoning": "The company domain was identified from the provided URL. The careers page was visited, but no direct contact email for recruitment or talent acquisition was found. The website appears to direct users to apply through specific job postings or an application portal, rather than providing a general careers email address."
+  },
+  "goodlight ai": {
+    "company_domain": "goodlight.ai",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Goodlight AI was found at goodlight.ai. However, there is no publicly listed careers or talent contact email address on their website. They appear to direct all job applications through their careers portal."
+  },
+  "adp": {
+    "company_domain": "adp.com",
+    "contact_email": null,
+    "email_source_url": "https://jobs.adp.com/",
+    "email_found_on_web": false,
+    "reasoning": "The official company domain is adp.com. The provided URL leads to ADP's job portal. While this portal lists many job openings, it does not provide a direct public email address for careers, recruiting, or talent inquiries. Instead, it directs users to apply through the portal itself. Therefore, no specific contact email for recruitment purposes was found."
+  },
+  "lunon": {
+    "company_domain": "lunon.com",
+    "contact_email": null,
+    "email_source_url": "https://lunon.com/careers",
+    "email_found_on_web": false,
+    "reasoning": "The official website for Lunon is lunon.com. Their careers page (lunon.com/careers) does not list a direct contact email for recruiting or talent inquiries. They appear to use an application portal, so no specific contact email could be found."
+  },
+  "later": {
+    "company_domain": "later.com",
+    "contact_email": null,
+    "email_source_url": "https://later.com/careers/",
+    "email_found_on_web": false,
+    "reasoning": "The official website for Later is later.com. Their careers page is located at later.com/careers/. While they have a careers page, no direct contact email for recruiting or talent acquisition is publicly listed. They likely use an application portal for job applications."
+  },
+  "vetsez": {
+    "company_domain": "vetsez.com",
+    "contact_email": "careers@vetsez.com",
+    "email_source_url": "https://www.vetsez.com/careers/",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for VetsEZ is vetsez.com. The careers page at https://www.vetsez.com/careers/ lists the email address careers@vetsez.com for inquiries."
+  },
+  "mindsmith": {
+    "company_domain": "mindsmith.com",
+    "contact_email": null,
+    "email_source_url": "https://mindsmith.com/careers",
+    "email_found_on_web": false,
+    "reasoning": "The official website for Mindsmith is mindsmith.com. The careers page (mindsmith.com/careers) directs users to apply through their applicant tracking system (Lever) and does not provide a public-facing email address for recruitment inquiries. Therefore, the contact_email is set to null."
+  },
+  "sandhills global": {
+    "company_domain": "sandhills.com",
+    "contact_email": null,
+    "email_source_url": "https://www.sandhills.com/careers",
+    "email_found_on_web": false,
+    "reasoning": "The official website for Sandhills Global is sandhills.com. Their careers page (https://www.sandhills.com/careers) does not list a direct contact email for recruitment or talent inquiries. Instead, it directs users to apply through their job listings, which likely utilize an applicant tracking system. No public-facing careers, recruiting, or talent email was found."
   }
 }
