@@ -21,10 +21,27 @@ def test_gmail():
                     token.write(creds.to_json())
             except Exception as e:
                 print(f"Refresh failed: {e}")
-                return
+                print("Attempting interactive local login...")
+                try:
+                    flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+                    creds = flow.run_local_server(port=0)
+                    with open('token.json', 'w') as token:
+                        token.write(creds.to_json())
+                    print("Authentication successful and token.json updated!")
+                except Exception as interactive_err:
+                    print(f"Interactive login failed: {interactive_err}")
+                    return
         else:
-            print("No valid credentials or refresh token. Interaction required.")
-            return
+            print("No valid credentials or refresh token. Launching interactive local login...")
+            try:
+                flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+                creds = flow.run_local_server(port=0)
+                with open('token.json', 'w') as token:
+                    token.write(creds.to_json())
+                print("Authentication successful and token.json updated!")
+            except Exception as interactive_err:
+                print(f"Interactive login failed: {interactive_err}")
+                return
 
     try:
         service = build('gmail', 'v1', credentials=creds)
@@ -36,3 +53,4 @@ def test_gmail():
 
 if __name__ == '__main__':
     test_gmail()
+
