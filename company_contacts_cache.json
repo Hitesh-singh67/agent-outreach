@@ -677,5 +677,33 @@
     "email_source_url": "https://www.sandhills.com/careers",
     "email_found_on_web": false,
     "reasoning": "The official website for Sandhills Global is sandhills.com. Their careers page (https://www.sandhills.com/careers) does not list a direct contact email for recruitment or talent inquiries. Instead, it directs users to apply through their job listings, which likely utilize an applicant tracking system. No public-facing careers, recruiting, or talent email was found."
+  },
+  "field ai": {
+    "company_domain": "fieldai.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Field AI is fieldai.com. The careers page (fieldai.com/careers) lists open positions but does not provide an explicit careers, recruiting, or talent contact email address. The 'Contact Us' page also directs users to a contact form, not a direct email for recruitment purposes. Various job postings for Field AI on third-party platforms also do not list a general careers email, instead directing applicants to apply through their respective platforms or the company's website."
+  },
+  "tribalscale": {
+    "company_domain": "tribalscale.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for TribalScale is tribalscale.com. Multiple career pages and job postings were reviewed (e.g., TribalScale's own careers page, Built In, Indeed, Wellfound, and Greenhouse), but no explicit careers, recruiting, or talent contact email was found. The company appears to primarily use application portals for job applications."
+  },
+  "centerfield": {
+    "company_domain": "centerfield.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Centerfield is centerfield.com. The careers and contact pages on the website, including the 'Get in Touch' section on the careers page, primarily feature application portals or contact forms for general inquiries, rather than a specific public email address for careers, recruiting, or talent. While a recruitment fraud alert states that 'Any outreach by our Talent Acquisition team will come from [@] centerfield [dot]com email domains', this refers to outgoing communication from their team and does not provide an explicit public email address for incoming career inquiries."
+  },
+  "bank of america": {
+    "company_domain": "bankofamerica.com",
+    "contact_email": "US_Campus@bofa.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8bAeTYMh9jX7n4vyOOFEllh-piKsK4TmmBXwwJz9sxF3nJaidC0NHmWriCrhcduuswu_VGWe4sB6bXjmdr4qjhyb_lL8lYtcLnwYmmA6IYXWPRAexM8lBI-Wj4c5cx8YBD0NMzQA_1P9TjxpzMkUD85cJrxGgmBWKL2erhA==",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Bank of America is bankofamerica.com. Several regional email addresses for contacting campus and junior talent teams were found on the 'Contact Us' page of their careers website. The email 'US_Campus@bofa.com' is provided for inquiries regarding positions in the U.S.. Other regional emails include juniortalentemea@bofa.com for Europe, the Middle East, or Africa; APAC_Campus@bofa.com for the Asia Pacific region (except Japan); Japan_Campus@bofa.com for Japan; canada_campus@bofa.com for Canada; and talent.latam@bofa.com for Latin America."
   }
 }
