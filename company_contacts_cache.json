@@ -705,5 +705,40 @@
     "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8bAeTYMh9jX7n4vyOOFEllh-piKsK4TmmBXwwJz9sxF3nJaidC0NHmWriCrhcduuswu_VGWe4sB6bXjmdr4qjhyb_lL8lYtcLnwYmmA6IYXWPRAexM8lBI-Wj4c5cx8YBD0NMzQA_1P9TjxpzMkUD85cJrxGgmBWKL2erhA==",
     "email_found_on_web": true,
     "reasoning": "The official website domain for Bank of America is bankofamerica.com. Several regional email addresses for contacting campus and junior talent teams were found on the 'Contact Us' page of their careers website. The email 'US_Campus@bofa.com' is provided for inquiries regarding positions in the U.S.. Other regional emails include juniortalentemea@bofa.com for Europe, the Middle East, or Africa; APAC_Campus@bofa.com for the Asia Pacific region (except Japan); Japan_Campus@bofa.com for Japan; canada_campus@bofa.com for Canada; and talent.latam@bofa.com for Latin America."
+  },
+  "bharath group": {
+    "company_domain": "bharathgroup.co.in",
+    "contact_email": "info.beedi@bharathgroup.co.in",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWhqgU6q7X3DjcwDVDLXcDNw8bWhZ_S5P1GMAOsoxlyxO0GvJP5x0a2R7HanzTjSJVF03pzOOCzn0iaWAKmIlR9ZmLb_XOloXwhkZiPS_z91_ZwRqH2-S0BooZnHsK",
+    "email_found_on_web": true,
+    "reasoning": "The official website for 'Bharath Group of Companies' is bharathgroup.co.in. Their careers page explicitly states, 'If you are interested in joining our team at Bharath Group of Companies, please email your resume to info.beedi@bharathgroup.co.in.'"
+  },
+  "harman international": {
+    "company_domain": "harman.com",
+    "contact_email": "harmancareers@harman.com",
+    "email_source_url": "https://www.harman.com/job-search, https://www.harman.com/harman-recruiter",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Harman International is harman.com. The email address 'harmancareers@harman.com' is consistently provided on their careers and recruitment scam advisory pages for assistance during the application process and to report suspicious recruitment activity. This confirms it as a valid careers/recruiting contact email."
+  },
+  "adobe": {
+    "company_domain": "adobe.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Adobe is adobe.com. While various search results mention emails related to careers, none are a general public-facing email for talent, recruiting, or career inquiries for candidates to initiate contact. The email 'erc@adobe.com' is for questions regarding the career opportunities website, policy, and applicant privacy. The email 'accommodations@adobe.com' is specifically for individuals requiring accommodations due to a disability or special need during the application process. Adobe's resources emphasize that recruiting communications will come from specific Adobe domains (e.g., @adobe.com, @opportunities.adobe.com, @jobalerts.adobe.com, adobe@myworkday.com), and that the application process is managed through secure platforms. There is no explicit 'careers@adobe.com', 'jobs@adobe.com', or 'recruiting@adobe.com' provided for general inquiries or resume submissions."
+  },
+  "eteam": {
+    "company_domain": "eteaminc.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for the company 'eTeam' specializing in staffing and recruiting solutions is eteaminc.com. While the website includes contact pages and a careers section, no explicit careers, recruiting, or talent-specific email address was found. General information emails like usinfo@eteaminc.com and apacinfo@eteaminc.com are provided, but these do not meet the criteria for a specific talent-related contact. The careers page appears to direct applicants towards job postings rather than providing a direct email for recruiting inquiries."
+  },
+  "peakflo": {
+    "company_domain": "peakflo.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Peakflo is peakflo.com. While a general contact email, info@peakflo.co, is provided on their contact page, it is explicitly stated for general inquiries, support, or partnership opportunities, not for careers, recruiting, or talent. Peakflo's career pages and job postings, such as those found on their website or Y Combinator's Work at a Startup platform, direct applicants to online application portals and do not list a dedicated public email address for careers, recruiting, or talent inquiries. Therefore, no verified careers-specific email was found."
   }
 }
