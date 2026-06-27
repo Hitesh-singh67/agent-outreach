@@ -740,5 +740,19 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website for Peakflo is peakflo.com. While a general contact email, info@peakflo.co, is provided on their contact page, it is explicitly stated for general inquiries, support, or partnership opportunities, not for careers, recruiting, or talent. Peakflo's career pages and job postings, such as those found on their website or Y Combinator's Work at a Startup platform, direct applicants to online application portals and do not list a dedicated public email address for careers, recruiting, or talent inquiries. Therefore, no verified careers-specific email was found."
+  },
+  "flexsin": {
+    "company_domain": "flexsin.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Flexsin is flexsin.com. While 'info@flexsin.com' is listed on various pages, including career-related ones, it is presented as a general inquiry email and not specifically as a careers, recruiting, or talent contact email. No dedicated email address such as 'careers@flexsin.com' or 'jobs@flexsin.com' was found. The website often directs candidates to upload their resumes via an application portal, rather than providing a direct email for talent acquisition. Per the instructions, general inquiry emails that are not explicitly for careers/recruiting should not be returned if no verified careers email is found."
+  },
+  "tds": {
+    "company_domain": "tdstelecom.com",
+    "contact_email": "careers@tdstelecom.com",
+    "email_source_url": "https://careers.tdstelecom.com",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for TDS (specifically TDS Telecom, a subsidiary of Telephone and Data Systems, Inc.) was identified as tdstelecom.com through multiple career-related search results. The email 'careers@tdstelecom.com' is explicitly listed on the TDS Telecom careers page as the contact for assistance or accommodation related to the application process."
   }
 }
