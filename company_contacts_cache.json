@@ -754,5 +754,33 @@
     "email_source_url": "https://careers.tdstelecom.com",
     "email_found_on_web": true,
     "reasoning": "The official website domain for TDS (specifically TDS Telecom, a subsidiary of Telephone and Data Systems, Inc.) was identified as tdstelecom.com through multiple career-related search results. The email 'careers@tdstelecom.com' is explicitly listed on the TDS Telecom careers page as the contact for assistance or accommodation related to the application process."
+  },
+  "airbus india private limited": {
+    "company_domain": "airbus.com",
+    "contact_email": "erecruiting@airbus.com",
+    "email_source_url": "https://www.airbus.com/contact/",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Airbus India Private Limited is airbus.com, as confirmed by multiple sources. The email address 'erecruiting@airbus.com' is listed on the Airbus 'Contact us' page for issues related to job or internship applications. While Airbus emphasizes that official job applications are submitted through their secure career portal, this email address serves as a direct point of contact for resolving problems encountered during the application process, aligning with the criteria for a talent/recruiting contact."
+  },
+  "indsac softech": {
+    "company_domain": "indsac.com",
+    "contact_email": "career@indsac.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlHKJS4fVwwtvTHuzwT1wGs75xyrbasY1jczy6NMGzacrw2Y8kmFH2MX2rtO4qU7FjylB8n_ipSSoqB63-qh5RpcE8S_Kjk-BfU52soiwI5sR0Z_SlgD1Mb7mIjwzwtg4=",
+    "email_found_on_web": true,
+    "reasoning": "The email 'career@indsac.com' is explicitly mentioned on the company's 'Career opportunities' page as the address to send resumes for job applications, specifically for roles like Project Manager and Senior Java Developer. Additionally, 'intern@indsac.com' is provided for internship applications. The primary domain identified for the company is 'indsac.com'."
+  },
+  "bitcs": {
+    "company_domain": "bitcs.in",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for BITCS is bitcs.in. While the website has a 'Careers' section, it does not list a specific email address for careers, recruiting, or talent inquiries. The general contact email provided, info@bitcs.in, is for general queries and is not a dedicated careers email. Other job portals and career-related search results also did not explicitly provide a verified careers, recruiting, or talent contact email."
+  },
+  "electronic arts": {
+    "company_domain": "ea.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Electronic Arts is ea.com. While specific emails like accessibility@ea.com for disability assistance and RecruitmentFraudReports@ea.com for reporting fraud were found, no general careers, recruiting, or talent contact email for direct inquiries or unsolicited applications was explicitly provided on their official careers pages or related documentation. The company directs job seekers to its careers portal (careers.ea.com) to apply for positions and emphasizes that official recruitment communication will originate from specific EA-owned domains."
   }
 }
