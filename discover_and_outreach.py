@@ -149,62 +149,80 @@ class MatchResult(BaseModel):
     company_domain: str = Field(description="The inferred official website domain of the company (e.g. scale.com, stripe.com, tesla.com).")
     contact_email: str = Field(description="The suggested career/hiring contact email for this company domain (e.g. careers@company.com, jobs@company.com, hr@company.com, recruiting@company.com).")
     email_subject: str = Field(description="A personalized, low-friction, high-impact cold email subject line.")
-    email_body: str = Field(description="A personalized, fluff-free cold email (<130 words) from the candidate to the career contact aligning candidate's background with the company's product stack.")
+    email_body: str = Field(description="A personalized cold email following the candidate's custom template structure (<350 words), aligning candidate's background with the company's stack.")
 
-# Custom HTML parser to extract tables from SimplifyJobs README.md
-class SimplifyParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.in_table = False
-        self.in_tbody = False
-        self.in_tr = False
-        self.in_td = False
-        self.current_row = []
-        self.current_cell_data = []
-        self.current_hrefs = []
-        self.rows = []
-        self.current_section = None
+def parse_markdown_table_row(line, has_salary=True):
+    """Parses a markdown table row and extracts company name, company url, role, location, and apply link."""
+    # Split line by '|'
+    parts = [p.strip() for p in line.split('|')]
+    if len(parts) < 2:
+        return None
+        
+    # Clean up empty split elements at boundaries
+    if parts[0] == '':
+        parts = parts[1:]
+    if parts and parts[-1] == '':
+        parts = parts[:-1]
+        
+    if has_salary:
+        if len(parts) < 6:
+            return None
+        comp_col = parts[0]
+        role_col = parts[1]
+        loc_col = parts[2]
+        apply_col = parts[4]
+    else:
+        if len(parts) < 5:
+            return None
+        comp_col = parts[0]
+        role_col = parts[1]
+        loc_col = parts[2]
+        apply_col = parts[3]
 
-    def handle_starttag(self, tag, attrs):
-        attrs_dict = dict(attrs)
-        if tag == 'table':
-            self.in_table = True
-        elif tag == 'tbody' and self.in_table:
-            self.in_tbody = True
-        elif tag == 'tr' and self.in_tbody:
-            self.in_tr = True
-            self.current_row = []
-        elif tag == 'td' and self.in_tr:
-            self.in_td = True
-            self.current_cell_data = []
-            self.current_hrefs = []
-        elif tag == 'a' and self.in_td:
-            if 'href' in attrs_dict:
-                self.current_hrefs.append(attrs_dict['href'])
-        elif tag == 'br' and self.in_td:
-            self.current_cell_data.append('\n')
+    # Parse company name and url
+    # e.g., <a href="https://www.nvidia.com"><strong>NVIDIA</strong></a>
+    company_name = "Unknown"
+    company_url = None
+    
+    comp_url_match = re.search(r'href="([^"]+)"', comp_col)
+    if comp_url_match:
+        company_url = comp_url_match.group(1)
+        
+    comp_name_match = re.search(r'<strong>(.*?)</strong>', comp_col)
+    if comp_name_match:
+        company_name = comp_name_match.group(1)
+    else:
+        company_name = re.sub(r'<[^>]+>', '', comp_col).strip()
 
-    def handle_endtag(self, tag):
-        if tag == 'table':
-            self.in_table = False
-            self.in_tbody = False
-        elif tag == 'tbody':
-            self.in_tbody = False
-        elif tag == 'tr' and self.in_tbody:
-            self.in_tr = False
-            if self.current_row:
-                self.rows.append((self.current_section, self.current_row))
-        elif tag == 'td' and self.in_tr:
-            self.in_td = False
-            cell_text = "".join(self.current_cell_data).strip()
-            self.current_row.append({
-                'text': cell_text,
-                'hrefs': self.current_hrefs
-            })
+    # Parse role
+    role_text = re.sub(r'<[^>]+>', '', role_col).strip()
+    
+    # Parse location
+    location_text = re.sub(r'<[^>]+>', '', loc_col).strip()
 
-    def handle_data(self, data):
-        if self.in_td:
-            self.current_cell_data.append(data)
+    # Parse apply link
+    # e.g., <a href="https://..."><img .../></a>
+    apply_link = None
+    apply_match = re.search(r'href="([^"]+)"', apply_col)
+    if apply_match:
+        apply_link = apply_match.group(1)
+
+    # Skip closed positions or missing links
+    if not apply_link or apply_link.strip() == "":
+        return None
+        
+    company_text_lower = company_name.lower()
+    role_text_lower = role_text.lower()
+    if "🚫" in company_text_lower or "🚫" in role_text_lower or "closed" in role_text_lower:
+        return None
+
+    return {
+        'company': company_name,
+        'company_url': company_url,
+        'role': role_text,
+        'location': location_text,
+        'apply_link': apply_link
+    }
 
 # Custom HTML parser to extract clean text from job description pages
 class TextExtractor(HTMLParser):
@@ -249,83 +267,53 @@ def parse_docx_resume(docx_path):
         print(f"[-] Error parsing resume docx: {e}")
         sys.exit(1)
 
-def fetch_simplify_postings():
-    """Scrapes SimplifyJobs Summer 2026 tech internships and parses active listings."""
-    print("[*] Fetching active tech internships from SimplifyJobs...")
-    url = "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/README.md"
-    try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req) as response:
-            content = response.read().decode('utf-8')
-    except Exception as e:
-        print(f"[-] Failed to download SimplifyJobs README.md: {e}")
-        return []
-
-    sections = re.split(r'##\s+', content)
-    parser = SimplifyParser()
+def fetch_speedyapply_postings():
+    """Scrapes speedyapply 2026 Software Engineering internships (USA and International)."""
+    print("[*] Fetching active internships from speedyapply/2026-SWE-College-Jobs...")
+    
+    urls = [
+        ("https://raw.githubusercontent.com/speedyapply/2026-SWE-College-Jobs/main/README.md", True),  # has_salary=True
+        ("https://raw.githubusercontent.com/speedyapply/2026-SWE-College-Jobs/main/INTERN_INTL.md", False)  # has_salary=False
+    ]
+    
     all_postings = []
-
-    for sec in sections:
-        lines = sec.split('\n')
-        if not lines:
-            continue
-        header = lines[0].strip()
-
-        category = None
-        if "Software Engineering Internship Roles" in header:
-            category = "SWE"
-        elif "Data Science, AI & Machine Learning Internship Roles" in header:
-            category = "AI/ML"
-
-        if not category:
+    
+    for url, has_salary in urls:
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=15) as response:
+                content = response.read().decode('utf-8')
+        except Exception as e:
+            print(f"[-] Failed to download postings from {url}: {e}")
             continue
 
-        table_match = re.search(r'<table>.*?</table>', sec, re.DOTALL | re.IGNORECASE)
-        if not table_match:
-            continue
-
-        table_html = table_match.group(0)
-        parser.current_section = category
-        parser.rows = []
-        parser.feed(table_html)
-
-        current_company = None
-        current_company_url = None
-
-        for cat, row in parser.rows:
-            if len(row) < 4:
+        lines = content.split('\n')
+        current_category = "SWE"
+        
+        for line in lines:
+            line = line.strip()
+            if line.startswith('###'):
+                header = line.replace('#', '').strip().lower()
+                if 'faang' in header:
+                    current_category = 'SWE'
+                elif 'quant' in header:
+                    current_category = 'Quant'
+                else:
+                    current_category = 'SWE'
+            
+            if not line.startswith('|'):
                 continue
-
-            company_cell = row[0]
-            role_cell = row[1]
-            location_cell = row[2]
-            app_cell = row[3]
-
-            company_text = company_cell['text'].replace('🔥', '').strip()
-            if company_text == '↳' or not company_text:
-                pass
-            else:
-                current_company = company_text
-                current_company_url = company_cell['hrefs'][0] if company_cell['hrefs'] else None
-
-            role_text = role_cell['text'].strip()
-            location_text = location_cell['text'].strip()
-            apply_link = app_cell['hrefs'][0] if app_cell['hrefs'] else None
-
-            # Skip closed postings
-            if "🚫" in company_text or "🚫" in role_text or "closed" in role_text.lower():
+                
+            # Skip headers or dividers
+            if 'company' in line.lower() or '---|---' in line:
                 continue
-
-            all_postings.append({
-                'category': cat,
-                'company': current_company,
-                'company_url': current_company_url,
-                'role': role_text,
-                'location': location_text,
-                'apply_link': apply_link
-            })
-
-    print(f"[+] SimplifyJobs active postings scraped: {len(all_postings)}")
+                
+            row_data = parse_markdown_table_row(line, has_salary)
+            if row_data:
+                row_data['category'] = current_category
+                all_postings.append(row_data)
+                
+    print(f"[+] speedyapply active postings scraped: {len(all_postings)}")
     return all_postings
 
 def search_india_internships(client):
@@ -333,9 +321,10 @@ def search_india_internships(client):
     print("[*] Searching Google for active India internship postings (Bangalore/Mumbai/Delhi NCR) using Gemini Search Grounding...")
     
     prompt = """
-Find 12 active Software Engineer Intern, AI Intern, or Machine Learning Intern postings in India (specifically target locations like Bangalore/Bengaluru, Mumbai, Gurugram, Gurgaon, Noida, Pune, Hyderabad).
-The postings should be on Greenhouse (boards.greenhouse.io), Lever (jobs.lever.co), Ashby (jobs.ashbyhq.com), or official company career portals.
-Only return active internship postings from the last 2-3 months. Do NOT include closed roles.
+Find 75 active Software Engineer Intern, AI/ML Intern, Data Analyst Intern, or Data Engineer Intern postings/companies in India.
+Specifically focus on growing or well-funded Indian startups, companies, or government organisations offering technology internships.
+Target directories/sources like YC Startup Directory, Wellfound (formerly AngelList), LinkedIn Jobs, Google News, Internshala, Naukri, and Unstop.
+Only return active internship opportunities or companies actively hiring interns.
 
 Format your response exactly as a JSON array of objects inside a single markdown code block, like this:
 ```json
@@ -343,9 +332,9 @@ Format your response exactly as a JSON array of objects inside a single markdown
   {
     "company": "Company Name",
     "company_url": "https://company.com",
-    "role": "Role Title",
-    "location": "Location (e.g. Bangalore, India)",
-    "apply_link": "https://boards.greenhouse.io/... or direct apply link"
+    "role": "Role Title (e.g., Software Engineering Intern)",
+    "location": "Location (e.g. Bangalore, India or Remote)",
+    "apply_link": "https://apply-link-or-careers-page"
   },
   ...
 ]
@@ -605,7 +594,9 @@ def send_summary_to_candidate(service, matched_companies, was_sent):
             for comp, info in matched_companies.items():
                 body_lines.append(f"- Company: {comp}")
                 body_lines.append(f"  Role: {info['role']}")
+                body_lines.append(f"  Location: {info.get('location', 'N/A')}")
                 body_lines.append(f"  Contact Email: {info['contact_email']}")
+                body_lines.append(f"  Official Apply Link: {info.get('apply_link', 'N/A')}")
                 body_lines.append(f"  Resume Type: {'Tailored' if info.get('tailored_resume') and 'tailored' in str(info['tailored_resume']) else 'Original'}")
                 body_lines.append(f"  Status: {'SENT' if was_sent else 'STAGED AS DRAFT'}")
                 body_lines.append("")
@@ -634,12 +625,12 @@ def _discover_contact_via_openrouter(company, company_url=None):
     """Fallback: uses OpenRouter free tier to discover company contact emails when Gemini quota is exhausted.
     NOTE: OpenRouter models don't have live web search, so this relies on the model's training data knowledge."""
     url_hint = f" (possible URL/domain hint: {company_url})" if company_url else ""
-    prompt = f"""Find the official website domain and the actual careers, recruiting, or talent contact email for the company "{company}"{url_hint}.
+    prompt = f"""Find the official website domain and a verified email contact for the company "{company}"{url_hint}.
 
-Look for:
-1. Careers page or contact page on their website.
-2. Known contact emails like jobs@company.com, careers@company.com, recruiting@company.com, hr@company.com, talent@company.com.
-3. Do NOT guess or fabricate an email. If the company only uses application portals (Greenhouse, Lever, Workday) and you don't know a public careers email, set "contact_email" to null.
+Your goal is to find recruiting contacts or technical decision-makers:
+1. General recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com).
+2. Direct contact emails of technical decision-makers or HR contacts at this company. Look for people with titles: Founder, Co-Founder, CTO, Engineering Manager, Tech Lead, or HR Manager (e.g., name@company.com, first.last@company.com).
+3. Do NOT guess or fabricate an email. If the company only uses application portals (Greenhouse, Lever, Workday) and you don't find a careers email or direct contact email, set "contact_email" to null.
 4. Do NOT return legal, privacy, security, abuse, billing, developer support, or customer support emails. If only these types of emails are known, set "contact_email" to null.
 
 Respond with a JSON object with these keys:
@@ -714,12 +705,13 @@ def discover_company_contact(client, company, company_url=None):
     
     url_hint = f" (possible URL/domain hint: {company_url})" if company_url else ""
     prompt = f"""
-Find the official website domain and the actual careers, recruiting, or talent contact email for the company "{company}"{url_hint}.
-Use Google Search to find this information. Look for:
-1. Careers page or contact page on their website.
-2. Job postings or press releases that list a contact email (e.g. jobs@company.com, careers@company.com, recruiting@company.com, hr@company.com, talent@company.com).
-3. Do NOT guess or guess-construct an email (like "careers@company.com") if it is not explicitly mentioned on the web. If they only use application portals (like Greenhouse, Lever, Workday) and do not have a public careers email, answer that no email was found.
-4. Do NOT return legal, privacy, security, abuse, fraud-reporting, billing, developer support, or customer support/service emails (e.g., privacy@company.com, dpo@company.com, security@company.com, billing@company.com, support@company.com, abuse@company.com, reporthiringfraud@company.com). If only these types of emails are found on the web, treat it as if no verified careers email was found and set "contact_email" to null.
+Find the official website domain and a verified email contact for the company "{company}"{url_hint}.
+Use Google Search to find this information. Your goal is to target:
+1. General recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com).
+2. Direct contact emails of technical decision-makers or HR contacts at this company. Look for people with titles: Founder, Co-Founder, CTO, Engineering Manager, Tech Lead, or HR Manager (e.g., name@company.com, first.last@company.com).
+3. Check their careers page, contact page, press releases, github repository contributors, LinkedIn profiles, or articles referencing the founders/executives.
+4. Do NOT guess or guess-construct an email if it is not explicitly mentioned on the web. If they only use application portals (like Greenhouse, Lever, Workday) and you don't find a public careers/HR email or executive/tech decision-maker's contact email, set "contact_email" to null.
+5. Do NOT return legal, privacy, security, abuse, billing, developer support, or customer support emails. If only these types of emails are found, set "contact_email" to null.
 
 Format your response exactly as a JSON object inside a single markdown code block, like this:
 ```json
@@ -1043,7 +1035,7 @@ def main():
         check_gmail_token_valid(args.non_interactive)
 
     # 2. Fetch listings
-    simplify_postings = fetch_simplify_postings()
+    simplify_postings = fetch_speedyapply_postings()
     india_searched_postings = search_india_internships(client)
     print(f"[+] Found {len(india_searched_postings)} India listings via Gemini search grounding.")
     
@@ -1090,9 +1082,9 @@ def main():
 
     matched_companies = {}  # Combined final matches: company_name -> match_info
     
-    # Target: 15 India matches, 10 Abroad matches
-    target_india = 15
-    target_abroad = 10
+    # Target: 50 India matches, 5 Abroad matches
+    target_india = 50
+    target_abroad = 5
     
     # helper evaluation run
     def evaluate_postings_list(postings_list, target_count, target_label, is_india):
@@ -1168,14 +1160,26 @@ Contact Details (Verified from Google Search):
 Your Tasks:
 1. Determine if this job role or the company matches the candidate's core programming languages (TypeScript, Python, JavaScript, Java, C, C++).
 2. For the company_domain and contact_email fields in your response, use the values provided above: Domain = "{contact_info.get('company_domain')}", Email = "{verified_email}".
-3. Draft a personalized, fluff-free cold email (<130 words) from the candidate to the career contact.
-   - Align the candidate's key project achievements (e.g. SentinelLog-AI logs analyzer, the PostgreSQL RAG/pgvector engine, or the PropTech MVP) with the company's stack and business focus.
-   - Keep the tone professional, low-friction, and conversational.
-   - Explicitly mention in the body of the email that the resume is attached (e.g., "I've attached my resume for your consideration." or "Please find my resume attached.").
-   - Mention the GitHub and LinkedIn profile links cleanly.
-   - Do NOT ask if the candidate is free to chat this week or available to talk this week. Instead, the final sentence of the email body (just before the sign-off/signature) must be exactly: 'Waiting for your response.'
+3. Draft a personalized cold email following this exact structure and style, but customize the details to align with the company ({company}) and the job description:
 
-Ensure that the drafted email is strictly under 130 words.
+Structure of the Email:
+- **Greeting**: "Greetings [Receiver's Name/Hiring Team]," (if a name is inferred from the email/domain, use it, else default to Hiring Team).
+- **Paragraph 1 (Intro)**: "I am Hitesh Kumar Singh, a final-year undergraduate pursuing a Bachelor of Computer Applications (BCA) from the University of Mysore. I am seeking an Internship opportunity with the esteemed {company} in any domain the team finds me a fit (with a strong preference for backend development, AI/ML, or data engineering roles)." (Modify the preference slightly to match the role if it's explicitly backend, AI/ML, frontend, full-stack, etc.).
+- **Paragraph 2 (Primary Experience)**: Describe your experience as Founder & Technical Lead at PropelAI Technologies. Customize this paragraph to emphasize the technologies, databases, frameworks, or security/systems aspects that are most relevant to the target company's stack and business focus. Keep the details factual to your resume (PropTech SaaS MVP, Node.js, Python, PostgreSQL, RLS, geofencing, digital ledger).
+- **Paragraph 3 (Projects & PORs)**: Describe your leadership role managing full-stack deployments and GTM strategy, and mention key projects (such as the SentinelLog-AI network security pipeline or the pgvector RAG engine). Highlight the project that is most relevant to the target company's job description.
+- **Paragraph 4 (Eagerness & Education)**: "Also, I acknowledge that I am not from a Tier-1 college, but am highly eager to learn the engineering workings of {company} which would align with my career goals further. I know you'll be able to connect with me on this; I have been actively trying my best to push my boundaries by building complex, production-grade systems, participating in hands-on industry simulations (such as Tata's Data Analytics and AWS Solutions Architecture), and contributing to open-source tools. I am sure you would find my GitHub and LinkedIn worth a look!"
+- **Paragraph 5 (Outro)**: "I would love to discuss more about how I can contribute to {company} and its engineering/product departments. I have enclosed my resume for your kind perusal and consideration. I look forward to hearing from you and providing my time and skills to {company} soon!"
+- **Links and Sign-off**:
+  Resume - https://drive.google.com/file/d/1gYimVJcu0v2wsPVWNpFgGvPfLxUBDhE7/view?usp=drive_link
+  GitHub - https://github.com/Hitesh-singh67
+  LinkedIn - https://www.linkedin.com/in/hitesh-singh67/
+
+  Thanking you in anticipation,
+
+  Hitesh Kumar Singh
+  +91 6398595165
+
+Ensure the drafted email strictly adheres to this structure and matches the tone. Keep the body text under 350 words.
 """
 
             try:

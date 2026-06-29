@@ -1,0 +1,24 @@
+Subject: Internship Opportunity | final-year BCA student | [Company Name]
+
+Greetings [Receiver's Name/Hiring Team], hope you're doing well.
+
+I am Hitesh Kumar Singh, a final-year undergraduate pursuing a Bachelor of Computer Applications (BCA) from the University of Mysore. I am seeking an Internship opportunity with the esteemed [Company Name] in any domain the team finds me a fit (with a strong preference for backend development, AI/ML, or data engineering roles).
+
+I previously founded and worked as the Technical Lead at PropelAI Technologies, where I architected and deployed a live, multi-tenant PropTech SaaS MVP. I built a secure backend, implemented PostgreSQL Row-Level Security (RLS), and engineered an AI-powered geofencing module that automated property portfolio monitoring.
+
+As the Founder & Technical Lead of PropelAI Technologies, I led our product roadmap, managed full-stack deployments, and drove our go-to-market (GTM) strategy, pitching to pre-seed investors and building an early-access waitlist. I have also spearheaded independent engineering projects, including SentinelLog-AI (a real-time headless network security log pipeline integrated with Gemini API threat profiling) and a custom pgvector-based RAG engine for semantic search.
+
+Also, I acknowledge that I am not from a Tier-1 college, but I am highly eager to learn the engineering workflows of [Company Name], which would align with my career goals further. I know you'll be able to connect with me on this; I have been actively trying my best to push my boundaries by building complex, production-grade systems, participating in hands-on industry simulations (such as Tata's Data Analytics and AWS Solutions Architecture), and contributing to open-source tools. I am sure you would find my GitHub and LinkedIn worth a look!
+
+I would love to discuss more about how I can contribute to [Company Name] and its engineering/product departments. I have enclosed my resume for your kind perusal and consideration.
+
+I look forward to hearing from you and providing my time and skills to [Company Name] soon!
+
+Resume - [Attach Resume / Google Drive Link]
+GitHub - https://github.com/Hitesh-singh67
+LinkedIn - https://www.linkedin.com/in/hitesh-singh67/
+
+Thanking you in anticipation,
+
+Hitesh Kumar Singh
++91 6398595165
