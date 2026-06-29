@@ -782,5 +782,40 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website for Electronic Arts is ea.com. While specific emails like accessibility@ea.com for disability assistance and RecruitmentFraudReports@ea.com for reporting fraud were found, no general careers, recruiting, or talent contact email for direct inquiries or unsolicited applications was explicitly provided on their official careers pages or related documentation. The company directs job seekers to its careers portal (careers.ea.com) to apply for positions and emphasizes that official recruitment communication will originate from specific EA-owned domains."
+  },
+  "lseg": {
+    "company_domain": "lseg.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain is lseg.com. While an email address for 'Employment verification and HR requests' (peopleservices@lseg.com) was found, it is not a direct careers, recruiting, or talent contact email for job applicants. LSEG encourages candidates to 'Join our Talent Community' and apply through their online portals, and explicitly states they 'will never extend a job offer or ask for your personal information via email'. No explicit public email for careers, recruiting, or talent was found on their website or in search results that meets the specified criteria."
+  },
+  "superkalam": {
+    "company_domain": "superkalam.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for SuperKalam is superkalam.com. While various job postings and career pages were found (e.g., on Y Combinator's Work at a Startup, TheJobsMap, Instahyre, ResuMail), none of them explicitly provided a public careers, recruiting, or talent contact email address. The available contact emails like hello@superkalam.com and studentcare@superkalam.com are for general inquiries, privacy, or customer support, which fall outside the requested categories. Some platforms suggest direct application through portals or contacting hiring managers directly, but no generic careers email was found."
+  },
+  "cummins": {
+    "company_domain": "cummins.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website domain for Cummins is cummins.com. While searching for a careers, recruiting, or talent contact email, the email 'accommodations@cummins.com' was found. This email is specifically for requesting support and accommodations for individuals with disabilities during the application process and is managed by Human Resources. It is not a general careers, recruiting, or talent contact email for inquiries or resume submissions. Other general email formats like First.Last@cummins.com were noted, but no dedicated, public-facing email specifically for general talent acquisition or recruiting was explicitly found on the web, and the instructions specify not to guess or construct an email. The company directs candidates to their careers page to explore opportunities and join a talent community."
+  },
+  "smartinfologiks": {
+    "company_domain": "smartinfologiks.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website smartinfologiks.com has a careers page (https://smartinfologiks.com/careers) that lists job openings. However, no explicit careers, recruiting, or talent contact email was found on the careers page, contact page, or in any other search results. The website appears to direct interested candidates to specific job postings rather than providing a general contact email for recruitment."
+  },
+  "automationedge": {
+    "company_domain": "automationedge.com",
+    "contact_email": "vinita.rahalkar@automationedge.com",
+    "email_source_url": "https://automationedge.com/careers/automation-sme-automation-subject-matter-expert/",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for AutomationEdge is automationedge.com. An explicit careers contact email was found on a specific job posting titled 'Automation SME (Automation Subject Matter Expert)' on their careers page. The email 'vinita.rahalkar@automationedge.com' is listed as the contact person for this position, which falls under the category of a recruiting/talent contact email. Another similar email, 'sarita.rathi@automationedge.com', was also found for a 'Senior Engineers' role. General information ('info@automationedge.com') and support emails ('support@automationedge.com') were found but are not relevant to careers/recruiting."
   }
 }
