@@ -1082,9 +1082,8 @@ def main():
 
     matched_companies = {}  # Combined final matches: company_name -> match_info
     
-    # Target: 50 India matches, 5 Abroad matches
-    target_india = 50
-    target_abroad = 5
+    # Target: Send at least 50 emails total. We prioritize India postings.
+    total_target = 50
     
     # helper evaluation run
     def evaluate_postings_list(postings_list, target_count, target_label, is_india):
@@ -1168,7 +1167,7 @@ Structure of the Email:
 - **Paragraph 2 (Primary Experience)**: Describe your experience as Founder & Technical Lead at PropelAI Technologies. Customize this paragraph to emphasize the technologies, databases, frameworks, or security/systems aspects that are most relevant to the target company's stack and business focus. Keep the details factual to your resume (PropTech SaaS MVP, Node.js, Python, PostgreSQL, RLS, geofencing, digital ledger).
 - **Paragraph 3 (Projects & PORs)**: Describe your leadership role managing full-stack deployments and GTM strategy, and mention key projects (such as the SentinelLog-AI network security pipeline or the pgvector RAG engine). Highlight the project that is most relevant to the target company's job description.
 - **Paragraph 4 (Eagerness & Education)**: "Also, I acknowledge that I am not from a Tier-1 college, but am highly eager to learn the engineering workings of {company} which would align with my career goals further. I know you'll be able to connect with me on this; I have been actively trying my best to push my boundaries by building complex, production-grade systems, participating in hands-on industry simulations (such as Tata's Data Analytics and AWS Solutions Architecture), and contributing to open-source tools. I am sure you would find my GitHub and LinkedIn worth a look!"
-- **Paragraph 5 (Outro)**: "I would love to discuss more about how I can contribute to {company} and its engineering/product departments. I have enclosed my resume for your kind perusal and consideration. I look forward to hearing from you and providing my time and skills to {company} soon!"
+- **Paragraph 5 (Outro)**: "I would love to discuss more about how I can contribute to {company} and its engineering/product departments. I have shared my resume via the Google Drive link below for your kind perusal and consideration. I look forward to hearing from you and providing my time and skills to {company} soon!"
 - **Links and Sign-off**:
   Resume - https://drive.google.com/file/d/1gYimVJcu0v2wsPVWNpFgGvPfLxUBDhE7/view?usp=drive_link
   GitHub - https://github.com/Hitesh-singh67
@@ -1195,12 +1194,7 @@ Ensure the drafted email strictly adheres to this structure and matches the tone
                 res = openrouter_chat(prompt, json_schema_properties=schema_props, temperature=0.2)
                             
                 if isinstance(res, dict) and res.get("matches_stack"):
-                    # Tailor resume for this company
-                    tailored_resume_path = resume_path  # fallback to original
-                    tailored = generate_tailored_text(client, resume_text, company, role, job_desc_text, res.get("company_domain", ""))
-                    if tailored:
-                        tailored_resume_path = tailor_resume_docx(resume_path, tailored, company)
-
+                    # Resume document attachments are disabled per user request. We do not generate tailored docx.
                     matched_companies[company] = {
                         'role': role,
                         'apply_link': apply_link,
@@ -1210,7 +1204,7 @@ Ensure the drafted email strictly adheres to this structure and matches the tone
                         'subject': res.get('email_subject', ''),
                         'body': res.get('email_body', ''),
                         'is_india': is_india,
-                        'tailored_resume': tailored_resume_path
+                        'tailored_resume': None
                     }
                     print(f"  [+] Match Approved! Verified Contact: {res.get('contact_email', verified_email)}")
                 else:
@@ -1219,11 +1213,13 @@ Ensure the drafted email strictly adheres to this structure and matches the tone
             except Exception as e:
                 print(f"  [-] OpenRouter evaluation failed: {e}")
 
-    # Evaluate India list
-    evaluate_postings_list(india_postings, target_india, "India", is_india=True)
+    # Evaluate India list (up to the total target limit)
+    evaluate_postings_list(india_postings, total_target, "India", is_india=True)
     
-    # Evaluate Abroad list
-    evaluate_postings_list(abroad_postings, target_abroad, "Abroad", is_india=False)
+    # Evaluate Abroad list (fill the remaining target space to hit at least 50 emails total)
+    remaining_target = max(0, total_target - len(matched_companies))
+    if remaining_target > 0:
+        evaluate_postings_list(abroad_postings, remaining_target, "Abroad", is_india=False)
 
     print(f"\n[+] Staging Complete! Discovered {len(matched_companies)} matching companies.")
 
@@ -1257,18 +1253,16 @@ Ensure the drafted email strictly adheres to this structure and matches the tone
         if args.send:
             print("\n[*] Sending outreach emails directly via Gmail...")
             for comp, info in matched_companies.items():
-                attach_path = info.get('tailored_resume') or resume_path
-                print(f"  └─ Sending email to {comp} ({info['contact_email']}) with {'tailored' if attach_path != resume_path else 'original'} resume...")
-                sent_msg = send_gmail_email(gmail_service, info['contact_email'], info['subject'], info['body'], attach_path)
+                print(f"  └─ Sending email to {comp} ({info['contact_email']}) without resume attachment...")
+                sent_msg = send_gmail_email(gmail_service, info['contact_email'], info['subject'], info['body'], resume_path=None)
                 if sent_msg:
                     print(f"     [+] Successfully sent email (ID: {sent_msg['id']})")
             print("\n[+] All outreach emails have been successfully sent!")
         else:
             print("\n[*] Creating pending drafts in Gmail...")
             for comp, info in matched_companies.items():
-                attach_path = info.get('tailored_resume') or resume_path
-                print(f"  └─ Creating draft for {comp} ({info['contact_email']}) with {'tailored' if attach_path != resume_path else 'original'} resume...")
-                draft = stage_gmail_draft(gmail_service, info['contact_email'], info['subject'], info['body'], attach_path)
+                print(f"  └─ Creating draft for {comp} ({info['contact_email']}) without resume attachment...")
+                draft = stage_gmail_draft(gmail_service, info['contact_email'], info['subject'], info['body'], resume_path=None)
                 if draft:
                     print(f"     [+] Successfully staged draft (ID: {draft['id']})")
             print("\n[+] All outreach drafts have been successfully staged in your Gmail Inbox!")

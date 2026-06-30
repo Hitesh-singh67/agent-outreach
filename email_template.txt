@@ -10,11 +10,11 @@ As the Founder & Technical Lead of PropelAI Technologies, I led our product road
 
 Also, I acknowledge that I am not from a Tier-1 college, but I am highly eager to learn the engineering workflows of [Company Name], which would align with my career goals further. I know you'll be able to connect with me on this; I have been actively trying my best to push my boundaries by building complex, production-grade systems, participating in hands-on industry simulations (such as Tata's Data Analytics and AWS Solutions Architecture), and contributing to open-source tools. I am sure you would find my GitHub and LinkedIn worth a look!
 
-I would love to discuss more about how I can contribute to [Company Name] and its engineering/product departments. I have enclosed my resume for your kind perusal and consideration.
+I would love to discuss more about how I can contribute to [Company Name] and its engineering/product departments. I have shared my resume via the Google Drive link below for your kind perusal and consideration.
 
 I look forward to hearing from you and providing my time and skills to [Company Name] soon!
 
-Resume - [Attach Resume / Google Drive Link]
+Resume - https://drive.google.com/file/d/1gYimVJcu0v2wsPVWNpFgGvPfLxUBDhE7/view?usp=drive_link
 GitHub - https://github.com/Hitesh-singh67
 LinkedIn - https://www.linkedin.com/in/hitesh-singh67/
 

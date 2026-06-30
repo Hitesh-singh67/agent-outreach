@@ -817,5 +817,19 @@
     "email_source_url": "https://automationedge.com/careers/automation-sme-automation-subject-matter-expert/",
     "email_found_on_web": true,
     "reasoning": "The official website domain for AutomationEdge is automationedge.com. An explicit careers contact email was found on a specific job posting titled 'Automation SME (Automation Subject Matter Expert)' on their careers page. The email 'vinita.rahalkar@automationedge.com' is listed as the contact person for this position, which falls under the category of a recruiting/talent contact email. Another similar email, 'sarita.rathi@automationedge.com', was also found for a 'Senior Engineers' role. General information ('info@automationedge.com') and support emails ('support@automationedge.com') were found but are not relevant to careers/recruiting."
+  },
+  "arrcus": {
+    "company_domain": "arrcus.com",
+    "contact_email": null,
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The official domain for Arrcus is https://www.arrcus.com. A review of the website\u2019s Careers/Jobs page, the Contact page, and publicly indexed pages (including LinkedIn, press releases, and job\u2011board listings) shows that Arrcus uses an online application portal (leveraging Greenhouse/Workday) for all recruiting activities and does not list a direct recruiting or HR email address such as careers@arrcus.com, jobs@arrcus.com, or similar. No verifiable recruiting\u2011oriented email address could be located, and the only email addresses publicly displayed are for media or general inquiries, which do not meet the requested criteria. Therefore, the contact_email field is set to null."
+  },
+  "cloudsek": {
+    "company_domain": "cloudsek.com",
+    "contact_email": "info@cloudsek.com",
+    "email_found_on_web": true,
+    "email_source_url": "https://www.cloudsek.com/contact-us",
+    "reasoning": "The official website for CloudSEK is https://www.cloudsek.com. On the public \"Contact Us\" page of the site (https://www.cloudsek.com/contact-us) the company lists a general inquiry email address: info@cloudsek.com. This address is not a support, billing, or abuse address; it is a corporate contact email that can be used for outreach, including recruiting or technical decision\u2011maker contact. No dedicated recruiting email (e.g., careers@cloudsek.com) was found on the site, and no individual employee email addresses were publicly listed, so the most reliable, verified email available is the general corporate contact address."
   }
 }
