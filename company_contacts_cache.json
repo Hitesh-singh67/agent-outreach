@@ -1290,5 +1290,12 @@
   },
   "manulife": {
     "analysis": "We need to find official website domain and a verified email contact for Manulife. Likely domain is manulife.ca (Canadian site) or manulife.com. Need to locate recruiting or HR email. Search web. Let's browse.\n"
+  },
+  "avea technologies": {
+    "company_domain": "avea.tech",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for AVEA Technologies (longevity supplements) is avea.tech. I extensively searched the careers page, contact page, and other related sections of the website. No general recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com) or direct contact emails of technical decision-makers or HR contacts were found. The website provides phone numbers and a general contact/support section, but no specific email addresses that meet the specified criteria."
   }
 }
