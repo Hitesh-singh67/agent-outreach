@@ -1598,5 +1598,12 @@
     "email_source_url": "https://sysco-veterans.jobs/",
     "email_found_on_web": true,
     "reasoning": "The official website domain is sysco.com. A verified email contact for a recruiter, Patricia Kelley, was found on the Sysco Veterans careers page."
+  },
+  "advfiction private limited": {
+    "company_domain": "advfictioncompany.com",
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The official website for Advfiction Private Limited appears to be advfictioncompany.com. While a general contact email, info@advfictioncompany.com, is available on their website, no specific recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com) or direct contact emails for technical decision-makers (Founder, Co-Founder, CTO, Engineering Manager, Tech Lead) or HR contacts were found through the search. Internship postings on platforms like Unstop also did not provide direct email contacts for recruitment. The search results did not explicitly mention any verifiable email addresses fitting the specified criteria. Therefore, the 'contact_email' is set to null as per the instructions."
   }
 }

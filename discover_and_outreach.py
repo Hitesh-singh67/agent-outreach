@@ -64,14 +64,14 @@ gemini_quota_exceeded = False
 # --- OpenRouter Free Tier Helper ---
 def openrouter_chat(prompt, json_schema_properties=None, temperature=0.2):
     """Calls OpenRouter's free-tier API (OpenAI-compatible) with optional JSON schema enforcement.
-    Uses the 'openrouter/auto' router which auto-selects the best free model."""
+    Uses the 'openrouter/free' router which auto-selects the best free model."""
     api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
         raise RuntimeError("OPENROUTER_API_KEY environment variable is not set.")
 
     messages = [{"role": "user", "content": prompt}]
     body = {
-        "model": "openrouter/auto",
+        "model": "openrouter/free",
         "messages": messages,
         "temperature": temperature,
     }
