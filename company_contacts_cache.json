@@ -6,13 +6,6 @@
     "email_found_on_web": true,
     "reasoning": "Tesla recruitment team verified contact email"
   },
-  "nidec": {
-    "company_domain": "nidec-mce.com",
-    "contact_email": "recruiting@nidec-mce.com",
-    "email_source_url": "https://nidec-mce.com",
-    "email_found_on_web": true,
-    "reasoning": "Nidec-MCE recruiting contact email"
-  },
   "salesforce": {
     "company_domain": "salesforce.com",
     "contact_email": null,
@@ -48,34 +41,6 @@
     "email_found_on_web": false,
     "reasoning": "Uses career portals and does not publish general recruiting email"
   },
-  "caw.tech (caw studios)": {
-    "company_domain": "caw.tech",
-    "contact_email": "careers@caw.tech",
-    "email_source_url": "https://caw.tech",
-    "email_found_on_web": true,
-    "reasoning": "CAW Studios official careers email"
-  },
-  "caw studios": {
-    "company_domain": "caw.tech",
-    "contact_email": "careers@caw.tech",
-    "email_source_url": "https://caw.tech",
-    "email_found_on_web": true,
-    "reasoning": "CAW Studios official careers email"
-  },
-  "caw.tech": {
-    "company_domain": "caw.tech",
-    "contact_email": "careers@caw.tech",
-    "email_source_url": "https://caw.tech",
-    "email_found_on_web": true,
-    "reasoning": "CAW Studios official careers email"
-  },
-  "avk tech": {
-    "company_domain": "avktechinc.com",
-    "contact_email": "careers@avktechinc.com",
-    "email_source_url": "https://avktechinc.com",
-    "email_found_on_web": true,
-    "reasoning": "AVK Tech Solutions Inc. recruitment contact email"
-  },
   "soothsayer analytics": {
     "company_domain": "soothsayeranalytics.com",
     "contact_email": null,
@@ -104,26 +69,12 @@
     "email_found_on_web": false,
     "reasoning": "Does not publish a general recruiting email"
   },
-  "quest global": {
-    "company_domain": "quest-global.com",
-    "contact_email": "careers@quest-global.com",
-    "email_source_url": "https://quest-global.com",
-    "email_found_on_web": true,
-    "reasoning": "Quest Global careers contact email"
-  },
   "black box": {
     "company_domain": "blackbox.com",
     "contact_email": "HRSS@blackbox.com",
     "email_source_url": "https://www.blackbox.com/en-us/about/careers/total-rewards",
     "email_found_on_web": true,
     "reasoning": "The official website domain for Black Box is blackbox.com. The email address HRSS@blackbox.com is explicitly provided on the 'Total Rewards' section of the Black Box careers page for accommodation requests related to their online application process. This email is also mentioned in a Kane County Government document encouraging applications to Black Box."
-  },
-  "eightfold ai": {
-    "company_domain": "eightfold.ai",
-    "contact_email": "careers@eightfold.ai",
-    "email_source_url": "https://eightfold.ai/careers/",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Eightfold AI is eightfold.ai. The careers page on their website explicitly states that candidates can request an alternative selection process or accommodation by emailing careers@eightfold.ai."
   },
   "tiktok": {
     "company_domain": "tiktok.com",
@@ -237,20 +188,6 @@
     "email_found_on_web": false,
     "reasoning": "The official website for bswift (including its operations in India) is bswift.com. After reviewing the careers sections on bswift.com and various job postings on third-party sites like Bandana.com, BeBee, Greenhouse, and foundit.in, no explicit careers, recruiting, or talent contact email address was found. The career pages typically direct candidates to apply through online application portals or provide general statements like 'we want to hear from you!' without listing a direct email address for talent acquisition."
   },
-  "nirmata": {
-    "company_domain": "nirmata.com",
-    "contact_email": "jobs@nirmata.com",
-    "email_source_url": "https://nirmata.com/company/careers/",
-    "email_found_on_web": true,
-    "reasoning": "The official website for Nirmata is nirmata.com. The careers page on their website explicitly lists 'jobs@nirmata.com' as the contact email for individuals interested in career opportunities."
-  },
-  "s&p global": {
-    "company_domain": "www.spglobal.com",
-    "contact_email": "hr@spglobal.com",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUmsHk-4o8J_VQbeL5mDsGtf2Fqkxfw5DFjm41RsXd5QgUVWxlZzVAjCTC0YOCdh_lWUC-bSVxxifoXppeHwbcbufFF10y_S3FlutyG6cRTh2Brp-qJzrsMQT3RbuMhXsHasVeNMZEu70xPdUfbgwmvshPdghwBY_-NegngdpUO2opM31HeF590kMhgtesbGT-unY=",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for S&P Global is www.spglobal.com. A human resources contact email, hr@spglobal.com, was found on JobzMall, which states it can be used to contact the Human Resources team at S&P Global."
-  },
   "sony research india": {
     "company_domain": "sony.co.in",
     "contact_email": null,
@@ -293,13 +230,6 @@
     "email_found_on_web": false,
     "reasoning": "A search for the company 'Futureacad' using the provided URL hint (https://futureacad.org) did not yield an active official website with that domain. Other entities found, such as 'FutureAcad' (futureacad.com) and 'Future Academy Pty Ltd' (futureacademy.edu.au), are educational institutions with general contact emails (e.g., info@futureacad.com, info@futureacademy.edu.au, charbel.tadros@futureacademy.edu.au). These emails do not explicitly serve as careers, recruiting, or talent contact emails according to the specified criteria. Therefore, no verified careers or recruiting email for 'Futureacad' on the specified domain hint was found."
   },
-  "reptape": {
-    "company_domain": "redtapeindia.com",
-    "contact_email": "hr@redtapeindia.com",
-    "email_source_url": "https://www.redtapeindia.com/careers",
-    "email_found_on_web": true,
-    "reasoning": "The company name appears to be 'Redtape' (not 'Reptape' as per the hint). The official domain for Redtape is redtapeindia.com. An HR email, hr@redtapeindia.com, was found on their official careers page."
-  },
   "ideas to impacts": {
     "company_domain": "ideastoimpacts.com",
     "contact_email": null,
@@ -313,13 +243,6 @@
     "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-hrdDb4ZNdCGts4-r7iRBzzRAf6Ze17sl5rRZP-3-RZ2wDGxvFzEKadl03DdJifakIzj4bOzJH1QFRMtxLVfHqR2nz29EuSDw96ygeAhZK-ZjIBUlr_g3ariVimsGoOtw6fUZi7ui2X7U0BusmrzC",
     "email_found_on_web": true,
     "reasoning": "The official website domain for Infrrd is infrrd.ai. A recruiting email, pavithra@infrrd.ai, was explicitly found in an 'Infrrd Off Campus Drive 2025' job posting for Trainee Software Engineer positions, where candidates were instructed to send their resumes to this address. This email directly serves a recruiting/talent acquisition purpose."
-  },
-  "stratzi.ai": {
-    "company_domain": "stratzi.ai",
-    "contact_email": "hiring@stratzi.ai",
-    "email_source_url": "https://www.stratzi.ai/careers",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Stratzi.AI is 'stratzi.ai'. The careers page on their website explicitly states 'Drop us a line at hiring@stratzi.ai' for job-related inquiries."
   },
   "radical technologies": {
     "company_domain": "radicaltechnologies.co.in",
@@ -398,13 +321,6 @@
     "email_found_on_web": false,
     "reasoning": "The official website for Illinois Tool Works is www.itw.com. While the website has extensive career sections and a 'Join Our Talent Community' feature, it does not explicitly provide a dedicated careers, recruiting, or talent contact email. Instead, it directs users to apply through their online application portals or join their talent community to receive updates on employment opportunities. An 'Info@' email was found for a division (ITW Heartland), but this is not a general careers email for the parent company. No other specific careers, recruiting, or talent contact emails were found on the web that meet the specified criteria."
   },
-  "arine": {
-    "company_domain": "arine.io",
-    "contact_email": "info@arine.io",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGGiy9DkgUCWU8gfF-Am0RWZY2XgEZ_xiEqPD_sdcaWfXHinyn8O93afEYXhoaZ3xPlGwwq37nvPU1bIBBDSnfwmZACBqwyuRKZc_7xAMpXkuKbQ8c5Y4MF2X8=",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Arine is arine.io, as indicated by multiple search results. The 'Contact Us' page on their website (arine.io) lists 'info@arine.io' as an email address to 'connect with a member of our team, to learn more about Arine and our solutions, or to explore career opportunities'. Although it is a general info email, its explicit mention for career inquiries makes it a valid contact for talent. Furthermore, a recruitment scam alert states that 'All hiring communications will come from an @arine.io email', reinforcing that arine.io is the domain for recruitment-related communication."
-  },
   "nec software solutions": {
     "company_domain": "necsws.com",
     "contact_email": null,
@@ -454,26 +370,12 @@
     "email_found_on_web": false,
     "reasoning": "The official website for KnowBe4 is knowbe4.com. While the careers page (knowbe4.com/careers or knowbe4.com/jobs) is available and encourages applicants to 'See Open Positions', no specific careers, recruiting, or talent contact email address was explicitly found on their website or in related job postings. The 'Contact Us' page lists only general sales and support emails (sales@knowbe4.com, support@knowbe4.com), which do not fit the criteria. The careers blog allows users to subscribe for updates with career advice from recruiters, but this is not a direct contact email for recruitment inquiries."
   },
-  "beyondsoft": {
-    "company_domain": "beyondsoft.com",
-    "contact_email": "hr@beyondsoft.com",
-    "email_source_url": "https://www.jobzmall.com/companies/beyondsoft/faq",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Beyondsoft is 'beyondsoft.com'. A career-related email address, 'hr@beyondsoft.com', was explicitly found on JobzMall, stated as an email for career-related questions and inquiries. While Beyondsoft's official career and contact pages direct users to apply through application portals or fill out a general contact form, the 'hr@beyondsoft.com' address is specifically identified as being for career inquiries. Other emails found, such as 'voe@us.beyondsoft.com' are for verification of employment, 'fraudreporting@us.beyondsoft.com' is for fraud reporting, and 'bci_privacysupport@us.beyondsoft.com' is for privacy support, none of which are suitable for general careers, recruiting, or talent contact."
-  },
   "gen digital": {
     "company_domain": "gendigital.com",
     "contact_email": null,
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website for Gen Digital is gendigital.com. While the careers pages (e.g., https://www.gendigital.com/careers) mention contacting 'HR Service Exchange' for accommodation requests during the application process, no explicit email address for careers, recruiting, or talent was found on the official website or in the search results. The job postings direct applicants to 'See all open jobs', indicating an application portal rather than a direct email contact. An email address 'gdc_info@generaldigital.com' was found, but it belongs to 'General Digital Corporation', a different entity from 'Gen Digital'. Another email 'eb_sales@nortonlifelock...' was found, but it is a sales email and not relevant to careers."
-  },
-  "bugcrowd": {
-    "company_domain": "bugcrowd.com",
-    "contact_email": "careers@bugcrowd.com",
-    "email_source_url": "https://www.bugcrowd.com/about/careers/",
-    "email_found_on_web": true,
-    "reasoning": "The careers page explicitly states 'If you can't find what you're looking for, get in touch at careers@bugcrowd.com.'"
   },
   "whatfix": {
     "company_domain": "whatfix.com",
@@ -566,20 +468,6 @@
     "email_found_on_web": false,
     "reasoning": "The official website for Tempo Software is tempo.io. While there is a 'Join our team' section on their About Us page, and job postings on third-party sites like Built In and Remote Rocketship, no explicit careers, recruiting, or talent contact email was found on their official website or within the search results. The job postings direct to application portals (e.g., tempo.recruiterbox.com). The email service@temposoftware.com is for general service inquiries and changing usernames, not for careers."
   },
-  "hp": {
-    "company_domain": "hp.com",
-    "contact_email": "hr@hp.com",
-    "email_source_url": "https://www.jobzmall.com/company/hewlett-packard-hp/faq/#:~:text=How%20do%20I%20contact%20HP's%20Human%20Resources%20department%3F,website%20at%20www.hp.com%2Fgo%2Fhr.",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for HP is hp.com. The email address 'hr@hp.com' is listed as a way to contact HP's Human Resources department, which falls under the scope of a careers, recruiting, or talent contact email."
-  },
-  "atlys": {
-    "company_domain": "atlys.com",
-    "contact_email": "talent@atlys.com",
-    "email_source_url": "https://www.atlys.com/careers/join-us",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Atlys is atlys.com. A careers-related email, talent@atlys.com, was found on their 'Join Atlys' Notion page, which is linked from their careers section, with the instruction 'Don't see any open position that is a fit?. Email us at talent@atlys.com'."
-  },
   "kodryx ai": {
     "company_domain": "kodryx.ai",
     "contact_email": null,
@@ -656,13 +544,6 @@
     "email_source_url": "https://later.com/careers/",
     "email_found_on_web": false,
     "reasoning": "The official website for Later is later.com. Their careers page is located at later.com/careers/. While they have a careers page, no direct contact email for recruiting or talent acquisition is publicly listed. They likely use an application portal for job applications."
-  },
-  "vetsez": {
-    "company_domain": "vetsez.com",
-    "contact_email": "careers@vetsez.com",
-    "email_source_url": "https://www.vetsez.com/careers/",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for VetsEZ is vetsez.com. The careers page at https://www.vetsez.com/careers/ lists the email address careers@vetsez.com for inquiries."
   },
   "mindsmith": {
     "company_domain": "mindsmith.com",
@@ -748,13 +629,6 @@
     "email_found_on_web": false,
     "reasoning": "The official website domain for Flexsin is flexsin.com. While 'info@flexsin.com' is listed on various pages, including career-related ones, it is presented as a general inquiry email and not specifically as a careers, recruiting, or talent contact email. No dedicated email address such as 'careers@flexsin.com' or 'jobs@flexsin.com' was found. The website often directs candidates to upload their resumes via an application portal, rather than providing a direct email for talent acquisition. Per the instructions, general inquiry emails that are not explicitly for careers/recruiting should not be returned if no verified careers email is found."
   },
-  "tds": {
-    "company_domain": "tdstelecom.com",
-    "contact_email": "careers@tdstelecom.com",
-    "email_source_url": "https://careers.tdstelecom.com",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for TDS (specifically TDS Telecom, a subsidiary of Telephone and Data Systems, Inc.) was identified as tdstelecom.com through multiple career-related search results. The email 'careers@tdstelecom.com' is explicitly listed on the TDS Telecom careers page as the contact for assistance or accommodation related to the application process."
-  },
   "airbus india private limited": {
     "company_domain": "airbus.com",
     "contact_email": "erecruiting@airbus.com",
@@ -825,13 +699,6 @@
     "email_found_on_web": false,
     "reasoning": "The official website domain for Arrcus is arrcus.com. While the Arrcus website provides contact information, it does not explicitly list a general recruiting/career email (e.g., careers@arrcus.com, hr@arrcus.com, talent@arrcus.com). The careers page directs users to 'View career opportunities' which typically leads to an application portal. Additionally, direct contact emails for technical decision-makers (such as Keyur Patel, Founder and CTO) or HR contacts (such as Jennifer Smith, Sr. Director of HR & People Operations) are not explicitly published on the website. Emails found for sales (sales@arrcus.com), support (support@arrcus.com), and media inquiries (jin@arrcus.com, rashmi.adukoorie@arrcus.com, sean@arrcus.com) are excluded based on the specified criteria. An email for a subsidiary (operations@nucleus-co.com for ARRCUS SOFTWARE PRIVATE LIMITED) was also found but is not applicable to the parent company's direct hiring/technical roles. As per the instructions, emails were not guessed or constructed, and only explicitly mentioned emails fitting the criteria would be included."
   },
-  "cloudsek": {
-    "company_domain": "cloudsek.com",
-    "contact_email": "work@cloudsek.com",
-    "email_source_url": "https://cloudsek.com/contact-us",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for CloudSEK is 'cloudsek.com'. The email address 'work@cloudsek.com' is explicitly provided on the 'Contact Us' page of the CloudSEK website for applications or specific inquiries related to job openings. This aligns with the requirement for a general recruiting/career contact email."
-  },
   "lendingiq": {
     "company_domain": "lendingiq.ai",
     "contact_email": null,
@@ -845,13 +712,6 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website domain for BTOW Pvt. Ltd. is b2world.in, as indicated by the copyright notice and contact information on their website. The 'Career' section of the B2World website (b2world.in/career) provides options to 'Apply for Internship' and 'Apply for Jobs'. This suggests that BTOW Pvt. Ltd. uses an application portal for recruitment. Although a general contact email, contact@b2world.in, is listed on the website, no specific general recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, hr@company.com) or direct contact emails of technical decision-makers or HR contacts were found on the web. As per the instructions, if only application portals are used and no public careers/HR email or executive/tech decision-maker's contact email is found, the 'contact_email' should be set to null."
-  },
-  "teal india": {
-    "company_domain": "tealindia.in",
-    "contact_email": "hr@tealindia.in",
-    "email_source_url": "https://www.tealindia.in/careers",
-    "email_found_on_web": true,
-    "reasoning": "The official website for Teal India (also known as Terra Economics & Analytics Lab) is tealindia.in. The email 'hr@tealindia.in' is explicitly provided on their careers page for general recruiting/career inquiries."
   },
   "the/nudge institute": {
     "company_domain": "thenudge.org",
@@ -902,13 +762,6 @@
     "email_found_on_web": true,
     "reasoning": "The official website domain for Snowflake is 'snowflake.com'. While direct general recruiting emails like 'careers@snowflake.com' were not explicitly found, the Snowflake Careers page provides 'snowflakecareers@snowflake.com' as a contact for assistance or accommodation due to a disability in their job application procedures. This email is directly related to the career/recruiting process and is explicitly mentioned on their official website, making it a verified career contact."
   },
-  "speedopus india": {
-    "company_domain": "speedopus.com",
-    "contact_email": "contact@speedopus.com",
-    "email_source_url": "https://speedopus.com/contact-us",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Speedopus India is speedopus.com. A general contact email, contact@speedopus.com, was found on the 'Contact Us' page. No specific recruiting/career contact emails or direct emails of technical decision-makers or HR contacts were explicitly mentioned on the website. This general contact email is not listed as legal, privacy, security, abuse, billing, developer support, or customer support."
-  },
   "rivian": {
     "company_domain": "rivian.com",
     "contact_email": "candidateaccommodations@rivian.com",
@@ -951,26 +804,12 @@
     "email_found_on_web": false,
     "reasoning": "The official website domain for Stripe is stripe.com. While several search results mentioned emails, none met the criteria for a verified general recruiting/career contact or a direct contact email for technical decision-makers or HR. Emails like `applicant-privacy@stripe.com` were privacy-related and thus excluded. Other mentions of emails were either for different companies named 'Stripe' (e.g., Stripe Partners, Stripe Recruitment Ltd), outdated individual contacts (e.g., `anurag@stripe.com` from 2012), or were obfuscated/implied through third-party email finder services without explicit disclosure (e.g., Scalelist, Clay). Stripe's career pages and recruiting resources indicate a process involving recruiters and application portals rather than public-facing email addresses for general recruitment or direct executive contact. Therefore, no suitable email was found based on the provided constraints."
   },
-  "citadel securities": {
-    "company_domain": "citadelsecurities.com",
-    "contact_email": "careers@citadelsecurities.com",
-    "email_source_url": "https://www.citadelsecurities.com/careers",
-    "email_found_on_web": true,
-    "reasoning": "The official website for Citadel Securities is citadelsecurities.com. On the Careers page (https://www.citadelsecurities.com/careers) the company provides a direct recruiting contact email for candidates, listed as careers@citadelsecurities.com. This email is a generic recruiting address rather than a support or legal address, fitting the request for a general recruiting/career contact. No other specific personal decision\u2011maker emails were found, and the provided email is verified on the company's own site."
-  },
   "grab": {
     "company_domain": "grab.com",
     "contact_email": null,
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "Grab's official website domain is grab.com. A review of the company's public website, careers page, and press/contact sections shows that Grab directs all job applications through its online recruitment portal (e.g., Lever/Greenhouse) and does not list a generic recruiting or HR email address such as careers@grab.com, jobs@grab.com, or hr@grab.com. No publicly available email for a technical decision\u2011maker or HR contact was found on the web, and only generic support or press emails (e.g., press@grab.com) are listed, which do not meet the criteria. Therefore, the contact_email is set to null."
-  },
-  "motorola solutions": {
-    "company_domain": "motorolasolutions.com",
-    "contact_email": "careers@motorolasolutions.com",
-    "email_source_url": "https://www.motorolasolutions.com/en_us/about/contact-us.html",
-    "email_found_on_web": true,
-    "reasoning": "The official Motorola Solutions website (motorolasolutions.com) includes a Contact Us page that lists a dedicated recruiting email address for job inquiries: careers@motorolasolutions.com. This address is a generic, company\u2011wide recruiting contact rather than a portal\u2011only link, satisfying the requirement for a verifiable email. No other recruiting\u2011specific emails (e.g., jobs@, talent@) were found, and the address is not a support, legal, or other non\u2011recruiting mailbox."
   },
   "bosch": {
     "company_domain": "bosch.com",
@@ -1035,13 +874,6 @@
     "email_found_on_web": false,
     "reasoning": "The official website domain for Wipro is wipro.com. While searching for recruiting/career contact emails, an email 'hr@wipro.com' was mentioned on a third-party job portal (JobzMall) as a way to reach Wipro's HR team. However, this email was not found directly on Wipro's official corporate or careers websites (wipro.com or careers.wipro.com) among the search results. The Wipro careers pages frequently list 'helpdesk.recruitment@wipro.com' for reporting suspicious job offers or advertisements, but explicitly state 'Do not email your resume to this ID as it is not monitored for resumes and career applications'. Other emails found were for investor relations ('investor.relations@wipro.com') or for reporting unethical hiring practices ('ombuds.person@wipro.com'), which do not fit the criteria for general recruiting/career contact. As the instructions state not to guess or construct an email and to set 'contact_email' to null if a public careers/HR email or executive/tech decision-maker's contact email is not explicitly found on the web, and specifically not to use emails for legal, privacy, security, abuse, billing, developer support, or customer support, no verified general recruiting/career email or direct contact email for a technical decision-maker or HR contact was found on Wipro's official channels."
   },
-  "razorpay": {
-    "company_domain": "razorpay.com",
-    "contact_email": "jobs@razorpay.com",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8DsNp6ZI-exKDLtYmSDGdkGaFkKqj-Nk6gJgevMQOuCNf3TMi4Nug7tsi68wS7kqNj8zXki4Od-h_Uhb27dd_dM-IVtbYOaNom2pzHEXuglJfPIe8",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Razorpay is 'razorpay.com' as consistently indicated across multiple search results. A verified career/recruiting email, 'jobs@razorpay.com', was explicitly found on the 'Tech at Razorpay' page, which is dedicated to engineering roles and career opportunities. This email directly addresses the requirement for a general recruiting/career contact. While other individual emails for a Senior Director of Engineering were found (e.g., 'rizwanul.haque@razorpay.com'), and an Executive Assistant to CEO email ('alisha.francis@razorpay.com') was also present, 'jobs@razorpay.com' is chosen as the primary contact email as it directly serves the purpose of general recruiting inquiries, aligning perfectly with the prompt's first objective. General contact emails like 'contact@razorpay.com' were noted, but were not explicitly categorized for recruiting/HR and thus 'jobs@razorpay.com' is a more precise fit for the user's request, and other specific emails like legal, privacy, security, abuse, billing, developer support, or customer support emails were explicitly excluded by the prompt."
-  },
   "cred": {
     "company_domain": "cred.club",
     "contact_email": "kunal@cred.club",
@@ -1062,13 +894,6 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website, zolve.com, and its associated career pages do not explicitly list a general recruiting/career contact email (e.g., careers@zolve.com, jobs@zolve.com, hr@zolve.com) or direct contact emails for technical decision-makers or HR personnel. While some third-party sites indicate email formats (e.g., {first name}.{last name}@zolve.com) and provide masked email addresses for individuals like the Founder and Human Resource Business Partner, these are not explicitly mentioned full email addresses as required by the instructions. The publicly available emails, such as hello@zolve.com and legal@zolve.com, are designated for customer support, general inquiries, or legal matters, which are outside the scope of the requested contact types."
-  },
-  "mensa brands": {
-    "company_domain": "mensabrands.com",
-    "contact_email": "careers@mensabrands.com",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOEF70Hn6oyvr-E8xCPz0GD04J03GEnwM8e3v7N97x9wTNGfXBfu7YWwBuiaF6wqIURJj3l2kAu36hGva1zmWqArqOH_5Gdzs3Cy39VERGIMrG9Jg6NiqzGOq4q_YcG6hsOTpJvJyBQeEx",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Mensa Brands is mensabrands.com. A verified email contact for careers is careers@mensabrands.com, which is explicitly mentioned on a careers-related page. Additionally, ananth@mensabrands.com is listed as the email for Ananth Narayanan, the Founder & CEO. The careers email fulfills the requirement for a general recruiting/career contact email."
   },
   "dunzo": {
     "company_domain": "dunzo.com",
@@ -1119,13 +944,6 @@
     "email_found_on_web": false,
     "reasoning": "The company 'Mindtree (Larsen & Toubro Infotech)' merged to form LTIMindtree in November 2022. The official website for LTIMindtree was www.ltimindtree.com. However, in February 2026, LTIMindtree Limited announced a name change to LTM Limited, with the official website www.ltm.com. A recruitment fraud alert on the LTM website explicitly states, 'LTM only communicates from the official domain \u201cltm.com\u201d', indicating this is the current official domain for recruitment-related communications.\n\nDespite extensive searching for general recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com) or direct contact emails of technical decision-makers or HR contacts, no explicitly mentioned and verifiable email addresses were found. Career pages on ltimindtree.com and ltm.com typically direct users to application portals or talent communities rather than providing direct contact email addresses.\n\nSome sources show partial email formats (e.g., xxxx@ltimindtree.com) or emails from 'Global Talent Acquisition Group' that are marked 'Do not reply'. The instructions specify not to guess or construct emails not explicitly mentioned. One job portal explicitly stated 'Company Email ID, Not Available' for LTIMindtree. Therefore, no verified contact email fulfilling the specified criteria could be identified."
   },
-  "publicis sapient": {
-    "company_domain": "publicissapient.com",
-    "contact_email": "hiring@publicissapient.com",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGn804QhWVFwnWyWtkCrz5cZMDJfYqppf9lW5zlHBnpmjIKwAX6GRcXjoxsT-gwAmO3NYylhEmMvi5aDfMQ7gUdnB9n9Z4zR4GnYVsv6sEA18A0mbDk92ozoqCaMefxxdvLdQzzVAnLdcMC4qwemrytea029dFk",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Publicis Sapient is publicissapient.com. A verified recruiting/career contact email found on their careers page and external referrals page is 'hiring@publicissapient.com'. This email is provided for assistance with job application procedures due to a disability and for external referral inquiries, making it a general recruiting/career contact email."
-  },
   "oracle": {
     "company_domain": "oracle.com",
     "contact_email": null,
@@ -1147,13 +965,6 @@
     "email_found_on_web": false,
     "reasoning": "The official domain for Ola (the ride-hailing company) is olacabs.com. While several search results mentioned email addresses, none of them met the specified criteria for 'contact_email'. 'hr@ola.org' appears to be for a different organization. 'Kyachalrahahai@olagroup.in' is an internal communication email for employees. 'media@olacabs.com' is for media inquiries. 'companysecretary@olaelectric.com' is for investor relations of Ola Electric and is not a recruiting or technical contact. Several direct contact emails for HR and executives were found but were obfuscated (e.g., 'xxxx@Olacabs.com'). 'support@olacabs.com' is a customer support email, which is explicitly excluded. No other public, non-obfuscated, and relevant recruiting/career or direct technical decision-maker/HR contact emails were explicitly mentioned on the web. As per the instructions, emails should not be guessed or constructed if not explicitly mentioned, and customer support/legal emails should be excluded."
   },
-  "swiggy": {
-    "company_domain": "swiggy.com",
-    "contact_email": "careers@swiggy.com",
-    "email_found_on_web": true,
-    "email_source_url": "https://www.swiggy.com/careers/",
-    "reasoning": "The official Swiggy website uses the domain swiggy.com. On the public Careers page (https://www.swiggy.com/careers/) a contact email for recruitment is listed as careers@swiggy.com, which is a standard corporate email address for hiring inquiries. No other recruiting\u2011specific email addresses were found, and the email is directly displayed on the company's own site, satisfying the requirement for a verified contact."
-  },
   "makemytrip": {
     "company_domain": "makemytrip.com",
     "contact_email": null,
@@ -1174,20 +985,6 @@
     "email_found_on_web": false,
     "email_source_url": null,
     "reasoning": "A search of Zepto's public website (https://www.zeptonow.com/) and related online resources shows only generic support or customer\u2011service contacts such as support@zeptonow.com. No dedicated recruiting, HR, or technical decision\u2011maker email addresses (e.g., careers@, jobs@, hr@, founder@, cto@) are publicly listed. The company appears to use an external applicant tracking system (Lever/Greenhouse) for job applications, and no verifiable personal or department email could be identified without guessing. Therefore, per the instructions, the contact_email field is set to null."
-  },
-  "jio": {
-    "company_domain": "jio.com",
-    "contact_email": "careers@jio.com",
-    "email_found_on_web": true,
-    "email_source_url": "https://careers.jio.com/",
-    "reasoning": "The official domain for Jio is jio.com, as confirmed by the company's main website and the careers sub\u2011domain (careers.jio.com). On the Jio Careers landing page a \"Contact Us\" section lists the email address\u202fcareers@jio.com for recruitment inquiries. This address is a generic, company\u2011wide recruiting contact and is not a support, billing, or legal address, satisfying the request for a general recruiting/career contact email."
-  },
-  "zomato": {
-    "company_domain": "zomato.com",
-    "contact_email": "careers@zomato.com",
-    "email_found_on_web": true,
-    "email_source_url": "https://www.zomato.com/careers",
-    "reasoning": "The official Zomato website domain is zomato.com. On the public Careers page (https://www.zomato.com/careers) a contact line reads: \"If you have any queries, please email us at careers@zomato.com.\" This provides a direct, verifiable recruiting email address that is not a generic support or abuse address. No other personal or decision\u2011maker email addresses were found on the site, and the company uses an external applicant tracking system for most job applications, but the listed recruiting email satisfies the request."
   },
   "ai startup impact": {
     "company_domain": "aistartupimpact.com",
@@ -1347,13 +1144,6 @@
     "email_found_on_web": true,
     "reasoning": "The official website domain for Postman is 'postman.com'. The general 'Contact Us' page provides 'info@postman.com' for general and media questions, which does not fit the criteria for recruiting. Customer support and student program emails were also found but are not relevant. A dedicated careers page on Workable for Postman explicitly states: 'Can't find the right role? Email your resume to postman@jobs.workablemail.com to be considered for new positions in the future.'. This email is specifically for job considerations and aligns with the requirement for general recruiting/career contact emails. No direct contact emails for technical decision-makers or HR contacts were explicitly found on the web."
   },
-  "myntra": {
-    "company_domain": "myntra.com",
-    "contact_email": "careers@myntra.com",
-    "email_source_url": "https://www.myntra.com/careers",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Myntra is www.myntra.com. The careers page explicitly states, 'Shoot us an email at careers@myntra.com' for career-related inquiries."
-  },
   "bigbasket": {
     "company_domain": "bigbasket.com",
     "contact_email": null,
@@ -1374,13 +1164,6 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website domain for Rapido is rapido.bike. While a masked email format (xxxx@rapido.bike) was found for a co-founder, the specific unmasked email address or a general recruiting/career contact email was not explicitly mentioned on the web. Customer support emails like 'shoutout@rapido.bike' were found, but these are explicitly excluded by the instructions. The careers and contact pages primarily use forms for inquiries and job applications rather than direct email addresses."
-  },
-  "nykaa": {
-    "company_domain": "nykaa.com",
-    "contact_email": "careers@nykaa.com",
-    "email_source_url": "https://www.nykaa.com/who_are_we, https://www.nykaa.com/fashion/careers",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Nykaa is 'nykaa.com'. A verified email contact for career-related queries is 'careers@nykaa.com'. This email address is explicitly provided on Nykaa's 'Who are We' page for resume submissions and on Nykaa Fashion's careers page for job applications, making it a general recruiting/career contact email as per the requirements."
   },
   "delhivery": {
     "company_domain": "delhivery.com",
@@ -1431,13 +1214,6 @@
     "email_found_on_web": true,
     "reasoning": "The official website domain for the Ministry of Electronics and Information Technology (MeitY), Government of India, is meity.gov.in. A verified email contact for recruiting/career purposes is meity-sthub@gov.in, which is listed for the HR Division of the MeitY Startup Hub for queries related to appointments and is found on their contact page."
   },
-  "tcs (tata consultancy services)": {
-    "company_domain": "tcs.com",
-    "contact_email": "careers@tcs.com",
-    "email_source_url": "https://www.tcs.com/recruitment-fraud-alert",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Tata Consultancy Services is tcs.com. The email address 'careers@tcs.com' is explicitly provided on their official website for recruitment activities and inquiries, including reporting fraudulent recruitment activities. This email fits the criteria for a general recruiting/career contact email. Direct contact emails for technical decision-makers or HR contacts (like the CHRO or CTO in the 'name@tcs.com' format) were not explicitly found on the web."
-  },
   "larsen & toubro infotech (lti mindtree)": {
     "company_domain": "ltm.com",
     "contact_email": null,
@@ -1465,13 +1241,6 @@
     "email_source_url": "https://www.alcon.com/about-us/general-inquiry",
     "email_found_on_web": true,
     "reasoning": "The official website domain for Alcon is alcon.com. A verified email for general recruiting/career inquiries is alcon.recruitment@alcon.com, which is explicitly provided on their website for job-related inquiries and accommodation requests. No direct contact emails for technical decision-makers or specific HR contacts (e.g., name@company.com) were found that were explicitly listed and publicly available without requiring a guess or special access."
-  },
-  "nextleap": {
-    "company_domain": "nextleap.app",
-    "contact_email": "contact@nextleap.app",
-    "email_source_url": "https://nextleap.app/contact-us",
-    "email_found_on_web": true,
-    "reasoning": "The official website for the company 'NextLeap', based on the provided hint, is nextleap.app. The email 'contact@nextleap.app' is listed on their 'Contact Us' page for general queries. Additionally, on their 'Showcase' page, it explicitly states, 'If you are looking to hire, please reach out to us by sending an email to contact@nextleap.app'. This email fits the criteria for a general recruiting/career contact."
   },
   "gyanx": {
     "company_domain": null,
@@ -1515,13 +1284,6 @@
     "email_found_on_web": true,
     "reasoning": "The official website domain for Clinikally is clinikally.com. A direct contact email for Arjun Soin, identified as a founder and CEO of Clinikally, was found on the Y Combinator launch page. The context for this email, arjunsoin@clinikally.com, explicitly states 'Talk to us - Interested in working, learning more, researching or collaborating?', which aligns with the request for direct contact emails of technical decision-makers or HR contacts, as well as general recruiting/career contact. Customer support emails (e.g., support@clinikally.com) were excluded as per the instructions."
   },
-  "worisgo": {
-    "company_domain": "worisgo.com",
-    "contact_email": "hr@worisgo.com",
-    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7D3zIbfKt8mA2J9MLobT1LQ5C8FSRLAr4QBKMcoeFj19fCT2wDjvCAdNKhOzERdEomAaKCdx3tk67azxWGLEdW15B4Xe_C0OSs7O7CPpL38vUdIVS0fWqAHtdtbSH5uCIexOfvnF7jfKZprzgDEAQIjSPGPRDxShd6w==",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for WoRisGo is worisgo.com, as indicated across multiple search results. A verified email contact for recruiting/careers, hr@worisgo.com, was explicitly found within a job description document for a 'Geopolitical Risk Intern' on the worisgo.com domain. This email falls under the 'General recruiting/career contact emails' category specified in the prompt. While contact.us@worisgo.com was also found on the website, hr@worisgo.com is more directly aligned with the requested career-related contacts."
-  },
   "atlassian": {
     "company_domain": "atlassian.com",
     "contact_email": null,
@@ -1535,13 +1297,6 @@
     "email_source_url": "https://torre.ai/en/jobs/2G45mY9J/head-of-viral-social-ugc-clippers-at-aios--remote--200k-400kyr--015-050",
     "email_found_on_web": true,
     "reasoning": "The company 'AIOS (YC W20)' is closely associated with 'Aios Medical' in various job postings and career information. A specific job posting for 'Head of Viral Social (UGC & Clippers) at AIOS' explicitly provides the email address 'richie+hiring@aiosmedical.com' for submitting resumes and relevant experience. This email address is a verified recruiting/career contact. The domain 'aiosmedical.com' is used in this official recruitment email, indicating it as the company's official domain for these purposes. While other domains like 'fella.notion.site' are used for career pages, 'aiosmedical.com' is directly used in a contact email, fulfilling the requirement for a company domain. The email address is for recruiting/hiring, and is explicitly mentioned on a job board, not guessed or constructed."
-  },
-  "optiver": {
-    "company_domain": "optiver.com",
-    "contact_email": "recruitment@optiver.com",
-    "email_source_url": "https://www.optiver.com/jobs/us-treasuries-trader/",
-    "email_found_on_web": true,
-    "reasoning": "The official website domain for Optiver is 'optiver.com'. A general recruitment contact email, 'recruitment@optiver.com', was found on the 'US Treasuries Trader' job posting page on Optiver's official website, explicitly stating 'If you have any questions feel free to contact our Recruitment team via. recruitment@optiver.com'. While regional career emails like 'recruiting@optiver.us' and 'careers@optiver.com.au' are also listed on their 'Contact Us' page, 'recruitment@optiver.com' is a direct, general recruitment email provided on a job application page. Other job postings explicitly state that applications cannot be accepted via email. Direct contact emails for technical decision-makers or HR contacts were not explicitly mentioned on their official website or in verifiable public sources, avoiding third-party email guessing tools as per instructions."
   },
   "agilent": {
     "company_domain": "agilent.com",
@@ -1605,5 +1360,20 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "The official website for Advfiction Private Limited appears to be advfictioncompany.com. While a general contact email, info@advfictioncompany.com, is available on their website, no specific recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com) or direct contact emails for technical decision-makers (Founder, Co-Founder, CTO, Engineering Manager, Tech Lead) or HR contacts were found through the search. Internship postings on platforms like Unstop also did not provide direct email contacts for recruitment. The search results did not explicitly mention any verifiable email addresses fitting the specified criteria. Therefore, the 'contact_email' is set to null as per the instructions."
+  },
+  "cloudsek": {
+    "company_domain": "cloudsek.com",
+    "contacts": [
+      {
+        "name": "Shashank Shekhar",
+        "title": "Media Contact",
+        "email": "shashank.shekhar@cloudsek.com",
+        "source": "https://www.cloudsek.com/press/cloudsek-becomes-first-indian-origin-cybersecurity-company-to-receive-investment-from-a-u-s-state-fund"
+      }
+    ],
+    "contact_email": "shashank.shekhar@cloudsek.com",
+    "email_source_url": "https://www.cloudsek.com/press/cloudsek-becomes-first-indian-origin-cybersecurity-company-to-receive-investment-from-a-u-s-state-fund",
+    "email_found_on_web": true,
+    "reasoning": "I followed the prescribed search strategy. My initial searches for key personnel (CEO, Founder, CTO, HR Manager) on LinkedIn, the company's official website, Wellfound/AngelList, Crunchbase, and GitHub did not yield any explicitly listed personal email addresses. While generic company emails (info@cloudsek.com, legal@cloudsek.com, dpo@cloudsek.com) were found on the official website, these are not personal emails. Finally, during the search for press releases, I found a specific media contact, Shashank Shekhar, with a verified email address listed in an official CloudSEK press release."
   }
 }

@@ -12,6 +12,53 @@ import shutil
 import copy
 import time
 import xml.etree.ElementTree as ET
+import socket
+import struct
+
+# --- Email Domain Validation (MX record check via DNS over socket) ---
+def validate_email_domain(email):
+    """Validates an email address format and checks if the domain has MX records.
+    Returns (is_valid: bool, reason: str)."""
+    if not email or not isinstance(email, str):
+        return False, "Empty or invalid email"
+    
+    email = email.strip()
+    
+    # Basic format check
+    email_regex = r'^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$'
+    if not re.match(email_regex, email):
+        return False, f"Invalid email format: {email}"
+    
+    domain = email.split('@')[1].lower()
+    
+    # Block obviously fake/placeholder domains
+    fake_domains = ['example.com', 'test.com', 'placeholder.com', 'company.com', 'domain.com']
+    if domain in fake_domains:
+        return False, f"Placeholder domain detected: {domain}"
+    
+    # Check if domain resolves (MX or A record)
+    try:
+        # Try MX lookup first
+        import subprocess
+        result = subprocess.run(
+            ['nslookup', '-type=MX', domain],
+            capture_output=True, text=True, timeout=10
+        )
+        output = result.stdout.lower()
+        if 'mail exchanger' in output or 'mx preference' in output:
+            return True, "MX record found"
+        
+        # Fallback: check if domain has any A record (some domains accept mail on A record)
+        socket.getaddrinfo(domain, 25, socket.AF_INET)
+        return True, "Domain resolves (A record)"
+    except subprocess.TimeoutExpired:
+        return False, f"DNS lookup timed out for {domain}"
+    except (socket.gaierror, socket.herror, OSError):
+        return False, f"Domain does not resolve: {domain}"
+    except Exception as e:
+        # If DNS check fails, be permissive — don't block on DNS errors
+        return True, f"DNS check inconclusive ({e}), allowing"
+
 
 # --- Load .env file (lightweight, no external dependency) ---
 def _load_dotenv():
@@ -142,6 +189,7 @@ def openrouter_chat(prompt, json_schema_properties=None, temperature=0.2):
                 raise RuntimeError(f"OpenRouter API error {e.code}: {error_body}")
     raise RuntimeError("OpenRouter: max retries exceeded")
 
+
 # Define the MatchResult schema for structured JSON output from Gemini
 class MatchResult(BaseModel):
     matches_stack: bool = Field(description="True if the job role or company matches the candidate's programming languages (TypeScript, Python, JavaScript, Java, C, C++).")
@@ -150,6 +198,91 @@ class MatchResult(BaseModel):
     contact_email: str = Field(description="The suggested career/hiring contact email for this company domain (e.g. careers@company.com, jobs@company.com, hr@company.com, recruiting@company.com).")
     email_subject: str = Field(description="A personalized, low-friction, high-impact cold email subject line.")
     email_body: str = Field(description="A personalized cold email following the candidate's custom template structure (<350 words), aligning candidate's background with the company's stack.")
+
+# Define Pydantic model for tailored resume content
+class TailoredResume(BaseModel):
+    skills_line: str = Field(description="The candidate's skills line reordered to put the most relevant languages/frameworks first for this company.")
+    experience_bullets: list[str] = Field(description="An array of exactly 4 strings rewritten to emphasize aspects most relevant to this company's stack.")
+    project1_description: list[str] = Field(description="An array of exactly 2 strings for SentinelLog-AI project rewritten to emphasize relevance.")
+    project2_description: list[str] = Field(description="An array of exactly 2 strings for RAG Engine project rewritten to emphasize relevance.")
+
+class GeminiQuotaExhaustedError(Exception):
+    """Raised when Gemini daily API quota is fully exhausted."""
+    pass
+
+def gemini_generate_content(client, model, contents, config=None, max_attempts=5):
+    """Wraps generate_content with robust handling of 429/503 rate limits and quotas.
+    If rate-limited, parses the retry delay or sleeps for 30s before retrying.
+    Raises GeminiQuotaExhaustedError immediately if daily limit is hit."""
+    backoff = 5
+    for attempt in range(max_attempts):
+        try:
+            return client.models.generate_content(
+                model=model,
+                contents=contents,
+                config=config
+            )
+        except Exception as e:
+            err_str = str(e)
+            is_rate_limit = "429" in err_str or "resource_exhausted" in err_str.lower() or "503" in err_str
+            
+            if is_rate_limit:
+                # Detect daily limit exhaustion (e.g., 'requestsperday' or 'Daily' in quotaId / error)
+                if "requestsperday" in err_str.lower() or "perday" in err_str.lower() or "daily" in err_str.lower():
+                    print("  [!] Gemini daily quota exhausted (GenerateRequestsPerDay).")
+                    raise GeminiQuotaExhaustedError("Gemini daily quota exhausted")
+                
+                if attempt < max_attempts - 1:
+                    # Try to parse the retry delay from the error message
+                    # e.g., "Please retry in 26.36s" or "retryDelay: '26s'"
+                    delay = backoff
+                    match = re.search(r'retry in ([\d\.]+)\s*s', err_str, re.IGNORECASE)
+                    if match:
+                        delay = float(match.group(1)) + 1.0 # Add a small buffer
+                    else:
+                        match_info = re.search(r'retryDelay:\s*\'(\d+)s\'', err_str)
+                        if match_info:
+                            delay = float(match_info.group(1)) + 1.0
+                        else:
+                            # Default to 30s for resource_exhausted, 10s for 503
+                            delay = 30.0 if "429" in err_str or "resource_exhausted" in err_str.lower() else 10.0
+                    
+                    print(f"  [!] Gemini rate-limited/busy. Sleeping for {delay:.1f}s before retrying (Attempt {attempt+1}/{max_attempts})...")
+                    time.sleep(delay)
+                    backoff *= 2
+                else:
+                    raise e
+            else:
+                raise e
+
+def gemini_structured_chat(client, prompt, response_schema, temperature=0.2):
+    """Calls Gemini 2.5 Flash to get structured output conforming to the response_schema."""
+    config = types.GenerateContentConfig(
+        response_mime_type="application/json",
+        response_schema=response_schema,
+        temperature=temperature
+    )
+    response = gemini_generate_content(
+        client=client,
+        model="gemini-2.5-flash",
+        contents=prompt,
+        config=config
+    )
+    if not response or not response.text:
+        return None
+    
+    text = response.text.strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        # Try extracting JSON from markdown code block if present
+        match = re.search(r'```(?:json)?\s*(.*?)\s*```', text, re.DOTALL)
+        if match:
+            try:
+                return json.loads(match.group(1).strip())
+            except json.JSONDecodeError:
+                pass
+        raise
 
 def parse_markdown_table_row(line, has_salary=True):
     """Parses a markdown table row and extracts company name, company url, role, location, and apply link."""
@@ -317,14 +450,25 @@ def fetch_speedyapply_postings():
     return all_postings
 
 def search_india_internships(client):
-    """Searches Google for active Software Engineering and AI/ML internship postings in India using Gemini Search Grounding."""
-    print("[*] Searching Google for active India internship postings (Bangalore/Mumbai/Delhi NCR) using Gemini Search Grounding...")
+    """Searches Google for active internship postings at Indian STARTUPS where founders/HR have public emails.
+    Prioritizes seed/Series A companies, YC-backed startups, and small companies with accessible leadership."""
+    print("[*] Searching for Indian startup internships with findable contacts using Gemini Search Grounding...")
     
     prompt = """
-Find 75 active Software Engineer Intern, AI/ML Intern, Data Analyst Intern, or Data Engineer Intern postings/companies in India.
-Specifically focus on growing or well-funded Indian startups, companies, or government organisations offering technology internships.
-Target directories/sources like YC Startup Directory, Wellfound (formerly AngelList), LinkedIn Jobs, Google News, Internshala, Naukri, and Unstop.
-Only return active internship opportunities or companies actively hiring interns.
+Search for 75 INDIAN STARTUPS and SMALL/MID-SIZE COMPANIES that are actively hiring Software Engineer Interns, AI/ML Interns, Data Analyst Interns, or Data Engineer Interns.
+
+IMPORTANT — FOCUS ON STARTUPS, NOT LARGE CORPORATIONS:
+- Prioritize seed-stage, Series A/B startups, YC-backed companies, and growing Indian tech companies.
+- Look at: YC Startup Directory (India), Wellfound (formerly AngelList) India jobs, Internshala, Unstop, LinkedIn startup jobs.
+- DO NOT include large enterprises (Microsoft, Google, Amazon, TCS, Infosys, Wipro, HCL, etc.) — they only use ATS portals and don't accept cold emails.
+- Focus on companies where the CEO/CTO/HR person's email is likely publicly available (small teams, startup culture, public team pages).
+- Include the company's official website URL so we can find their team/about page.
+
+Target cities: Bangalore/Bengaluru, Mumbai, Delhi NCR (Gurugram/Gurgaon/Noida), Pune, Hyderabad, Chennai, and Remote (India).
+
+For EACH company, also try to find:
+- The name and title of the CEO/Founder/CTO
+- Any publicly available email from their team page, LinkedIn, or GitHub
 
 Format your response exactly as a JSON array of objects inside a single markdown code block, like this:
 ```json
@@ -334,7 +478,10 @@ Format your response exactly as a JSON array of objects inside a single markdown
     "company_url": "https://company.com",
     "role": "Role Title (e.g., Software Engineering Intern)",
     "location": "Location (e.g. Bangalore, India or Remote)",
-    "apply_link": "https://apply-link-or-careers-page"
+    "apply_link": "https://apply-link-or-careers-page",
+    "founder_name": "Founder/CEO name if found, or null",
+    "founder_title": "CEO/CTO/Founder, or null",
+    "founder_email": "their email if publicly available, or null"
   },
   ...
 ]
@@ -342,27 +489,16 @@ Format your response exactly as a JSON array of objects inside a single markdown
 Do not output anything else.
 """
     try:
-        import time
-        backoff = 3
-        response = None
-        for attempt in range(3):
-            try:
-                response = client.models.generate_content(
-                    model="gemini-2.5-flash",
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        tools=[types.Tool(google_search=types.GoogleSearch())]
-                    )
-                )
-                break
-            except Exception as e:
-                if ("503" in str(e) or "429" in str(e)) and attempt < 2:
-                    print(f"  [!] API busy or rate-limited. Retrying in {backoff}s...")
-                    time.sleep(backoff)
-                    backoff *= 2
-                else:
-                    raise e
-                    
+        config = types.GenerateContentConfig(
+            tools=[types.Tool(google_search=types.GoogleSearch())]
+        )
+        response = gemini_generate_content(
+            client=client,
+            model="gemini-2.5-flash",
+            contents=prompt,
+            config=config,
+            max_attempts=5
+        )
         if not response:
             raise Exception("No response received from GenAI API.")
             
@@ -371,8 +507,17 @@ Do not output anything else.
         json_str = match.group(1) if match else text
         postings_data = json.loads(json_str.strip())
         
+        # Save successful results to cache for future fallback
+        cache_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'india_postings_cache.json')
+        try:
+            with open(cache_path, 'w', encoding='utf-8') as f:
+                json.dump(postings_data, f, indent=2)
+            print(f"[+] Updated India postings cache with {len(postings_data)} fresh listings.")
+        except Exception:
+            pass
+        
     except Exception as e:
-        print(f"[-] Gemini search grounding for India jobs failed: {e}")
+        print(f"[-] Gemini search grounding for India startup jobs failed: {e}")
         print("[*] Falling back to local India postings cache...")
         
         cache_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'india_postings_cache.json')
@@ -390,15 +535,21 @@ Do not output anything else.
 
     postings = []
     for item in postings_data:
-        postings.append({
+        posting = {
             'category': 'AI/ML' if any(x in item.get('role', '').lower() for x in ['ai', 'ml', 'machine', 'learning']) else 'SWE',
             'company': item.get('company', 'Unknown'),
             'company_url': item.get('company_url', ''),
             'role': item.get('role', 'Intern'),
             'location': item.get('location', 'India'),
             'apply_link': item.get('apply_link', '')
-        })
-    print(f"[+] Found {len(postings)} India listings.")
+        }
+        # Carry forward any founder info discovered during search (will be used in contact discovery)
+        if item.get('founder_name'):
+            posting['founder_name'] = item['founder_name']
+            posting['founder_title'] = item.get('founder_title', '')
+            posting['founder_email'] = item.get('founder_email', '')
+        postings.append(posting)
+    print(f"[+] Found {len(postings)} India startup listings.")
     return postings
 
 def fetch_job_description(url):
@@ -595,9 +746,11 @@ def send_summary_to_candidate(service, matched_companies, was_sent):
                 body_lines.append(f"- Company: {comp}")
                 body_lines.append(f"  Role: {info['role']}")
                 body_lines.append(f"  Location: {info.get('location', 'N/A')}")
-                body_lines.append(f"  Contact Email: {info['contact_email']}")
+                contacts = info.get('all_contacts', [{'name': 'Primary', 'email': info['contact_email']}])
+                body_lines.append(f"  Contacts ({len(contacts)}):")
+                for c in contacts:
+                    body_lines.append(f"    → {c.get('name', 'Unknown')} ({c.get('title', 'N/A')}) — {c['email']}")
                 body_lines.append(f"  Official Apply Link: {info.get('apply_link', 'N/A')}")
-                body_lines.append(f"  Resume Type: {'Tailored' if info.get('tailored_resume') and 'tailored' in str(info['tailored_resume']) else 'Original'}")
                 body_lines.append(f"  Status: {'SENT' if was_sent else 'STAGED AS DRAFT'}")
                 body_lines.append("")
         else:
@@ -623,25 +776,36 @@ def send_summary_to_candidate(service, matched_companies, was_sent):
 
 def _discover_contact_via_openrouter(company, company_url=None):
     """Fallback: uses OpenRouter free tier to discover company contact emails when Gemini quota is exhausted.
-    NOTE: OpenRouter models don't have live web search, so this relies on the model's training data knowledge."""
+    NOTE: OpenRouter models don't have live web search, so this relies on the model's training data knowledge.
+    CRITICAL: Instructed to NEVER fabricate emails — return null if not confidently known."""
     url_hint = f" (possible URL/domain hint: {company_url})" if company_url else ""
-    prompt = f"""Find the official website domain and a verified email contact for the company "{company}"{url_hint}.
+    prompt = f"""Find the official website domain and REAL, VERIFIED email contacts for the company "{company}"{url_hint}.
 
-Your goal is to find recruiting contacts or technical decision-makers:
-1. General recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com).
-2. Direct contact emails of technical decision-makers or HR contacts at this company. Look for people with titles: Founder, Co-Founder, CTO, Engineering Manager, Tech Lead, or HR Manager (e.g., name@company.com, first.last@company.com).
-3. Do NOT guess or fabricate an email. If the company only uses application portals (Greenhouse, Lever, Workday) and you don't find a careers email or direct contact email, set "contact_email" to null.
-4. Do NOT return legal, privacy, security, abuse, billing, developer support, or customer support emails. If only these types of emails are known, set "contact_email" to null.
+CRITICAL RULES — READ CAREFULLY:
+1. You do NOT have internet access. Only return emails you are CONFIDENT exist from your training data.
+2. NEVER fabricate, guess, or construct emails. Do NOT make up emails like careers@company.com, jobs@company.com, or firstname@company.com unless you have seen them in your training data.
+3. If you are not 100% sure a specific email address exists and is active, set ALL email fields to null.
+4. Preferred contacts (in order): CEO/Founder personal email, CTO email, HR Head/Manager email, official careers/recruiting email that you KNOW exists.
+5. Do NOT return legal, privacy, security, abuse, billing, or customer support emails.
+
+I would rather get null than a made-up email that will bounce.
 
 Respond with a JSON object with these keys:
 - "company_domain": string or null
-- "contact_email": string or null
+- "contacts": array of objects, each with "name" (string or null), "title" (string or null), "email" (string or null), "source" (string describing where you know this email from, or null)
+- "contact_email": string or null (the best single email from contacts, for backward compatibility)
 - "email_source_url": string or null
-- "email_found_on_web": boolean
+- "email_found_on_web": boolean (set to false since you don't have web access)
 - "reasoning": string
 """
     schema_props = {
         "company_domain": {"type": ["string", "null"]},
+        "contacts": {"type": "array", "items": {"type": "object", "properties": {
+            "name": {"type": ["string", "null"]},
+            "title": {"type": ["string", "null"]},
+            "email": {"type": ["string", "null"]},
+            "source": {"type": ["string", "null"]}
+        }}},
         "contact_email": {"type": ["string", "null"]},
         "email_source_url": {"type": ["string", "null"]},
         "email_found_on_web": {"type": "boolean"},
@@ -650,16 +814,51 @@ Respond with a JSON object with these keys:
     try:
         result = openrouter_chat(prompt, json_schema_properties=schema_props, temperature=0.1)
         if isinstance(result, dict):
+            # Validate any returned emails before accepting
+            contacts = result.get("contacts", [])
+            validated_contacts = []
+            for c in contacts:
+                email = c.get("email")
+                if email and isinstance(email, str) and "@" in email:
+                    is_valid, reason = validate_email_domain(email)
+                    if is_valid:
+                        validated_contacts.append(c)
+                    else:
+                        print(f"    [!] OpenRouter email rejected: {email} ({reason})")
+            result["contacts"] = validated_contacts
+            # Update contact_email to first valid contact
+            if validated_contacts:
+                result["contact_email"] = validated_contacts[0]["email"]
+            else:
+                result["contact_email"] = None
             return result
         return None
     except Exception as e:
         print(f"  [!] OpenRouter contact discovery also failed: {e}")
         return None
 
+def _is_generic_guessed_email(email):
+    """Detects emails that were likely guessed/fabricated rather than found on the web.
+    Returns True if the email looks like a generic pattern guess."""
+    if not email:
+        return False
+    email_lower = email.lower().strip()
+    # Common generic prefixes that AI models fabricate
+    generic_prefixes = [
+        'careers@', 'jobs@', 'hr@', 'recruiting@', 'talent@', 'hiring@',
+        'apply@', 'recruitment@', 'joinourteam@', 'work@', 'opportunities@',
+        'info@', 'contact@', 'hello@', 'support@', 'help@'
+    ]
+    for prefix in generic_prefixes:
+        if email_lower.startswith(prefix):
+            return True
+    return False
 
 def discover_company_contact(client, company, company_url=None):
-    """Uses a local cache file first, then gemini-2.5-flash with Google Search grounding to discover verified contact emails.
-    Falls back to OpenRouter free tier if Gemini quota is exhausted."""
+    """Uses a local cache file first, then gemini-2.5-flash with Google Search grounding to discover 
+    REAL people (CEO, CTO, HR) and their verified email addresses at the company.
+    Falls back to OpenRouter free tier if Gemini quota is exhausted.
+    Returns a dict with 'contacts' array and backward-compatible 'contact_email' field."""
     global gemini_quota_exceeded
     company_clean = str(company).strip().lower()
     
@@ -671,11 +870,26 @@ def discover_company_contact(client, company, company_url=None):
                 cache = json.load(f)
             if company_clean in cache:
                 cached = cache[company_clean]
-                # Smart skip: if cached entry has no email, return immediately without burning an API call
                 cached_email = cached.get("contact_email") if cached else None
-                if cached_email and str(cached_email).strip().lower() not in ["null", "none", ""]:
-                    print(f"  └─ Found '{company}' details in local contact cache.")
-                    return cached
+                
+                # Invalidate cache entries with generic guessed emails — these are what caused bounces
+                if cached_email and _is_generic_guessed_email(cached_email):
+                    print(f"  └─ Found '{company}' in cache but email '{cached_email}' looks generic/guessed. Re-searching...")
+                    # Remove stale entry so we re-search
+                    del cache[company_clean]
+                    with open(cache_path, 'w', encoding='utf-8') as f:
+                        json.dump(cache, f, indent=2)
+                elif cached_email and str(cached_email).strip().lower() not in ["null", "none", ""]:
+                    # Validate cached email domain
+                    is_valid, reason = validate_email_domain(cached_email)
+                    if is_valid:
+                        print(f"  └─ Found '{company}' details in local contact cache (MX verified).")
+                        return cached
+                    else:
+                        print(f"  └─ Cached email '{cached_email}' failed MX check ({reason}). Re-searching...")
+                        del cache[company_clean]
+                        with open(cache_path, 'w', encoding='utf-8') as f:
+                            json.dump(cache, f, indent=2)
                 else:
                     print(f"  └─ Found '{company}' in cache but no verified email. Skipping.")
                     return cached
@@ -705,52 +919,56 @@ def discover_company_contact(client, company, company_url=None):
     
     url_hint = f" (possible URL/domain hint: {company_url})" if company_url else ""
     prompt = f"""
-Find the official website domain and a verified email contact for the company "{company}"{url_hint}.
-Use Google Search to find this information. Your goal is to target:
-1. General recruiting/career contact emails (e.g., careers@company.com, jobs@company.com, recruiting@company.com, hr@company.com, talent@company.com).
-2. Direct contact emails of technical decision-makers or HR contacts at this company. Look for people with titles: Founder, Co-Founder, CTO, Engineering Manager, Tech Lead, or HR Manager (e.g., name@company.com, first.last@company.com).
-3. Check their careers page, contact page, press releases, github repository contributors, LinkedIn profiles, or articles referencing the founders/executives.
-4. Do NOT guess or guess-construct an email if it is not explicitly mentioned on the web. If they only use application portals (like Greenhouse, Lever, Workday) and you don't find a public careers/HR email or executive/tech decision-maker's contact email, set "contact_email" to null.
-5. Do NOT return legal, privacy, security, abuse, billing, developer support, or customer support emails. If only these types of emails are found, set "contact_email" to null.
+Search the web to find REAL PEOPLE and their VERIFIED email addresses at the company "{company}"{url_hint}.
 
-Format your response exactly as a JSON object inside a single markdown code block, like this:
+YOUR PRIMARY GOAL: Find the actual email addresses of specific people at this company — NOT generic emails.
+
+SEARCH STRATEGY (follow this order):
+1. Search LinkedIn for "{company}" + "CEO" OR "Founder" OR "CTO" OR "HR Manager" OR "Head of People" OR "Talent Acquisition". Look for their personal email in LinkedIn bios, or linked personal websites.
+2. Search the company's official website team/about page for founder and leadership emails.
+3. Search Wellfound/AngelList, Crunchbase, or startup directories for founder contact info.
+4. Search GitHub for the company's org or founder's profile — many developers list their email publicly.
+5. Search press releases, blog posts, or news articles that mention specific people and their emails.
+6. As a LAST RESORT, check if the company has a known, working careers@ or hr@ email that is EXPLICITLY listed on their website (not guessed).
+
+CRITICAL RULES:
+- Only return emails you FOUND EXPLICITLY on a real webpage. Cite the source URL.
+- NEVER construct or guess an email address. For example, do NOT take someone's name and combine it with the company domain to create "firstname@company.com" — unless you found that exact email on a webpage.
+- If the company is a large enterprise (e.g., Microsoft, Google, Amazon, TikTok, Meta, Apple) that ONLY uses ATS portals for recruiting, return null for all emails. These companies don't accept cold emails.
+- Prefer personal emails of decision-makers (CEO, CTO, Founder, HR Head) over generic departmental emails.
+- Return up to 3 contacts if found.
+
+Format your response exactly as a JSON object inside a single markdown code block:
 ```json
 {{
   "company_domain": "string or null",
-  "contact_email": "string or null",
-  "email_source_url": "string or null",
-  "email_found_on_web": boolean,
-  "reasoning": "string"
+  "contacts": [
+    {{
+      "name": "Person's full name or null",
+      "title": "Their title (CEO, CTO, HR Manager, etc.) or null",
+      "email": "their verified email or null",
+      "source": "URL where you found this email"
+    }}
+  ],
+  "contact_email": "best single email from contacts array, or null",
+  "email_source_url": "URL where the best email was found, or null",
+  "email_found_on_web": true/false,
+  "reasoning": "Explain how you found (or couldn't find) the emails"
 }}
 ```
 Do not output anything else.
 """
     try:
-        import time
-        # Respect API rate limits
-        time.sleep(2)
-        
-        # Add retry/backoff logic to handle 503 and rate limit errors
-        backoff = 3
-        response = None
-        for attempt in range(3):
-            try:
-                response = client.models.generate_content(
-                    model="gemini-2.5-flash",
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        tools=[types.Tool(google_search=types.GoogleSearch())]
-                    )
-                )
-                break
-            except Exception as e:
-                if ("503" in str(e) or "429" in str(e)) and attempt < 2:
-                    print(f"  [!] API busy or rate-limited. Retrying in {backoff}s...")
-                    time.sleep(backoff)
-                    backoff *= 2
-                else:
-                    raise e
-
+        config = types.GenerateContentConfig(
+            tools=[types.Tool(google_search=types.GoogleSearch())]
+        )
+        response = gemini_generate_content(
+            client=client,
+            model="gemini-2.5-flash",
+            contents=prompt,
+            config=config,
+            max_attempts=5
+        )
         if not response:
             return None
             
@@ -758,6 +976,37 @@ Do not output anything else.
         match = re.search(r'```json\s*(.*?)\s*```', text, re.DOTALL)
         json_str = match.group(1) if match else text
         data = json.loads(json_str.strip())
+        
+        # Validate all returned emails via MX check
+        contacts = data.get("contacts", [])
+        validated_contacts = []
+        for c in contacts:
+            email = c.get("email")
+            if email and isinstance(email, str) and "@" in email:
+                # Skip generic guessed emails
+                if _is_generic_guessed_email(email):
+                    print(f"    [!] Skipping generic/guessed email: {email}")
+                    continue
+                is_valid, reason = validate_email_domain(email)
+                if is_valid:
+                    validated_contacts.append(c)
+                    print(f"    [+] Validated: {c.get('name', 'Unknown')} ({c.get('title', 'Unknown')}) - {email} ✓")
+                else:
+                    print(f"    [!] Email domain invalid: {email} ({reason})")
+        
+        data["contacts"] = validated_contacts
+        # Update backward-compatible contact_email
+        if validated_contacts:
+            data["contact_email"] = validated_contacts[0]["email"]
+        else:
+            # Check if original contact_email is valid and not generic
+            orig_email = data.get("contact_email")
+            if orig_email and not _is_generic_guessed_email(orig_email):
+                is_valid, reason = validate_email_domain(orig_email)
+                if not is_valid:
+                    data["contact_email"] = None
+            else:
+                data["contact_email"] = None
         
         # Save newly discovered contact details to local cache
         try:
@@ -773,12 +1022,28 @@ Do not output anything else.
             print(f"  [!] Failed to save contact to cache: {cache_err}")
             
         return data
+    except GeminiQuotaExhaustedError:
+        print("  [!] Gemini daily quota exhausted. Switching permanently to OpenRouter fallback...")
+        gemini_quota_exceeded = True
+        data = _discover_contact_via_openrouter(company, company_url)
+        if data:
+            try:
+                cache = {}
+                if os.path.exists(cache_path):
+                    with open(cache_path, 'r', encoding='utf-8') as f:
+                        cache = json.load(f)
+                cache[company_clean] = data
+                with open(cache_path, 'w', encoding='utf-8') as f:
+                    json.dump(cache, f, indent=2)
+                print(f"  [+] Saved '{company}' details to local contact cache (via OpenRouter).")
+            except Exception as cache_err:
+                print(f"  [!] Failed to save contact to cache: {cache_err}")
+        return data
     except Exception as e:
         print(f"  [!] Gemini email discovery failed: {e}")
         if "quota" in str(e).lower() or "429" in str(e) or "resource_exhausted" in str(e).lower():
-            print("  [!] Gemini quota exhausted. Switching to OpenRouter fallback for contact discovery...")
-            gemini_quota_exceeded = True
-            # Immediately try OpenRouter fallback for THIS company instead of returning None
+            print("  [!] Gemini quota exhausted or rate-limit retry limit hit. Switching to OpenRouter fallback...")
+            # Immediately try OpenRouter fallback for THIS company
             data = _discover_contact_via_openrouter(company, company_url)
             if data:
                 try:
@@ -795,9 +1060,10 @@ Do not output anything else.
             return data
         return None
 
+
 def generate_tailored_text(client, resume_text, company, role, job_desc_text, company_domain):
-    """Uses OpenRouter free tier to rewrite resume sections emphasizing skills relevant to the target company/role."""
-    print(f"  └─ Generating tailored resume content for {company} via OpenRouter...")
+    """Uses Gemini 2.5 Flash to rewrite resume sections emphasizing skills relevant to the target company/role."""
+    print(f"  └─ Generating tailored resume content for {company} via Gemini...")
 
     prompt = f"""You are a professional resume optimization expert. Given the candidate's resume and a target company/role, 
 rewrite specific resume sections to emphasize the most relevant skills and achievements for this specific opportunity.
@@ -818,22 +1084,10 @@ Company Domain: {company_domain}
 Job Description Context:
 {job_desc_text[:2000] if job_desc_text else 'No job description available. Infer from company and role.'}
 
-Respond with a JSON object with these exact keys:
-- "skills_line": The candidate's skills line reordered to put the most relevant languages/frameworks first for this company. Only include skills the candidate actually has.
-- "experience_bullets": An array of exactly 4 strings. The 4 experience bullets from the Founder & Technical Lead section, rewritten to emphasize aspects most relevant to this company's stack. Keep the same achievements, just shift emphasis.
-- "project1_description": An array of exactly 2 strings. The 2 bullet points for SentinelLog-AI project, rewritten to emphasize relevance to this company. Keep same achievements.
-- "project2_description": An array of exactly 2 strings. The 2 bullet points for RAG Engine project, rewritten to emphasize relevance to this company. Keep same achievements.
+Respond with a JSON object containing the tailored skills, experience bullets, and project descriptions.
 """
-
-    schema_props = {
-        "skills_line": {"type": "string"},
-        "experience_bullets": {"type": "array", "items": {"type": "string"}},
-        "project1_description": {"type": "array", "items": {"type": "string"}},
-        "project2_description": {"type": "array", "items": {"type": "string"}}
-    }
-
     try:
-        result = openrouter_chat(prompt, json_schema_properties=schema_props, temperature=0.2)
+        result = gemini_structured_chat(client, prompt, response_schema=TailoredResume, temperature=0.2)
         if isinstance(result, dict) and "skills_line" in result:
             # Convert dict to a simple namespace object so .attribute access works
             class TailoredResult:
@@ -1108,18 +1362,82 @@ def main():
             
             print(f"\n[{target_label} Match {current_matched+1}/{target_count}] Evaluating {company} - '{role}' ({location})...")
             
-            # Step 1: Contact & Domain Discovery using Search Grounding
-            contact_info = discover_company_contact(client, company, p.get('company_url'))
+            # Step 1: Contact & Domain Discovery
+            # Optimize: If we already have a verified founder email in the posting, use it directly to save API quota!
+            contact_info = None
+            if p.get('founder_email') and isinstance(p['founder_email'], str) and "@" in p['founder_email']:
+                founder_email = p['founder_email'].strip()
+                if founder_email.lower() not in ["null", "none", ""]:
+                    is_valid, reason = validate_email_domain(founder_email)
+                    if is_valid and not _is_generic_guessed_email(founder_email):
+                        print(f"  [✓] Using pre-discovered contact email from search phase: {founder_email}")
+                        contact_info = {
+                            'company_domain': p.get('company_url') or founder_email.split('@')[1],
+                            'contacts': [{
+                                'name': p.get('founder_name') or 'Founder',
+                                'title': p.get('founder_title') or 'CEO/Founder',
+                                'email': founder_email,
+                                'source': 'Search Phase'
+                            }],
+                            'contact_email': founder_email,
+                            'email_found_on_web': True,
+                            'reasoning': 'Discovered during search grounding phase'
+                        }
             
-            verified_email = None
+            if not contact_info:
+                contact_info = discover_company_contact(client, company, p.get('company_url'))
+            
+            # Collect all verified emails (multi-contact support)
+            all_contacts = []
+            
+            # Check contacts array first (new format)
+            if contact_info and contact_info.get("contacts"):
+                for c in contact_info["contacts"]:
+                    email = c.get("email")
+                    if email and isinstance(email, str) and "@" in email:
+                        email = email.strip()
+                        if email.lower() not in ["null", "none", ""]:
+                            all_contacts.append({
+                                'name': c.get('name', 'Hiring Team'),
+                                'title': c.get('title', ''),
+                                'email': email
+                            })
+            
+            # Also check backward-compatible contact_email
             if contact_info and contact_info.get("contact_email"):
                 email_candidate = str(contact_info.get("contact_email")).strip()
                 if email_candidate.lower() not in ["null", "none", ""] and "@" in email_candidate:
-                    verified_email = email_candidate
+                    # Don't duplicate
+                    existing_emails = {c['email'].lower() for c in all_contacts}
+                    if email_candidate.lower() not in existing_emails:
+                        all_contacts.append({
+                            'name': 'Hiring Team',
+                            'title': '',
+                            'email': email_candidate
+                        })
             
-            if not verified_email:
-                print(f"  [-] Skipping: No verified contact email found on the web for '{company}' (Reasoning: {contact_info.get('reasoning') if contact_info else 'Search failed'})")
+            # Check if we got founder info from the search phase
+            if p.get('founder_email') and isinstance(p['founder_email'], str) and "@" in p['founder_email']:
+                founder_email = p['founder_email'].strip()
+                if founder_email.lower() not in ["null", "none", ""]:
+                    existing_emails = {c['email'].lower() for c in all_contacts}
+                    if founder_email.lower() not in existing_emails:
+                        # Validate founder email from search
+                        is_valid, reason = validate_email_domain(founder_email)
+                        if is_valid and not _is_generic_guessed_email(founder_email):
+                            all_contacts.insert(0, {  # Insert at front — founder has priority
+                                'name': p.get('founder_name', 'Founder'),
+                                'title': p.get('founder_title', 'CEO/Founder'),
+                                'email': founder_email
+                            })
+            
+            if not all_contacts:
+                print(f"  [-] Skipping: No verified contact email found for '{company}' (Reasoning: {contact_info.get('reasoning') if contact_info else 'Search failed'})")
                 continue
+            
+            # Show discovered contacts
+            for c in all_contacts:
+                print(f"  [✓] Contact: {c['name']} ({c['title']}) — {c['email']}")
                 
             # Fetch job description text
             job_desc_text = ""
@@ -1130,8 +1448,14 @@ def main():
                     print(f"  └─ Successfully fetched {len(job_desc_text)} chars.")
                 else:
                     print("  └─ Direct job page scraping blocked; using company metadata fallback.")
+            
+            # Use the primary (first) contact for email personalization
+            primary_contact = all_contacts[0]
+            verified_email = primary_contact['email']
+            contact_name = primary_contact['name'] if primary_contact['name'] != 'Hiring Team' else None
                     
             # Build prompt for Step 2 (Stack Matching & Personalization)
+            greeting_name = contact_name if contact_name else "Hiring Team"
             prompt = f"""
 You are an Advanced Lead Generation & Outreach Engineer. Analyze the company, job role, and candidate details to evaluate matching and draft an outreach email.
 
@@ -1155,6 +1479,7 @@ Discovered Job Posting:
 Contact Details (Verified from Google Search):
 - Official Domain: {contact_info.get('company_domain')}
 - Verified Contact Email: {verified_email}
+- Contact Person Name: {greeting_name}
 
 Your Tasks:
 1. Determine if this job role or the company matches the candidate's core programming languages (TypeScript, Python, JavaScript, Java, C, C++).
@@ -1162,7 +1487,7 @@ Your Tasks:
 3. Draft a personalized cold email following this exact structure and style, but customize the details to align with the company ({company}) and the job description:
 
 Structure of the Email:
-- **Greeting**: "Greetings [Receiver's Name/Hiring Team]," (if a name is inferred from the email/domain, use it, else default to Hiring Team).
+- **Greeting**: "Greetings {greeting_name}," (use the contact person's name provided above).
 - **Paragraph 1 (Intro)**: "I am Hitesh Kumar Singh, a final-year undergraduate pursuing a Bachelor of Computer Applications (BCA) from the University of Mysore. I am seeking an Internship opportunity with the esteemed {company} in any domain the team finds me a fit (with a strong preference for backend development, AI/ML, or data engineering roles)." (Modify the preference slightly to match the role if it's explicitly backend, AI/ML, frontend, full-stack, etc.).
 - **Paragraph 2 (Primary Experience)**: Describe your experience as Founder & Technical Lead at PropelAI Technologies. Customize this paragraph to emphasize the technologies, databases, frameworks, or security/systems aspects that are most relevant to the target company's stack and business focus. Keep the details factual to your resume (PropTech SaaS MVP, Node.js, Python, PostgreSQL, RLS, geofencing, digital ledger).
 - **Paragraph 3 (Projects & PORs)**: Describe your leadership role managing full-stack deployments and GTM strategy, and mention key projects (such as the SentinelLog-AI network security pipeline or the pgvector RAG engine). Highlight the project that is most relevant to the target company's job description.
@@ -1182,36 +1507,66 @@ Ensure the drafted email strictly adheres to this structure and matches the tone
 """
 
             try:
-                print("  └─ Sending prompt to OpenRouter for stack evaluation and drafting...")
-                schema_props = {
-                    "matches_stack": {"type": "boolean"},
-                    "reason": {"type": "string"},
-                    "company_domain": {"type": "string"},
-                    "contact_email": {"type": "string"},
-                    "email_subject": {"type": "string"},
-                    "email_body": {"type": "string"}
-                }
-                res = openrouter_chat(prompt, json_schema_properties=schema_props, temperature=0.2)
+                if gemini_quota_exceeded:
+                    raise GeminiQuotaExhaustedError("Gemini quota previously exhausted")
+                
+                print("  └─ Sending prompt to Gemini for stack evaluation and drafting...")
+                res = gemini_structured_chat(client, prompt, response_schema=MatchResult, temperature=0.2)
                             
                 if isinstance(res, dict) and res.get("matches_stack"):
-                    # Resume document attachments are disabled per user request. We do not generate tailored docx.
+                    # Store all contacts for multi-send support
                     matched_companies[company] = {
                         'role': role,
                         'apply_link': apply_link,
                         'location': location,
-                        'domain': res.get('company_domain', ''),
-                        'contact_email': res.get('contact_email', verified_email),
+                        'domain': contact_info.get('company_domain', ''),
+                        'contact_email': verified_email,  # Primary contact — always use the verified one
+                        'all_contacts': all_contacts,  # All contacts for multi-send
                         'subject': res.get('email_subject', ''),
                         'body': res.get('email_body', ''),
                         'is_india': is_india,
                         'tailored_resume': None
                     }
-                    print(f"  [+] Match Approved! Verified Contact: {res.get('contact_email', verified_email)}")
+                    contact_names = ", ".join([f"{c['name']} ({c['email']})" for c in all_contacts])
+                    print(f"  [+] Match Approved! Contacts: {contact_names}")
                 else:
                     reason = res.get('reason', 'Unknown') if isinstance(res, dict) else 'API Error'
                     print(f"  [-] Match Rejected: {reason}")
+            except GeminiQuotaExhaustedError:
+                print("  [!] Gemini daily quota exhausted during evaluation. Switching permanently to OpenRouter...")
+                gemini_quota_exceeded = True
+                try:
+                    print("  └─ Sending prompt to OpenRouter fallback for stack evaluation...")
+                    schema_props = {
+                        "matches_stack": {"type": "boolean"},
+                        "reason": {"type": "string"},
+                        "company_domain": {"type": "string"},
+                        "contact_email": {"type": "string"},
+                        "email_subject": {"type": "string"},
+                        "email_body": {"type": "string"}
+                    }
+                    res = openrouter_chat(prompt, json_schema_properties=schema_props, temperature=0.2)
+                    if isinstance(res, dict) and res.get("matches_stack"):
+                        matched_companies[company] = {
+                            'role': role,
+                            'apply_link': apply_link,
+                            'location': location,
+                            'domain': contact_info.get('company_domain', ''),
+                            'contact_email': verified_email,
+                            'all_contacts': all_contacts,
+                            'subject': res.get('email_subject', ''),
+                            'body': res.get('email_body', ''),
+                            'is_india': is_india,
+                            'tailored_resume': None
+                        }
+                        print(f"  [+] Match Approved via OpenRouter! Contacts: {verified_email}")
+                    else:
+                        reason = res.get('reason', 'Unknown') if isinstance(res, dict) else 'API Error'
+                        print(f"  [-] Match Rejected via OpenRouter: {reason}")
+                except Exception as or_err:
+                    print(f"  [-] OpenRouter fallback also failed: {or_err}")
             except Exception as e:
-                print(f"  [-] OpenRouter evaluation failed: {e}")
+                print(f"  [-] Gemini evaluation failed: {e}")
 
     # Evaluate India list (up to the total target limit)
     evaluate_postings_list(india_postings, total_target, "India", is_india=True)
@@ -1231,15 +1586,19 @@ Ensure the drafted email strictly adheres to this structure and matches the tone
         print("\n" + "="*80)
         print("DRY RUN MODE: Outputting outreach drafts to terminal.")
         print("="*80)
+        total_emails = 0
         for comp, info in matched_companies.items():
+            contacts = info.get('all_contacts', [{'name': 'Primary', 'email': info['contact_email']}])
             print(f"\nCompany: {comp} (Domain: {info['domain']}) [India: {info['is_india']}]")
             print(f"Role: {info['role']}")
-            print(f"Contact Email: {info['contact_email']}")
-            print(f"Tailored Resume: {info.get('tailored_resume', 'N/A')}")
+            print(f"Contacts ({len(contacts)}):")
+            for c in contacts:
+                print(f"  → {c.get('name', 'Unknown')} ({c.get('title', 'N/A')}) — {c['email']}")
             print(f"Subject: {info['subject']}")
             print(f"Body:\n{info['body']}")
             print("-" * 50)
-        print("\n[+] Dry run finished successfully.")
+            total_emails += len(contacts)
+        print(f"\n[+] Dry run finished successfully. {len(matched_companies)} companies, {total_emails} total emails would be sent.")
     else:
         print("\n[*] Connecting securely to Gmail API...")
         gmail_service = get_gmail_service(args.non_interactive)
@@ -1250,22 +1609,51 @@ Ensure the drafted email strictly adheres to this structure and matches the tone
             send_summary_to_candidate(gmail_service, {}, args.send)
             return
 
+        sent_count = 0
+        skipped_count = 0
+        
         if args.send:
             print("\n[*] Sending outreach emails directly via Gmail...")
             for comp, info in matched_companies.items():
-                print(f"  └─ Sending email to {comp} ({info['contact_email']}) without resume attachment...")
-                sent_msg = send_gmail_email(gmail_service, info['contact_email'], info['subject'], info['body'], resume_path=None)
-                if sent_msg:
-                    print(f"     [+] Successfully sent email (ID: {sent_msg['id']})")
-            print("\n[+] All outreach emails have been successfully sent!")
+                contacts = info.get('all_contacts', [{'name': 'Primary', 'email': info['contact_email']}])
+                for contact in contacts:
+                    email_addr = contact['email']
+                    contact_name = contact.get('name', 'Unknown')
+                    
+                    # Final MX validation before sending
+                    is_valid, reason = validate_email_domain(email_addr)
+                    if not is_valid:
+                        print(f"  [!] SKIPPING {email_addr} — MX validation failed: {reason}")
+                        skipped_count += 1
+                        continue
+                    
+                    print(f"  └─ Sending to {comp} → {contact_name} ({email_addr})...")
+                    sent_msg = send_gmail_email(gmail_service, email_addr, info['subject'], info['body'], resume_path=None)
+                    if sent_msg:
+                        print(f"     [+] Successfully sent (ID: {sent_msg['id']})")
+                        sent_count += 1
+            print(f"\n[+] Email sending complete! Sent: {sent_count}, Skipped (bad domain): {skipped_count}")
         else:
             print("\n[*] Creating pending drafts in Gmail...")
             for comp, info in matched_companies.items():
-                print(f"  └─ Creating draft for {comp} ({info['contact_email']}) without resume attachment...")
-                draft = stage_gmail_draft(gmail_service, info['contact_email'], info['subject'], info['body'], resume_path=None)
-                if draft:
-                    print(f"     [+] Successfully staged draft (ID: {draft['id']})")
-            print("\n[+] All outreach drafts have been successfully staged in your Gmail Inbox!")
+                contacts = info.get('all_contacts', [{'name': 'Primary', 'email': info['contact_email']}])
+                for contact in contacts:
+                    email_addr = contact['email']
+                    contact_name = contact.get('name', 'Unknown')
+                    
+                    # Final MX validation before staging
+                    is_valid, reason = validate_email_domain(email_addr)
+                    if not is_valid:
+                        print(f"  [!] SKIPPING {email_addr} — MX validation failed: {reason}")
+                        skipped_count += 1
+                        continue
+                    
+                    print(f"  └─ Creating draft for {comp} → {contact_name} ({email_addr})...")
+                    draft = stage_gmail_draft(gmail_service, email_addr, info['subject'], info['body'], resume_path=None)
+                    if draft:
+                        print(f"     [+] Successfully staged draft (ID: {draft['id']})")
+                        sent_count += 1
+            print(f"\n[+] Draft staging complete! Staged: {sent_count}, Skipped (bad domain): {skipped_count}")
         
         send_summary_to_candidate(gmail_service, matched_companies, args.send)
 

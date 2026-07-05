@@ -1,86 +1,172 @@
 [
   {
-    "company": "Salesforce",
-    "company_url": "https://www.salesforce.com/company/careers/",
-    "role": "Software Engineer Intern (Futureforce - Summer 2027)",
-    "location": "Bangalore / Hyderabad, India",
-    "apply_link": "https://www.salesforce.com/company/careers/university-recruiting/"
+    "company": "Kognify Matrix Labs",
+    "company_url": "https://kognifymatrixlabs.ai",
+    "role": "AI/ML Intern (implied from careers page, apply via email)",
+    "location": "Remote",
+    "apply_link": "hr@kognifymatrixlabs.ai",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": "hr@kognifymatrixlabs.ai"
   },
   {
-    "company": "Google",
-    "company_url": "https://careers.google.com/",
-    "role": "Software Engineering Intern, Summer 2026",
-    "location": "Hyderabad, Telangana, India",
-    "apply_link": "https://careers.google.com/jobs/results/1234567890/"
+    "company": "Uptitude",
+    "company_url": "https://uptitude.com",
+    "role": "Data Engineering Intern (from previous search, implied opportunities on careers page)",
+    "location": "Gurgaon, India",
+    "apply_link": "https://uptitude.com/careers",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "Microsoft",
-    "company_url": "https://careers.microsoft.com/v2/global/en/students/internships.html",
-    "role": "Software Engineer Internship 2026",
-    "location": "Bangalore / Hyderabad / Pune / Noida / Gurugram / Mumbai, India",
-    "apply_link": "https://careers.microsoft.com/v2/global/en/students/internships.html"
+    "company": "Kaagaz Mitra",
+    "company_url": "https://kaagazmitra.com",
+    "role": "Digital Operations Intern",
+    "location": "Remote",
+    "apply_link": "https://kaagazmitra.com/apply-for-internship?role=Digital%20Operations%20Intern",
+    "founder_name": "Snehanshu Gandhi, Gaurav Shrishrimal, Tamanjit Bindra",
+    "founder_title": "Founders",
+    "founder_email": "hello@kaagaz.app"
   },
   {
-    "company": "Cisco",
-    "company_url": "https://www.cisco.com/c/en/us/about/careers/jobs.html",
-    "role": "Software Engineer \u2013 (Summer Internship) \u2013 India Engineering",
+    "company": "Kaagaz Mitra",
+    "company_url": "https://kaagazmitra.com",
+    "role": "Customer Support Intern",
+    "location": "Remote",
+    "apply_link": "https://kaagazmitra.com/apply-for-internship?role=Customer%20Support%20Intern",
+    "founder_name": "Snehanshu Gandhi, Gaurav Shrishrimal, Tamanjit Bindra",
+    "founder_title": "Founders",
+    "founder_email": "hello@kaagaz.app"
+  },
+  {
+    "company": "CoinDCX",
+    "company_url": "https://coindcx.com",
+    "role": "Intern - Automation & Data Analyst",
     "location": "Bangalore, India",
-    "apply_link": "https://jobs.cisco.com/jobs/Software-Engineer-Intern-Summer-Internship-India-Engineering-1449112"
+    "apply_link": "https://nextleap.app/internship-jobs/coindcx-intern-automation-data-analyst",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "Sustainability Economics.ai",
-    "company_url": "https://sustainabilityeconomics.ai/",
+    "company": "CoinDCX",
+    "company_url": "https://coindcx.com",
+    "role": "Backend Developer Intern",
+    "location": "Bengaluru, India",
+    "apply_link": "https://myinternships.in/internships/coindcx/backend-developer-intern",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
+  },
+  {
+    "company": "CoinDCX",
+    "company_url": "https://coindcx.com",
     "role": "Machine Learning Intern",
-    "location": "Bengaluru, Karnataka, India",
-    "apply_link": "https://www.talent.com/view?id=1e51b689a770&context=search&src=search"
+    "location": "Mumbai, India (Remote)",
+    "apply_link": "https://myinternships.in/internships/coindcx/machine-learning-intern",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "CAW.Tech (CAW Studios)",
-    "company_url": "https://cawstudios.com/careers/",
-    "role": "AI / ML Engineer Intern (LangChain, RAG, Agentic AI)",
-    "location": "Hyderabad, India",
-    "apply_link": "https://cawstudios.com/careers/"
+    "company": "CoinDCX",
+    "company_url": "https://coindcx.com",
+    "role": "Data Science Intern",
+    "location": "Bengaluru, India",
+    "apply_link": "https://myinternships.in/internships/coindcx/data-science-intern",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "AVK Tech",
-    "company_url": "https://avktech.in/careers",
-    "role": "AI / ML Product Engineer Intern (NLP, LLM, Product)",
-    "location": "Hyderabad, India",
-    "apply_link": "https://avktech.in/careers"
+    "company": "CoinDCX",
+    "company_url": "https://coindcx.com",
+    "role": "Business Analyst Intern (Data)",
+    "location": "Whitefield, Bengaluru, India",
+    "apply_link": "https://myinternships.in/internships/coindcx/business-analyst-intern-data-2",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "Soothsayer Analytics",
-    "company_url": "https://www.soothsayeranalytics.com/careers/",
-    "role": "AI Intern (Data Science, ML)",
-    "location": "Hyderabad, India",
-    "apply_link": "https://www.soothsayeranalytics.com/careers/"
+    "company": "CoinDCX",
+    "company_url": "https://coindcx.com",
+    "role": "HR Data Analyst Intern",
+    "location": "Powai, Mumbai, India (Hybrid)",
+    "apply_link": "https://myinternships.in/internships/coindcx/hr-data-analyst-intern",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "Harman",
-    "company_url": "https://www.harman.com/careers",
-    "role": "AI & Machine Learning Intern 2026",
-    "location": "Bangalore, India",
-    "apply_link": "https://www.harman.com/careers"
+    "company": "Entrupy",
+    "company_url": "https://www.entrupy.com",
+    "role": "ML Intern",
+    "location": "Bangalore, India (Remote or Hybrid)",
+    "apply_link": "https://www.entrupy.com/careers",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "Tektronix",
-    "company_url": "https://www.tek.com/en/careers",
-    "role": "Software & AI Intern 2026",
-    "location": "Bangalore, India",
-    "apply_link": "https://www.tek.com/en/careers"
+    "company": "GroMo",
+    "company_url": "https://gromo.in",
+    "role": "Marketing Intern (Not technical, but YC-backed growing startup)",
+    "location": "Gurgaon, India",
+    "apply_link": "https://gromo.in/careers",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": "contact@gromo.in"
   },
   {
-    "company": "Axil Nexa Pvt. Ltd.",
-    "company_url": "https://axilnexa.com/careers",
-    "role": "AI/ML Java Python Node.js Engineer Intern",
-    "location": "Gurugram, India",
-    "apply_link": "https://axilnexa.com/careers"
+    "company": "Elovient Software Solutions",
+    "company_url": null,
+    "role": "Full-Stack Software Developer Intern",
+    "location": "Mumbai, India",
+    "apply_link": "https://wellfound.com/jobs/2658428-full-stack-software-developer-intern",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   },
   {
-    "company": "Quest Global",
-    "company_url": "https://www.quest-global.com/careers/",
-    "role": "AI Intern 2026",
-    "location": "Hyderabad & Bangalore, India",
-    "apply_link": "https://www.quest-global.com/careers/"
+    "company": "Internshala",
+    "company_url": "https://internshala.com",
+    "role": "Software Development Engineering Intern",
+    "location": "Gurgaon, India",
+    "apply_link": "https://unstop.com/internships/software-development-engineering-internship-in-gurgaon-at-internshala/668407",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": "helpdesk@internshala.com"
+  },
+  {
+    "company": "Alchemyst AI",
+    "company_url": null,
+    "role": "Full Stack AI Intern",
+    "location": "Bengaluru, India (Remote)",
+    "apply_link": "https://wellfound.com/jobs/2849999-full-stack-ai-intern",
+    "founder_name": "Uttaran Nayak, Anuran Roy",
+    "founder_title": "Co-Founder, CEO/CTO",
+    "founder_email": null
+  },
+  {
+    "company": "Dobbe AI",
+    "company_url": null,
+    "role": "Data Science Intern",
+    "location": "Delhi, India (Remote)",
+    "apply_link": "https://wellfound.com/jobs/2845603-data-science-intern",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
+  },
+  {
+    "company": "Dobbe AI",
+    "company_url": null,
+    "role": "AI Engineer Intern (Full-Stack + Agentic AI)",
+    "location": "Delhi, India (Remote)",
+    "apply_link": "https://wellfound.com/jobs/2845606-ai-engineer-intern-full-stack-agentic-ai",
+    "founder_name": null,
+    "founder_title": null,
+    "founder_email": null
   }
 ]
