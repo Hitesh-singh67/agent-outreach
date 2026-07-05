@@ -1375,5 +1375,68 @@
     "email_source_url": "https://www.cloudsek.com/press/cloudsek-becomes-first-indian-origin-cybersecurity-company-to-receive-investment-from-a-u-s-state-fund",
     "email_found_on_web": true,
     "reasoning": "I followed the prescribed search strategy. My initial searches for key personnel (CEO, Founder, CTO, HR Manager) on LinkedIn, the company's official website, Wellfound/AngelList, Crunchbase, and GitHub did not yield any explicitly listed personal email addresses. While generic company emails (info@cloudsek.com, legal@cloudsek.com, dpo@cloudsek.com) were found on the official website, these are not personal emails. Finally, during the search for press releases, I found a specific media contact, Shashank Shekhar, with a verified email address listed in an official CloudSEK press release."
+  },
+  "weekday india": {
+    "company_domain": "weekday.works",
+    "contact_email": "founders@weekday.works",
+    "email_source_url": "https://www.weekday.works/contact",
+    "email_found_on_web": true,
+    "reasoning": "The official website for Weekday India, an AI-powered recruitment platform, is weekday.works. The 'Contact' page on this website explicitly provides 'founders@weekday.works' as an email address. This email address is suitable as it targets decision-makers (founders) and is not a customer support, legal, or privacy-related contact."
+  },
+  "adler inc.": {
+    "company_domain": "adler-inc.com",
+    "contact_email": "michelle@adler-inc.com",
+    "email_source_url": "https://www.adler-inc.com/contact/",
+    "email_found_on_web": true,
+    "reasoning": "The official website for a company named 'Adler-Inc' is adler-inc.com. The contact page and news listing on this website provide a direct email for Michelle Adler Rogoff, who is described as a key figure in the company, indicating a leadership or principal role. This email (michelle@adler-inc.com) fits the criteria for a direct contact email of a technical decision-maker or HR contact."
+  },
+  "bexo.ai": {
+    "company_domain": "bexotechnologies.com",
+    "contact_email": "bexotechnologies@gmail.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhGRrs84emzGOUKBLhPU2Bh0G050LIeSip89KZ2Rbgs3l4EVxpCSvcgB1rIRF0cjRzza-k5f3CpLn2RIr1EICEBTOHfLUqUHwAXHnrDEa2RAEbjFT_EG786TgZZ6BCrL97",
+    "email_found_on_web": true,
+    "reasoning": "The official website for BEXO.AI is bexotechnologies.com. This domain is consistently referenced in search results when discussing 'Bexo AI' as an IT solutions provider and for job-related information. The email address 'bexotechnologies@gmail.com' is listed on the 'About Us' and 'Contact Us' pages of bexotechnologies.com as a general contact email. While not a specific careers or HR email, it is the primary general contact provided by the company and is not among the excluded categories (legal, privacy, security, etc.). No dedicated recruiting/career emails or direct contact emails of technical decision-makers or HR contacts were explicitly found on the website or in other reliable sources."
+  },
+  "truviq systems": {
+    "company_domain": "truviqsystems.com",
+    "contact_email": "resumes@truviqsystems.zohorecruitmail.in",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElMmZftd9sYgVGlnqdRRwWKEys98VwH0GvaO5Fu9RTbFKEBPtvj31AzGfM7VHans_4__R_OaHIt5voTavgzJ8AFFf0tRMU75Fecb10bP7uGqLJQVdV2PLrg8y1NuPvhzV7u5Bxe6G3HacoMw==",
+    "email_found_on_web": true,
+    "reasoning": "The company's official website is truviqsystems.com. A career/recruiting email was found on their 'Jobs at Truviq' page, explicitly stating 'Can't find any job matches? Share your resume to resumes@truviqsystems.zohorecruitmail.in'. This email address is intended for career-related inquiries."
+  },
+  "globalfoundries": {
+    "company_domain": "gf.com",
+    "contact_email": "gregg.bartlett@gf.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHJMQzHOKwG26ANQFqX35Gu-C9Pv5cP6vKDintgH8FO0BBAHWVr1fGLd9de-Tia_v2n8bP-jVSMSUWuFyiFsDIOi49r9RjY1Tqtq7iUGSlm5HjAEGdgfifBgLBjKHmmlvSSyDoOrycYHrQ",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for GlobalFoundries is 'gf.com'. A verified email contact for Gregg Bartlett, the Chief Technology Officer (CTO) at GlobalFoundries, was found as 'gregg.bartlett@gf.com'. This email address is suitable as it belongs to a technical decision-maker within the company, adhering to the specified criteria. Although 'usaccommodations@gf.com' was found for employment accommodation requests, the CTO's direct email is a more appropriate contact for a 'technical decision-maker' as requested."
+  },
+  "amerisourcebergen": {
+    "company_domain": "amerisourcebergen.com",
+    "contact_email": "abccareers@amerisourcebergen.com",
+    "email_source_url": "https://www.amerisourcebergen.com/contact-us",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for AmerisourceBergen is amerisourcebergen.com. It is important to note that AmerisourceBergen officially became Cencora on August 30, 2023, and is in the process of transitioning content to cencora.com. A verified email contact for careers/recruiting was found on the 'Contacting AmerisourceBergen' page (amerisourcebergen.com/contact-us), explicitly stating 'Email abccareers@amerisourcebergen.com for support' regarding careers or job opportunities."
+  },
+  "auctane": {
+    "company_domain": "auctane.com",
+    "contact_email": "praca@auctane.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLiTyacsZ-Kjmoi8lqwiOQUqJXicQ9R0m-YH77jtRsy6pS8H0m6JdXOWl2G8xZF0QONCBhg6UVNt21YvGcKBy_VyxyEPu76pLCJdlzVquoSAwn3vtqN7RQYWp83MWl9Ap7",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Auctane is auctane.com. A verified email contact for general recruiting/career inquiries is praca@auctane.com, explicitly mentioned on their contact and careers pages for sending CVs and addressing HR questions. No direct contact emails for specific technical decision-makers or HR managers were found that fit the specified criteria without being a guess or a general corporate email not designated for recruiting/HR. The email 'dave.lenhart@auctane.com' was found on a government contractor page, but the role of Dave Lenhart was not explicitly stated as a technical decision-maker or HR contact, and thus not included."
+  },
+  "abb": {
+    "company_domain": "abb.com",
+    "contact_email": "employerbranding@ch.abb.com",
+    "email_source_url": "https://www.eth-gethired.ch/en/company/abb-schweiz-ag",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for ABB is 'abb.com'. The email 'employerbranding@ch.abb.com' was identified on the ABB Schweiz AG career information page hosted on eth-gethired.ch, explicitly stated as a contact for those interested in starting a career with ABB. Other HR-related emails, such as 'US-Askhr@abb.com', were explicitly noted not to accept resumes or applications, and general inquiry emails were not specific to careers. The 'hr@abb.com' email was found on a third-party FAQ site and not corroborated by an official ABB source as a general career contact."
+  },
+  "caterpillar": {
+    "company_domain": "caterpillar.com",
+    "contact_email": "personalmanagement@cat.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbo7MlGB1e1LbNig6tnViIktWRJknkTR8tg-nQ-rFTrg_nhRjWylgZp4zkdqRUOxxwtGM6sIYI6Fa2zEckS0py7Qt9IQTaQLqvXYvpmkUuRMjXoyWL3vdbEbUW2bhIFMJ_55_9VXkx3_U2bRkmo0kJn8_4xrOTiWAwuZ-aTSB7YfFIs2FLxy8=",
+    "email_found_on_web": true,
+    "reasoning": "The official website domain for Caterpillar is caterpillar.com. A verified email contact for careers/HR was found on the 'Contact Jobs & Careers' page of Caterpillar Energy Solutions GmbH, a subsidiary of Caterpillar. The email provided is personalmanagement@cat.com, which is an HR management contact. The domain cat.com is a flagship brand of Caterpillar and is used across many of its products and services."
   }
 }
