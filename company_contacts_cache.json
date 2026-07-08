@@ -1926,19 +1926,6 @@
     "email_source_url": null,
     "reasoning": "The official domain for SentinelOne is known to be sentinelone.com from general knowledge and the provided hint. However, I do not have any specific, verified email addresses (such as for the CEO, CTO, HR, or official recruiting) from my training data that I am 100% confident exist and are active. In strict adherence to the rules prohibiting fabrication or guessing of email addresses, all email fields are set to null."
   },
-  "thales": {
-    "company_domain": "thalesgroup.com",
-    "contact_email": "info@thalesgroup.com",
-    "contacts": [
-      {
-        "email": "info@thalesgroup.com",
-        "source": "training data"
-      }
-    ],
-    "email_found_on_web": false,
-    "email_source_url": null,
-    "reasoning": "Based on standard corporate structure and known official domains, the primary contact email is provided. Verification was limited to training data sources."
-  },
   "borgwarner": {
     "company_domain": "borgwarner.com",
     "contacts": [],
@@ -2157,5 +2144,220 @@
     "email_source_url": "https://www.hp.com",
     "email_found_on_web": false,
     "reasoning": "Based on training data, hp.com is HP's official domain. Verified executive emails (CEO and CTO) and the careers@hp.com contact are known from historical data. HR head email could not be confirmed with 100% certainty. All other emails excluded per rules."
+  },
+  "thales": {
+    "company_domain": "thalesgroup.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The official domain for Thales Group is thalesgroup.com, which is confirmed by the provided hint and my training knowledge. However, I do not have any specific, verified email addresses (CEO, CTO, HR, or careers) for Thales from my training data that I am 100% confident are real and active. Following the strict rules to never fabricate or guess emails, all email fields are set to null."
+  },
+  "mongodb": {
+    "company_domain": "mongodb.com",
+    "contacts": [
+      {
+        "name": null,
+        "title": "Recruiting / Careers email (verified from training data) ",
+        "email": "careers@mongodb.com",
+        "source": "Observed in MongoDB job postings within training data"
+      }
+    ],
+    "contact_email": "careers@mongodb.com",
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have verified from training data that the email careers@mongodb.com appears in MongoDB job postings. No verified personal emails for CEO, CTO, or HR head are available in my training data, so only the careers contact is included."
+  },
+  "mks": {
+    "company_domain": "mksinst.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The domain 'mksinst.com' is inferred from the provided URL hint. However, without internet access, I cannot verify specific email addresses or confirm their existence. All email fields are set to null to comply with the requirement of only returning 100% verified contacts from training data. No specific emails like careers@mksinst.com can be confirmed without explicit evidence in my training data."
+  },
+  "transperfect": {
+    "company_domain": "transperfect.com ",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I know the company's website domain is transperfect.com from the provided hint, but I do not have any verified, specific email addresses for the CEO, CTO, HR head, or careers contact in my training data. To avoid fabricating or guessing emails, I have left all email fields null."
+  },
+  "propertyguru": {
+    "company_domain": "propertygurugroup.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for PropertyGuru could be confirmed from training data. Without web access, I cannot validate specific emails like CEO/Founder, CTO, HR Head, or careers contacts. All email fields are set to null to comply with the rule of not fabricating or guessing addresses."
+  },
+  "roche": {
+    "company_domain": "roche.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'roche.com' is confirmed as Roche's official website, no specific verified email addresses (e.g., CEO, CTO, HR, or careers) could be retrieved from my training data with 100% certainty. Rules prohibit fabricating or guessing emails, and without explicit confirmation of active addresses, all email fields are set to null."
+  },
+  "super.com": {
+    "company_domain": "super.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses found in training data for Super.com. Unable to confirm any official contact emails."
+  },
+  "dashlane": {
+    "company_domain": "dashlane.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The official website domain for Dashlane is confidently known to be dashlane.com from general knowledge and the provided hint. However, per the critical rules, I must only return email contacts I am 100% confident exist from my training data for preferred roles (CEO/Founder, CTO, HR Head, official careers/recruiting). I do not have any verified personal or departmental emails (excluding support, legal, or privacy contacts which are explicitly excluded) for Dashlane in my training data. To strictly comply with the rule against fabricating or guessing emails, all email fields are set to null."
+  },
+  "nuclear promise x": {
+    "company_domain": "npxinnovation.ca",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on the provided hint, the company domain is likely npxinnovation.ca. No verified email addresses are known from training data, so all email fields are set to null."
+  },
+  "patsnap": {
+    "company_domain": "patsnap.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified personal or official email addresses for Patsnap were found in training data. Therefore all email fields are set to null."
+  },
+  "logitech": {
+    "company_domain": "logitech.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While Logitech's official domain is confirmed as logitech.com, no specific verified email addresses for executives, HR, or careers were found in my training data. I cannot fabricate or guess emails per the critical rules. All email fields are set to null to avoid potential bounce risks."
+  },
+  "dentsu": {
+    "company_domain": "dentsu.com ",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The domain dentsu.com is known as the official website. However, I have no verified email addresses for executives or HR from my training data, so I cannot provide any contact emails without risk of fabrication."
+  },
+  "cohere": {
+    "company_domain": "cohere.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Cohere found in training data; cannot provide any contact emails."
+  },
+  "lumentum": {
+    "company_domain": "lumentum.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified email addresses for Lumentum from my training data. I cannot confirm any personal or official contact emails. Therefore all email fields are set to null."
+  },
+  "spacex": {
+    "company_domain": "spacex.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified email addresses for SpaceX contacts in my training data. To avoid providing incorrect or fabricated emails, I set all email fields to null."
+  },
+  "pfizer": {
+    "company_domain": "pfizer.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain pfizer.com is known from training data, no verified personal or executive email addresses (CEO, CTO, HR, recruiting) are present in the training data that can be confirmed without internet access. Therefore, contacts are left empty."
+  },
+  "meshy": {
+    "company_domain": "meshy.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Meshy in my training data; therefore I cannot provide any contacts."
+  },
+  "spacial ai": {
+    "company_domain": "spacial.io ",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Spacial AI are present in my training data; the domain spacial.io is taken from the provided hint and is assumed correct, but no email contacts could be confirmed."
+  },
+  "magnet forensics": {
+    "company_domain": "magnetforensics.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The official domain for Magnet Forensics is magnetforensics.com, which is well-established in public training data and matches the provided hint. However, I do not have any specific, verified email addresses (such as for the CEO, CTO, or HR) from my training data that I am 100% confident are real and active. Following the critical rules to avoid fabrication, all email fields are set to null."
+  },
+  "pear vc": {
+    "company_domain": "pear.vc",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Pear VC in my training data; therefore I cannot provide any contacts."
+  },
+  "telus digital": {
+    "company_domain": "telusdigital.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The official domain for TELUS Digital is telusdigital.com, as confirmed by the provided URL hint (jobs2.telusdigital.com) and the company's rebranding from TELUS International. However, per the critical rules, I must only provide email contacts I am 100% confident exist from my training data. I do not have any verified, specific email addresses for TELUS Digital's CEO, CTO, HR head, or official recruiting/careers team in my training data. To strictly avoid fabricating, guessing, or constructing emails, all email fields are set to null."
+  },
+  "nationgraph": {
+    "company_domain": "nationgraph.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses found in training data for NationGraph. Domain inferred from provided hint."
+  },
+  "orion health": {
+    "company_domain": "orionhealth.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "Orion Health is a known healthcare technology company with the official domain orionhealth.com. However, I do not have any specific, verified email addresses (for CEO, CTO, HR, or recruiting personnel) from my training data that I am 100% confident are real and active. In strict adherence to the rules against fabricating or guessing email contacts, all email fields have been set to null and the contacts array is empty."
+  },
+  "creatify": {
+    "company_domain": "creatify.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no confirmed or verified email addresses for Creatify in my training data. The company domain is inferred from the provided hint, but no specific contact emails could be identified. Therefore all email fields are set to null to avoid providing inaccurate information."
+  },
+  "goventi": {
+    "company_domain": "ventitechnologies.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have internet access and I am not certain of any verified email addresses for GoVenti. The domain is likely ventitechnologies.com based on the hint, but I cannot confirm any specific contact emails."
+  },
+  "kognify matrix labs": {
+    "company_domain": "kognifymatrixlabs.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about Kognify Matrix Labs or any associated email addresses in my training data. Therefore I cannot provide any contacts and must return null for all email fields."
   }
 }
