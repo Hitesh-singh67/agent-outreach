@@ -3327,5 +3327,229 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "While the official domain 'marinabaysands.com' is confirmed from the provided URL hint, specific verified email addresses for executives (CEO/Founder, CTO, HR Head) or official careers/recruiting contacts are not present in my training data. I cannot fabricate or guess emails, and without explicit confirmation of active addresses, all email fields are set to null per the critical rules."
+  },
+  "outbox.vc": {
+    "company_domain": "outbox.vc",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I recall that Outbox.vc is a venture capital firm likely using the domain outbox.vc, but I have no verified email addresses for its executives or HR in my training data. To avoid fabricating contacts, I return null for all email fields."
+  },
+  "hooman labs": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified information about Hooman Labs' official domain or specific email addresses exists in my training data. All email fields are set to null to comply with the requirement of not fabricating or guessing emails. The company domain could not be confirmed without internet access."
+  },
+  "codingal": {
+    "company_domain": "codingal.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The official domain for Codingal is confidently known to be codingal.com based on training data. However, I do not have any specific, verified email addresses (for CEO, CTO, HR, or careers) from my training data that I am 100% confident exist and are active. Following the strict instructions to never fabricate, guess, or construct emails and to set all email fields to null if not 100% sure, no email contacts are provided."
+  },
+  "pinnacleworks infotech pvt ltd": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified information about PinnacleWorks Infotech Pvt Ltd's domain or email addresses in my training data, and I cannot guess or fabricate contacts per the instructions."
+  },
+  "codenia technologies": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no reliable information about Codenia Technologies' official domain or verified email contacts in my training data."
+  },
+  "medtek.ai": {
+    "company_domain": "medtek.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Medtek.AI found in training data. Domain inferred from hint but no contact emails confirmed."
+  },
+  "meansquare.ai": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified information about 'meanSquare.ai' exists in my training data. I cannot access the internet to verify domains or email addresses. Fabricating or guessing emails violates the critical rules. All fields must remain null to avoid providing inaccurate or non-existent contact information."
+  },
+  "kaleris": {
+    "company_domain": "kaleris.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email contacts for Kaleris exist in my training data. The domain 'kaleris.com' is used based on the provided hint, but I cannot confirm specific email addresses without internet access or explicit training data references. All email fields are set to null to comply with the rule of not fabricating or guessing."
+  },
+  "sadhana it solutions": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified information about Sadhana IT Solutions' domain or email contacts exists in my training data. I cannot fabricate or guess emails, and must adhere strictly to the rule of returning null unless 100% certain. No official sources or verifiable records were available in my knowledge base."
+  },
+  "zenjade automation technology private limited": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to current or specific data about 'Zenjade Automation Technology Private Limited' in my training data. The company name appears to be specific and not widely documented, and I cannot verify its domain or email contacts without internet access. All email fields are set to null to comply with the rule of not fabricating or guessing unverified information."
+  },
+  "avyan ai": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about a company named 'Avyan AI' in my training data, including its domain or any employee email addresses. Therefore I cannot provide any contacts or domain without risking fabrication."
+  },
+  "velino ai": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "I do not have any verified information about the company 'Velino AI', its official website domain, or any specific email contacts (such as CEO, CTO, HR, or careers) from my training data. In strict adherence to the provided rules\u2014specifically not fabricating, guessing, or constructing email addresses and only returning data I am 100% confident exists\u2014I am setting the domain and all email-related fields to null."
+  },
+  "karma com solidarit\u00e9": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The company 'Karma Com Solidarit\u00e9' is not present in my training data with any verified domain or specific email contacts (CEO, Founder, HR, or careers). Following the critical rules to never fabricate or guess emails and to return null if not 100% sure, all email and domain fields are set to null."
+  },
+  "aivision21": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no reliable data indicating the official domain or verified email addresses for Aivision21. No known public contact emails exist in my training data."
+  },
+  "hortiprise": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no reliable information about Hortiprise's official domain or verified email contacts in my training data."
+  },
+  "johnson & johnson": {
+    "company_domain": "jnj.com ",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I know the corporate domain is jnj.com from the provided hint and general knowledge, but I have no verified, specific email addresses for executives, HR, or recruiting contacts in my training data that I can confirm are active and official. To avoid fabricating information, I leave all email fields null."
+  },
+  "apenir innovations pvt ltd": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified information exists in my training data about 'APENIR INNOVATIONS PVT LTD' domain or specific email contacts. Cannot fabricate or guess emails per strict rules. All fields must be null to avoid potential bounce risks."
+  },
+  "orbitxii technologies": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified domain or email contacts for 'OrbitXII technologies' exist in my training data. I cannot fabricate or guess emails due to strict verification rules. All fields are set to null to avoid returning unverified or potentially invalid information."
+  },
+  "veritech.ai software it services": {
+    "company_domain": "veritech.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no record of any verified email addresses for Veritech.AI in my training data. The company domain is inferred from the provided hint (https://veritech.ai/). No specific contact emails could be confirmed, so all email fields are set to null and the contacts list is empty."
+  },
+  "zaalima development pvt ltd": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "I have no information about 'Zaalima Development Pvt Ltd' in my training data. According to the critical rules provided, I must not fabricate, guess, or construct any domain or email addresses. Since I am not 100% sure that any specific email address or domain exists for this company, all related fields are set to null and the contacts array is empty."
+  },
+  "cfound": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "I do not have any specific, verified email addresses for the company 'CFound' from my training data, and I do not have internet access to verify them. In strict adherence to the provided rules\u2014particularly the mandate to never fabricate, guess, or construct emails and to return null rather than a potentially bouncing address\u2014I have set all email fields and the company domain to null. No names, titles, or sources could be confidently provided without risking fabrication."
+  },
+  "hipaas inc.": {
+    "company_domain": "hipaas.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified personal or official email addresses for HiPaaS Inc. were found in training data. Only the company domain is known."
+  },
+  "xapien innovatus private limited": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verifiable domain or email addresses for Xapien Innovatus Private Limited found in training data."
+  },
+  "wise nri inc.": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "I do not have any verified email contacts or confirmed official domain information for 'Wise NRI Inc.' from my training data. To strictly comply with the rules against fabricating, guessing, or constructing email addresses, I am setting all email fields and the company domain to null. I would rather provide null than risk providing a non-existent or bouncing email address."
+  },
+  "pgagi consultancy pvt. ltd.": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "I do not have any specific, verified email addresses (CEO, CTO, HR, or careers) for PGAGI Consultancy Pvt. Ltd. from my training data. Per the strict instructions to never fabricate, guess, or construct emails and to set ALL email fields to null if I am not 100% sure they exist and are active, all email-related fields are set to null. I also cannot confidently verify the official website domain from my training data without risking inaccuracy, so it is set to null as well. No internet access was used."
+  },
+  "skills nurture": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "I do not have any verified email contacts or official domain information for the company 'Skills Nurture' from my training data. To comply with the strict instruction to never fabricate or guess email addresses and to only return information I am 100% confident exists, all email fields and the domain have been set to null."
+  },
+  "kandid": {
+    "company_domain": null,
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The user requested real, verified email contacts for the company 'Kandid' and strictly instructed not to fabricate, guess, or construct any email addresses. Based on my training data, I do not have any specific, verified email addresses (such as CEO, CTO, HR, or official careers) for a company named 'Kandid'. To comply with the critical rules and avoid providing potentially bouncing or invented emails, I am setting all email fields to null and providing an empty contacts array. Additionally, without internet access, I cannot confidently verify the official website domain for the specific 'Kandid' entity intended (as there are multiple businesses with similar names), so the domain is also set to null."
+  },
+  "robro systems": {
+    "company_domain": "robrosystems.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "The domain robrosystems.com is identified from the provided hint and general knowledge of the company. However, I do not have any specific, verified email addresses (such as those for CEO, CTO, HR, or official recruiting) from my training data. In strict adherence to the rule against fabricating or guessing email contacts, all email fields have been set to null."
   }
 }
