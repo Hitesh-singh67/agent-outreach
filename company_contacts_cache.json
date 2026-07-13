@@ -3641,5 +3641,264 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "My search focused on finding verified personal email addresses for individuals at 'Orivanta Labs' following the specified strategy. I checked LinkedIn, the company's official website, Wellfound/AngelList, Crunchbase, GitHub, press releases, and blog posts. While 'Orivanta Labs' is mentioned on Wellfound as an AI startup, no specific individuals' email addresses were found. A company named 'ORIVANTA Technologies' (an IT services firm, distinct from 'Orivanta Labs' which focuses on AI solutions) has an 'info@orivanta.tech' email address listed on its contact page, but this is a general departmental email and not associated with a specific person at 'Orivanta Labs'. No personal, verified email addresses of decision-makers or explicitly listed careers/HR emails for 'Orivanta Labs' were found that meet the strict criteria of being explicitly listed and not guessed."
+  },
+  "cekura": {
+    "company_domain": "cekura.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://cekura.ai/contact",
+    "email_found_on_web": true,
+    "reasoning": "I searched Cekura's official website (cekura.ai), LinkedIn (via general search), Y Combinator, Tracxn, Crunchbase, and press releases for personal email addresses of key personnel. I identified the co-founders: Tarush Agarwal (Co-founder & CEO), Sidhant Kabra (Co-Founder & President), and Shashij Gupta (Co-Founder). However, their individual, verified email addresses were not explicitly listed on any publicly accessible webpages in the search results. The company's official website, cekura.ai, explicitly lists 'support@cekura.ai' on its 'Contact Us' page, Privacy Policy, and Terms of Service as a general contact email. This is the only explicitly found and verified email address for the company. Per the instructions, I did not construct or guess any email addresses."
+  },
+  "zyaro.ai": {
+    "company_domain": "zyaro.ai",
+    "contacts": [
+      {
+        "name": "Vaibhav Munjal",
+        "title": "Co-Founder & CEO",
+        "email": "vaibhav@zyaro.ai",
+        "source": "https://zyaro.ai/privacy-policy"
+      }
+    ],
+    "contact_email": "vaibhav@zyaro.ai",
+    "email_source_url": "https://zyaro.ai/privacy-policy",
+    "email_found_on_web": true,
+    "reasoning": "I found the email address for Vaibhav Munjal, the Co-Founder & CEO, explicitly listed on the Zyaro privacy policy page. The policy states that he is the appointed Grievance Officer and provides his email for concerns regarding personal data processing. His role as Founder is also corroborated by Wellfound (AngelList) search results."
+  },
+  "taskwiser": {
+    "company_domain": "taskwiser.co",
+    "contacts": [
+      {
+        "name": null,
+        "title": null,
+        "email": "team@taskwiser.co",
+        "source": "https://taskwiser.co/"
+      }
+    ],
+    "contact_email": "team@taskwiser.co",
+    "email_source_url": "https://taskwiser.co/",
+    "email_found_on_web": true,
+    "reasoning": "I searched LinkedIn, Taskwiser's official website (taskwiser.co), Wellfound, Crunchbase, GitHub, press releases, and blog posts for individual email addresses of decision-makers (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition). No personal, verified email addresses for specific individuals were explicitly found. The company's official website, taskwiser.co, explicitly lists 'team@taskwiser.co' as a contact email. While this is a generic email, it is the only explicitly verified email address found on a real webpage for the company. Taskwiser appears to be a small company (1-10 employees) based on Wellfound data."
+  },
+  "quickgov solutions private limited": {
+    "company_domain": "quicketsolutions.com",
+    "contacts": [
+      {
+        "name": "Akshay Singh",
+        "title": "Director",
+        "email": "asingh@quicketsolutions.com",
+        "source": "https://www.zaubacorp.com/company/QUICKGOV-SOLUTIONS-PRIVATE-LIMITED/U72900DL2021PTC378709#:~:text=Users%20may%20contact%20QUICKGOV%20SOLUTIONS%20PRIVATE%20LIMITED%20on%20its%20Email%20address%20-%20asingh%40quicketsolutions.com., https://www.indiafilings.com/company/quickgov-solutions-private-limited-U72900DL2021PTC378709#:~:text=Correspondence%20or%20inquiries%20may%20be%20sent%20to%20the%20official%20email%20address%2C%20asingh%40quicketsolutions.com., https://www.instafinancials.com/company/quickgov-solutions-private-limited/U72900DL2021PTC378709#:~:text=Email%20ID%2C%20asingh%40quicketsolutions.com%2C%20Website"
+      }
+    ],
+    "contact_email": "asingh@quicketsolutions.com",
+    "email_source_url": "https://www.zaubacorp.com/company/QUICKGOV-SOLUTIONS-PRIVATE-LIMITED/U72900DL2021PTC378709#:~:text=Users%20may%20contact%20QUICKGOV%20SOLUTIONS%20PRIVATE%20LIMITED%20on%20its%20Email%20address%20-%20asingh%40quicketsolutions.com.",
+    "email_found_on_web": true,
+    "reasoning": "The email address 'asingh@quicketsolutions.com' was explicitly found as the contact email for 'Quickgov Solutions Private Limited' on multiple company information websites: ZaubaCorp, IndiaFilings, and InstaFinancials. Akshay Singh is listed as a director of the company on these platforms. While the initial domain hint was 'quickgov.in', the verified email is associated with 'quicketsolutions.com', which is directly linked to Quickgov Solutions Private Limited. No other specific personal email addresses for decision-makers at the company were found explicitly listed on web pages within the search results."
+  },
+  "luna ring": {
+    "company_domain": "lunazone.com",
+    "contacts": [
+      {
+        "name": "Swapnil Vats",
+        "title": "Director & Product Head",
+        "email": "swapnil.vats@lunazone.com",
+        "source": "https://www.reddit.com/r/SmartRings/comments/1cg3x39/ama_with_swapnil_vats_director_product_head_luna/"
+      },
+      {
+        "name": "Vinayak Suneja",
+        "title": "Product Experience Manager",
+        "email": "vinayak.suneja@lunazone.com",
+        "source": "https://apps.apple.com/us/app/luna-ring-and-band-lifeos-ai/id6472659932"
+      },
+      {
+        "name": "Data Protection Officer (Nexxbase Innovations Pvt Ltd)",
+        "title": "Data Protection Officer",
+        "email": "dpo@nexxbase.com",
+        "source": "https://www.lunazone.com/policies/privacy-policy"
+      }
+    ],
+    "contact_email": "swapnil.vats@lunazone.com",
+    "email_source_url": "https://www.reddit.com/r/SmartRings/comments/1cg3x39/ama_with_swapnil_vats_director_product_head_luna/",
+    "email_found_on_web": true,
+    "reasoning": "I began by searching for 'Luna Ring' and relevant titles on LinkedIn and general web searches, which led me to the company's website (lunazone.com) and various articles and community forums. I found a direct email address for Swapnil Vats, the Director & Product Head of Luna Ring, in a Reddit AMA session where he explicitly provided it for inquiries. Similarly, an email for Vinayak Suneja, Product Experience Manager, was found in a response to an app review on the Apple App Store. Additionally, I identified 'dpo@nexxbase.com' as the Data Protection Officer's email for Nexxbase, the parent company of Luna Ring, listed on their privacy policy page. I prioritized the personal emails of decision-makers (Swapnil Vats and Vinayak Suneja) and included the DPO email due to its specific role at the parent company. I did not construct or guess any email addresses."
+  },
+  "hyve ai labs": {
+    "company_domain": "hyve.ae",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdJQW0zcMN6ikUDx52xQ-vlvWxG2cT2uptK8vXdCw22rLXCxQCcja25db7foeD7IryZmrbSnyaGH2ArnSWM6HhdWnamtz6pUsE_rqCkJuITA==",
+    "email_found_on_web": true,
+    "reasoning": "I performed a comprehensive search following the outlined strategy. I searched LinkedIn for key personnel and their emails, the company's official website (hyveailabs.com and hyve.ae), Wellfound/AngelList, Crunchbase, GitHub, and press releases/news articles. The official contact page for Hyve AI Labs (hyve.ae/contact) explicitly lists 'hello@hyve.ae' as a contact email address. I identified Lucas Fulks as the CEO and Co-Founder and Cori Grohman as a Co-Founder from a press release, and their presence on Wellfound, but their individual, verified email addresses were not explicitly found on any public webpages during my search. Therefore, I could only provide the generic contact email found on their website."
+  },
+  "growati": {
+    "company_domain": "growati.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite searching LinkedIn for key roles (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition), the company's official website, Wellfound/AngelList, Crunchbase, GitHub, press releases, blog posts, and news articles, no explicitly stated personal email addresses for specific individuals at Growati were found. The website growati.com lists general contact emails like contact@growati.com and info@growati.com, but these are not tied to specific people and therefore do not meet the primary goal of finding verified email addresses of REAL PEOPLE."
+  },
+  "accelyzi": {
+    "company_domain": "accelyzi.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite a thorough search following the specified strategy (LinkedIn, company website, startup directories, GitHub, press releases, and generic HR/careers emails), no verified individual email addresses for specific people at Accelyzi, nor any explicitly listed generic departmental emails, were found on publicly accessible web pages. The search results primarily consisted of general advice on finding HR emails or definitions of related terms, not actual contact information for Accelyzi personnel."
+  },
+  "infrabyte consulting": {
+    "company_domain": "infrabyteconsulting.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching across LinkedIn, company websites (infrabyteconsulting.com, infrabyteit.com, infrabyte.com), startup directories (Wellfound, AngelList, Crunchbase), GitHub, and general web searches for press releases and news articles, no explicitly revealed email addresses of specific individuals at 'Infrabyte Consulting' were found. Several related entities (Infrabyte IT, Infrabyte, Infrabyte Technology Solution Pvt. Ltd.) were identified, but their individual contact emails were either masked or not publicly listed. The company 'Infrabyte Consulting' is noted as being very small (2 employees as of April 2026), which often limits public disclosure of individual contact information. While a masked email format like '*****@infrabyteconsulting.com' was indicated for the company, and a masked email for 'T Aru, Director' at 'Infrabyte Technology Solution Pvt. Ltd.' (infrabyteits.com) was found, these do not meet the critical rule of providing an explicitly revealed and unmasked email address for a specific person at 'Infrabyte Consulting'."
+  },
+  "aios": {
+    "company_domain": "aios.ai",
+    "contacts": [
+      {
+        "name": "Luke Harries",
+        "title": "CEO and Co-founder",
+        "email": "luke@aios.ai",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmrRCSczeYII4pb0vDR7Kyi97-lyBtHOGdBiXYy1niom1ltHiZ8mju_kav4pHBiZLHfcIPmJwUluAixdz9hMwoKrq1JC9IXvFl9A74PVzE7oaWlA5jOCeooXqcE6ejzhYcqxz22AAwq3Y="
+      },
+      {
+        "name": "Richie",
+        "title": "Co-founder (referring to CEO in context)",
+        "email": "richie+hiring@aiosmedical.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGHpPdm_K7y5fmjmlUeaQubxsnA8l93VI64xZtgeY8rgFjZrP_kfXfKOl0CTVrlBNF4SACAgnMRj9iAjXZE9Z6XvWETvVQXRRZnp7isD6eQtRloQSZ6eL4y1wFqn-k3UtispK2w44hV4cDLOM-pm_XDetlz9YkgHzkq7hUB3A=="
+      }
+    ],
+    "contact_email": "luke@aios.ai",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmrRCSczeYII4pb0vDR7Kyi97-lyBtHOGdBiXYy1niom1ltHiZ8mju_kav4pHBiZLHfcIPmJwUluAixdz9hMwoKrq1JC9IXvFl9A74PVzE7oaWlA5jOCeooXqcE6ejzhYcqxz22AAwq3Y=",
+    "email_found_on_web": true,
+    "reasoning": "I searched for 'AIOS' on Wellfound/AngelList, a startup directory, as per the search strategy. I found an entry for 'AIOS (YC W20/S21)' which directly mentions Luke Harries as CEO and Co-founder, and explicitly provides his email address: luke@aios.ai. This email address matches the domain hint aios.ai provided in the prompt. Additionally, I found a job posting for 'Head of Product Growth (Referrals & Viral Loops) at AIOS (YC W20/S21)' which states to email 'richie+hiring@aiosmedical.com' with a resume. This refers to Richie, a co-founder of the same company, and is an explicitly provided email address. While the domain differs slightly, both contacts are for the same identified company 'AIOS' or 'Aios Medical' (YC W20/S21)."
+  },
+  "model ml": {
+    "company_domain": "modelml.com",
+    "contacts": [
+      {
+        "name": "Arnie Englander",
+        "title": "Co-Founder",
+        "email": "arnie@modelml.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj9Dv6DoSbapQ4dSePeQxU5_Eg3SL3Ql32sKpK11n5DrIeDOWmbOis673II0CgKZXMy13-26d1_pmxJvO3NBv88z0TkZiKPaYsxTsz1GKqm4p9o6ApQRSeKFZ5v0IG3XTCC21ztUIoV5ZjQdatRKJjwjxR6Hh1SQ9cpdxk6j5KvO6maOEm3g4C_GUjHzhPoR3B0II="
+      }
+    ],
+    "contact_email": "arnie@modelml.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFj9Dv6DoSbapQ4dSePeQxU5_Eg3SL3Ql32sKpK11n5DrIeDOWmbOis673II0CgKZXMy13-26d1_pmxJvO3NBv88z0TkZiKPaYsxTsz1GKqm4p9o6ApQRSeKFZ5v0IG3XTCC21ztUIoV5ZjQdatRKJjwjxR6Hh1SQ9cpdxk6j5KvO6maOEm3g4C_GUjHzhPoR3B0II=",
+    "email_found_on_web": true,
+    "reasoning": "The search strategy focused on finding actual, verified email addresses of specific people at Model ML. The primary company domain was identified as modelml.com. Founders Chaz Englander (CEO) and Arnie Englander (Co-Founder/CTO) were consistently identified across multiple sources [2, 3, 5, 6, 7, 10, 12, 13, 22].\n\nAn explicit, unredacted email address for Arnie Englander, co-founder, was found in a newsletter compilation of funding rounds, stating 'Outreach: Arnie Englander (Co-Founder); Email: arnie@modelml.com'. This email is directly associated with a specific person and their title.\n\nFor Chaz Englander, while he is consistently listed as CEO and co-founder, no unredacted email address was explicitly found on a publicly accessible webpage. Some sources, like Growjo and Scalelist, displayed redacted email formats (e.g., 'c***@modelml.com'). Per the critical rule of not constructing or guessing email addresses, these could not be included. The company's official website (modelml.com) has a 'Book a demo' section that asks for an email address, but does not provide contact emails. The Terms of Service lists a generic 'info@modelml.com', but the primary goal was to find emails of *real people*, not generic departmental contacts. Therefore, only Arnie Englander's email met the strict criteria."
+  },
+  "trako infra india": {
+    "company_domain": "trakoindia.com",
+    "contacts": [
+      {
+        "name": "Azir Aslam Khan",
+        "title": "Director / CEO",
+        "email": "azir.k@trakoindia.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZxJkzeUr8agmVKZg1fNFbX5_ncf_naclqEn8echmgVC0-JMSISNdeYvc4Y9U_TILE9JRuB_AMo0bzyd0jHDZWIhiugCU8-BhheHLR9vC7G-38dFXCB35YBR9vlY8LAgCnNBBgMO9sqz8-Hu-yMp0L_RarQ84JZ-L7LOtu88FS1Q-ADmUkvGrpWIChLMRBF95AoalY_P0bsk_K"
+      }
+    ],
+    "contact_email": "azir.k@trakoindia.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZxJkzeUr8agmVKZg1fNFbX5_ncf_naclqEn8echmgVC0-JMSISNdeYvc4Y9U_TILE9JRuB_AMo0bzyd0jHDZWIhiugCU8-BhheHLR9vC7G-38dFXCB35YBR9vlY8LAgCnNBBgMO9sqz8-Hu-yMp0L_RarQ84JZ-L7LOtu88FS1Q-ADmUkvGrpWIChLMRBF95AoalY_P0bsk_K",
+    "email_found_on_web": true,
+    "reasoning": "I searched various platforms including LinkedIn, company information portals (IndiaFilings, Tofler, InstaFinancials), and business directories. The email 'azir.k@trakoindia.com' was explicitly listed as the official email address for TRAKO INFRA INDIA PRIVATE LIMITED on IndiaFilings. This email is associated with Azir Aslam Khan, who is identified as a director of the company and possibly the CEO on IndiaMART. No other verified personal emails for decision-makers at the company were found following the outlined search strategy and critical rules. An email for an Interim Resolution Professional (rajeevnbhatia@gmail.com) was found during insolvency proceedings, but it was excluded as it's a personal email for an external professional, not an email *at the company* for a direct employee."
+  },
+  "lamatic.ai": {
+    "company_domain": "lamatic.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific personal or professional email addresses for the individuals at Lamatic.ai in my training data. Per the strict instructions to avoid fabrication and only provide emails I am 100% confident exist, all email fields must be null."
+  },
+  "corbit-tech": {
+    "company_domain": "corbit-tech.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Corbit-Tech were found in the training data. Unable to provide contact emails."
+  },
+  "energy365.ai": {
+    "company_domain": "energy365.ai ",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable email contact information for Energy365.ai in my training data. While the domain hint suggests energy365.ai, I cannot confirm any specific email addresses (CEO, CTO, HR, or recruiting) without external verification, so all email fields are set to null as per the rules."
+  },
+  "startupdeckai": {
+    "company_domain": "startupdeck.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for StartupDeckAI in my training data. To comply with the strict rule against fabricating or guessing emails, I am returning null for all contact fields."
+  },
+  "innovatily": {
+    "company_domain": "innovatily.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no internet access and no training data indicating any verified email addresses for Innovatily. The domain is inferred from the provided hint."
+  },
+  "ultimez technology": {
+    "company_domain": "ultimez.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual contact emails (CEO, CTO, HR) for ULTIMEZ TECHNOLOGY in my training data. To avoid providing fabricated or inaccurate information, all email fields are set to null."
+  },
+  "hard.coded": {
+    "company_domain": "hardcoded.tech",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on training data, no verified email addresses for hard.coded were found. The domain hardcoded.tech is the likely official website, but no contact emails could be confirmed."
+  },
+  "starlabs technologies": {
+    "company_domain": "starlabs.tech",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verifiable email addresses or confirmed domain details exist in my training data for Starlabs Technologies. The domain 'starlabs.tech' is a plausible hint but cannot be confirmed without internet access. All email fields are set to null to comply with strict verification rules."
+  },
+  "hexa solutions": {
+    "company_domain": "null",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "null",
+    "email_found_on_web": false,
+    "reasoning": "I do not have verifiable information about HEXA SOLUTIONS's domain or email contacts in my training data, and per the rules I must not fabricate or guess any details."
+  },
+  "future interns": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific email addresses for 'Future Interns' in my training data. To avoid providing fabricated or inaccurate information, all email fields are set to null."
+  },
+  "springer capital": {
+    "company_domain": "springercapital.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Springer Capital in my training data. To avoid providing fabricated or inaccurate information, all email fields are set to null."
+  },
+  "aspire": {
+    "company_domain": "aspireapp.com','contacts':[],'contact_email':null,'email_source_url':null,'email_found_on_web':false,'reasoning':'I have no verified email addresses for Aspire (aspireapp.com) in my training data that meet the criteria (CEO/Founder, CTO, HR Head, or official careers/recruiting email). To avoid fabricating contacts, I return null for all email fields.'}  {",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Aspire (aspireapp.com) in my training data that meet the criteria (CEO/Founder, CTO, HR Head, or official careers/recruiting email). To avoid fabricating contacts, I return null for all email fields."
   }
 }
