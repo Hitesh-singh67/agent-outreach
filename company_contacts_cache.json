@@ -3900,5 +3900,62 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "I have no verified email addresses for Aspire (aspireapp.com) in my training data that meet the criteria (CEO/Founder, CTO, HR Head, or official careers/recruiting email). To avoid fabricating contacts, I return null for all email fields."
+  },
+  "capabl from elite techno groups": {
+    "company_domain": "capabl.com",
+    "contacts": [
+      {
+        "name": "Umang Surana",
+        "title": "Co-Founder",
+        "email": "suranaumang@elitetechnogroups.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_GP6Wk3FLRKavgvDobU3ojkPeLpmwM_Ook82btnx_O7FHYEQfjtnlc1gn2jOWbpKif_tt4_k3jHy1KcIzg0FdbVkrgNJEWm6FMFDgViMuqolApsmWDQCDva0kJw0"
+      }
+    ],
+    "contact_email": "suranaumang@elitetechnogroups.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH_GP6Wk3FLRKavgvDobU3ojkPeLpmwM_Ook82btnx_O7FHYEQfjtnlc1gn2jOWbpKif_tt4_k3jHy1KcIzg0FdbVkrgNJEWm6FMFDgViMuqolApsmWDQCDva0kJw0",
+    "email_found_on_web": true,
+    "reasoning": "I found the email address for Umang Surana, Co-Founder of Capabl from Elite Techno Groups, on his LinkedIn profile (via a Mesh search result). The profile explicitly stated, 'For engineering-related guidance and discussions, you can reach out to Umang via email at suranaumang@elitetechnogroups.com.' I searched for other leadership figures like Mayank Arora (Founder & CEO) on LinkedIn and the company's official website (capabl.com) but could not find explicitly listed personal email addresses. The company's 'Contact Us' and 'Careers' pages primarily feature contact forms or job postings without specific individual email addresses. While Capabl's website is 'capabl.com', the provided email address for the co-founder uses the 'elitetechnogroups.com' domain, which is consistent with the company being 'Capabl from Elite Techno Groups'."
+  },
+  "dimension six": {
+    "company_domain": null,
+    "contacts": [
+      {
+        "name": "Priyank Kishore Dodhia",
+        "title": "Director",
+        "email": "priyankdodhia10@gmail.com",
+        "source": "https://www.zaubacorp.com/company/VOLTA-INDUSTRIES-LLP/AAX-0779"
+      },
+      {
+        "name": null,
+        "title": null,
+        "email": "dimensionsixtechnologies@gmail.com",
+        "source": "https://www.indiafilings.com/company/dimension-six-technologies-private-limited-U29109GJ2024PTC149301, https://tracxn.com/d/companies/dimension-six-technologies-private-limited, https://www.falcone.biz/company/dimension-six-technologies-private-limited-U29109GJ2024PTC149301"
+      }
+    ],
+    "contact_email": "priyankdodhia10@gmail.com",
+    "email_source_url": "https://www.zaubacorp.com/company/VOLTA-INDUSTRIES-LLP/AAX-0779",
+    "email_found_on_web": true,
+    "reasoning": "I identified 'DIMENSION SIX TECHNOLOGIES PRIVATE LIMITED' as the relevant company. I found its directors, Priyank Kishore Dodhia and Kush Vimal Jalan, listed on multiple company information platforms. During the search, I located a personal email address, priyankdodhia10@gmail.com, explicitly associated with Priyank Kishore Dodhia on ZaubaCorp. This individual is listed as a Director for DIMENSION SIX TECHNOLOGIES PRIVATE LIMITED and a Designated Partner for VOLTA INDUSTRIES LLP on the same webpage, where the email is provided for VOLTA INDUSTRIES LLP. Additionally, a generic company email address, dimensionsixtechnologies@gmail.com, was found on IndiaFilings, Tracxn, and Falcon Ebiz Pvt Ltd as the official contact for DIMENSION SIX TECHNOLOGIES PRIVATE LIMITED. No other personal emails for decision-makers at 'Dimension Six' were explicitly found without guessing, which is against the critical rules."
+  },
+  "amgen": {
+    "company_domain": "amgen.com",
+    "contacts": [
+      {
+        "name": "Robert A. Bradway",
+        "title": "Chairman and Chief Executive Officer",
+        "email": "rbradway@amgen.com",
+        "source": "https://pubmed.ncbi.nlm.nih.gov/27738006/"
+      },
+      {
+        "name": "Raina Marks",
+        "title": "Sr. Manager National Health Systems Marketing, Cardiovascular",
+        "email": "rporia@amgen.com",
+        "source": "https://www.amga.org/membership/corporate-partner-directory/amgen-inc/"
+      }
+    ],
+    "contact_email": "rbradway@amgen.com",
+    "email_source_url": "https://pubmed.ncbi.nlm.nih.gov/27738006/",
+    "email_found_on_web": true,
+    "reasoning": "Amgen is a large biopharmaceutical company, and generally, personal email addresses for executives are not publicly listed on their official website. My search strategy focused on finding explicitly stated personal emails of decision-makers. I successfully found the email address for Robert A. Bradway, the Chairman and Chief Executive Officer of Amgen, from a scientific publication. Additionally, I found an email for Raina Marks, a Senior Manager, on an AMGA membership directory. While Amgen's 'Contact Us' and 'Careers' pages provide several departmental email addresses (e.g., AmgenCareers@careers.pure.cloud, staffing-hr-connect@amgen.com, investor.relations@amgen.com), these are generic and not tied to specific individuals."
   }
 }
