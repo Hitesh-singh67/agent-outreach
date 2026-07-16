@@ -4105,5 +4105,53 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "No verified information about 'Siellium Global Labs Private Limited' exists in my training data. I cannot confirm the company domain or any active email addresses without explicit evidence from reliable sources. All email fields are set to null to comply with the rule against fabrication."
+  },
+  "teal india (terra economics & analytics lab)": {
+    "company_domain": "tealindia.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The search was conducted following the specified strategy across LinkedIn, the company's official website (tealindia.in), Wellfound/AngelList, Crunchbase, GitHub, press releases, blog posts, and news articles. Key individuals identified at Teal India include Kshitij Batra (Co-Founder & CEO), Rohan Shridhar (Co-Founder & COO), and Shreyas Murali Thottuvai (Head of People). However, no explicit personal email addresses for these or any other specific individuals were found on any public webpages during the search. While generic departmental emails such as 'sales@tealindia.in', 'hr@tealindia.in', and 'support@tealindia.in' were found on the company's website, the primary goal was to find actual email addresses of specific people, not generic emails. Adhering to the critical rule of never constructing or guessing email addresses, and only returning explicitly found personal emails, no such emails could be verified."
+  },
+  "five rings": {
+    "company_domain": "fiverings.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://yale-wgs.squarespace.com/news/sponsorship-spotlight-five-rings",
+    "email_found_on_web": true,
+    "reasoning": "Despite extensive searching for specific individuals' verified email addresses at Five Rings (fiverings.com), no personal emails for decision-makers such as the CEO, Founder, CTO, or HR Manager were explicitly found on public webpages. Websites like Growjo and FinalScout mention individuals like Jason McCarthy (Founder and Managing Director), Kenneth Mandel (Head of Trading), Andrea Baker (Head of Human Capital), Tamara Eden (Talent Acquisition Lead), and Marcus Epstein (Head of Technology). However, these platforms either mask the email addresses (e.g., 'j****@fiverings.com') or require an account to reveal them, which violates the 'NEVER construct or guess an email address' rule and the requirement to 'Only return emails you FOUND EXPLICITLY on a real webpage'.\n\nTwo relevant, generic departmental email addresses were found explicitly listed on public webpages:\n1. `learnmore@fiverings.com`: Found on the official Five Rings 'Contact Us' page.\n2. `talent@fiverings.com`: Found in a 'Sponsorship Spotlight' from Yale WGiCS, associated with inquiries regarding Five Rings and mentioned in conjunction with 'Andrea Baker, Head of Human Capital' for coffee chats. This email is explicitly listed for talent-related questions.\n\nFollowing the search strategy's 'LAST RESORT' rule, `talent@fiverings.com` is selected as the 'best single email' as it is a relevant departmental contact explicitly listed and pertains to human capital/talent acquisition, which aligns with the goal of reaching relevant personnel within the company, even if not a specific individual's personal email. No individual contact information meeting the strict verification criteria was found."
+  },
+  "global relay": {
+    "company_domain": "globalrelay.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified personal or official contact emails for Global Relay were found in the training data. All email fields are set to null to avoid fabricating or guessing addresses."
+  },
+  "tmx": {
+    "company_domain": "tmx.com ",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified, specific email addresses for TMX Group executives or HR from my training data; therefore I cannot provide any email contacts without risking fabrication."
+  },
+  "spt labtech": {
+    "company_domain": "sptlabtech.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "Based on the provided URL hint, the official domain for SPT Labtech is sptlabtech.com. However, I do not have any specific, verified email addresses for SPT Labtech (such as CEO, CTO, HR, or careers contacts) from my training data. Per the critical rules, I will not fabricate or guess any email addresses, so all email fields are set to null."
+  },
+  "ideactra technologies": {
+    "company_domain": "ideactra.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Ideactra Technologies in my training data. To comply with the strict rule against fabricating or guessing emails, I am returning null for all contact fields."
   }
 }
