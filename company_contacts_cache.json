@@ -4153,5 +4153,114 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "I do not have any verified, specific individual email addresses for Ideactra Technologies in my training data. To comply with the strict rule against fabricating or guessing emails, I am returning null for all contact fields."
+  },
+  "clanx": {
+    "company_domain": "clanx.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searches on LinkedIn, the company's official website (clanx.ai), and related job platforms like opentalent.in, no explicitly listed personal email addresses for specific individuals (CEO, Founder, CTO, HR Manager, Head of People, or Talent Acquisition) at CLANX were found. No general contact email for the domain clanx.ai was explicitly listed either. The email 'hello@opentalent.in' was found on job postings for ClanX on opentalent.in, but this is a generic contact for the OpenTalent platform, not for ClanX itself, and not a personal email address. Per the critical rules, email addresses cannot be constructed or guessed."
+  },
+  "gromo": {
+    "company_domain": "gromo.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://www.gromo.in/",
+    "email_found_on_web": true,
+    "reasoning": "A comprehensive search was conducted for specific individuals (CEO, Founders, CTO, HR Manager, Head of People, Talent Acquisition) and their verified email addresses at GroMo (gromo.in). Ankit Khandelwal (Co-Founder & CEO) and Darpan Khurana (Co-Founder) were identified, but their direct or personal email addresses were explicitly stated as 'Not publicly disclosed' or were not found on any public webpages. Anand Kumar Keshri was identified as CTO, but no direct email address was found for him. A GitHub profile for an 'Aditya Kumar' listing 'CTO @Gromo' and a personal Gmail address was found, but there was no explicit link or strong evidence to confirm that this 'Gromo' refers to the target company gromo.in, and a more recent CTO was also identified. Therefore, this email could not be verified as belonging to the target company's CTO. The company's official website, gromo.in, explicitly lists 'contact@gromo.in' as a general inquiry email on its 'Contact Us' page. It also lists 'support@gromo.in' on its 'Privacy Policy' page, associated with the Nodal Grievance Officer, Rajat Gupta. As no individual, direct, and verified email addresses for decision-makers were explicitly found adhering to the strict rules, the general contact email 'contact@gromo.in', explicitly listed on the company's website, is provided as the best available option."
+  },
+  "urbanroof private limited": {
+    "company_domain": "urbanroof.in",
+    "contacts": [
+      {
+        "name": "Abhishek Bhagatsing Jagdale",
+        "title": "Founder & CEO",
+        "email": "abhishejj105@gmail.com",
+        "source": "https://www.zaubacorp.com/company/URBANROOF-PRIVATE-LIMITED/U45201PN2018PTC178984, https://cleartax.in/s/urbanroof-private-limited-u45201pn2018ptc178984, https://www.indiafilings.com/company/urbanroof-private-limited-U45201PN2018PTC178984"
+      }
+    ],
+    "contact_email": "abhishejj105@gmail.com",
+    "email_source_url": "https://www.zaubacorp.com/company/URBANROOF-PRIVATE-LIMITED/U45201PN2018PTC178984",
+    "email_found_on_web": true,
+    "reasoning": "I searched for 'UrbanRoof Private Limited' and found their official website urbanroof.in. The website's 'Contact Us' page explicitly lists 'info@urbanroof.in' and the 'Careers' page lists 'hr@urbanroof.in'. Further searches on corporate information platforms like ZaubaCorp, ClearTax, and IndiaFilings, which list company director details, identified Abhishek Bhagatsing Jagdale as a Director and the Founder/CEO. These sources also explicitly provide 'abhishejj105@gmail.com' as the contact email for URBANROOF PRIVATE LIMITED. This email is associated with the founder and is publicly listed as the company's official contact on government registration-related websites. Therefore, it is considered a verified email for a decision-maker."
+  },
+  "bluemutulfund": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I was unable to find any verified email addresses for specific individuals at Bluemutulfund. My search across LinkedIn, startup directories like Unstop and The Job Company, GitHub, press releases, blog posts, and news articles did not yield any personal emails of decision-makers (CEO, CTO, Founder, HR Head) or even explicitly listed generic departmental emails like careers@ or hr@ on an official company website. The available information primarily consists of internship postings on third-party job platforms, which mention 'direct mentorship from startup founders' but do not provide names or contact details for these founders or any other personnel."
+  },
+  "citadel": {
+    "company_domain": "citadel.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "A comprehensive search was conducted for personal and verified email addresses of key personnel (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition) at Citadel (citadel.com). The search included LinkedIn, the company's official website (including careers pages), and general web searches for press releases and contact information. \n\nCitadel is a large financial institution that appears to primarily utilize Applicant Tracking Systems (ATS) for recruitment, as indicated by their careers pages which direct applicants to explore roles and apply online, mentioning a 'recruiting contact' after initial stages rather than providing direct email addresses. No personal email addresses for any specific individuals at Citadel were explicitly found on their official website or other verifiable public pages. \n\nWhile general departmental email addresses such as 'ClientandPartnerGroup@citadel.com' and 'CitadelCounterpartyRelations@citadel.com' were found on citadel.com, these are not personal emails of decision-makers. Furthermore, a 'brandprotection@citadel.com' email was identified for reporting fraudulent schemes, but not for general contact or recruiting. Results pertaining to 'The Citadel' with a '.edu' domain were identified as a military college and not the target company. Third-party email finder tools were disregarded as they do not explicitly show verified emails on a real webpage without further interaction, which violates the critical rules.\n\nGiven that Citadel is a large enterprise that relies on ATS for recruiting and does not explicitly list direct email addresses for unsolicited contact, and no personal verified emails were found, the primary goal of finding actual email addresses of specific people could not be met under the specified rules."
+  },
+  "cae": {
+    "company_domain": "cae.com",
+    "contacts": [
+      {
+        "name": "Andrew Arnovitz",
+        "title": "Chief Strategy Officer",
+        "email": "andrew.arnovitz@cae.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpW-2xvMX7NF8RYULT2cADrD12c_w4z0_Pr6siJghszpdFi3tVDXcaihVuPZSmhWiJXzSbqNJvYmaAYfVOUvuCNkM1Gz2EA4ijWmbDLrBuUn_fVvu9HvHjY-nVs6XjxibAQD5FLGKdviavtXBVdU70sgZKSzlpsYljISP7UzxPCTsPosuGrxEFTYQ533UtJoa1UCI7LKBnGmVDp6pafmNFfFhOyCeLV5OkjVn3P8I="
+      },
+      {
+        "name": "Samantha Golinski",
+        "title": "Senior Vice President, Communications",
+        "email": "samantha.golinski@cae.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpW-2xvMX7NF8RYULT2cADrD12c_w4z0_Pr6siJghszpdFi3tVDXcaihVuPZSmhWiJXzSbqNJvYmaAYfVOUvuCNkM1Gz2EA4ijWmbDLrBuUn_fVvu9HvHjY-nVs6XjxibAQD5FLGKdviavtXBVdU70sgZKSzlpsYljISP7UzxPCTsPosuGrxEFTYQ533UtJoa1UCI7LKBnGmVDp6pafmNFfFhOyCeLV5OkjVn3P8I="
+      },
+      {
+        "name": "Michael Hall",
+        "title": "Government Contracts Contact (CAE USA INC.)",
+        "email": "michael.hall@caemilusa.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKwIYqlnAy8fNv0KX4SFfgHSiPPXT7eDDxr_7d7tGCOjUmkuTse58X0Tmjm8JBP2fem3wFuTANWg4Pcdsxt9xo_lRsAa_8Oag7bSSl1qMFmRZU-YJclKtRfhDN97Kh18ffouw2CbwqKzes2LO_Y_kUv1qzBHWWefgEaC3keSzTcqlCs2e1ege55p3l8dm3SflOxI_ngweNbmqpxL-2tSe02nGjv37fgr6r6WIMtz-2UbRdzBl-mguDmMLAx3RN8Hejq5pCHb5Duw="
+      }
+    ],
+    "contact_email": "andrew.arnovitz@cae.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFpW-2xvMX7NF8RYULT2cADrD12c_w4z0_Pr6siJghszpdFi3tVDXcaihVuPZSmhWiJXzSbqNJvYmaAYfVOUvuCNkM1Gz2EA4ijWmbDLrBuUn_fVvu9HvHjY-nVs6XjxibAQD5FLGKdviavtXBVdU70sgZKSzlpsYljISP7UzxPCTsPosuGrxEFTYQ533UtJoa1UCI7LKBnGmVDp6pafmNFfFhOyCeLV5OkjVn3P8I=",
+    "email_found_on_web": true,
+    "reasoning": "I searched for individuals at CAE with relevant titles and found explicitly listed email addresses on official company communications. Andrew Arnovitz, Chief Strategy Officer, and Samantha Golinski, Senior Vice President, Communications, both have their email addresses (`andrew.arnovitz@cae.com` and `samantha.golinski@cae.com` respectively) publicly listed in CAE's financial results advisories. Additionally, Michael Hall's email (`michael.hall@caemilusa.com`) was found as a contact for CAE USA INC. on a GSA eLibrary Contractor Information page. The domain `caemilusa.com` is associated with CAE USA INC., a subsidiary of CAE. Other potential contacts were found via 'Send an email' links on CAE's careers pages, but these were not included as the email addresses themselves were not explicitly displayed on the webpage, adhering to the instruction to only return emails explicitly found on a real webpage."
+  },
+  "rakuten kobo": {
+    "company_domain": "kobo.com",
+    "contacts": [
+      {
+        "name": "Erin Ierullo",
+        "title": "Senior Manager, Communications, Rakuten Kobo",
+        "email": "erin.ierullo@rakuten.com",
+        "source": "https://www.kobo.com/news-releases/rakuten-kobo-announces-plans-for-instapaper-integration-continuing-commitment-to-seamless-read-it-later-experience"
+      },
+      {
+        "name": "Alanna McLatchie",
+        "title": "Specialist, Public Relations, Rakuten Kobo",
+        "email": "alanna.mclatchie@rakuten.com",
+        "source": "https://www.kobo.com/news-releases/media-alert-rakuten-kobo-expands-kobo-plus-unlimited-reading-subscription-service-to-czech-republic-greece-luxembourg-philippines-poland"
+      },
+      {
+        "name": "Sinead McElhinney",
+        "title": "Manager, Public Relations, Rakuten Kobo",
+        "email": "sinead.mcelhinney@rakuten.com",
+        "source": "https://www.kobo.com/news-releases/rakuten-kobo-introduces-kobo-forma-our-thinnest-most-durable-most-comfortable-ereader"
+      }
+    ],
+    "contact_email": "erin.ierullo@rakuten.com",
+    "email_source_url": "https://www.kobo.com/news-releases/rakuten-kobo-announces-plans-for-instapaper-integration-continuing-commitment-to-seamless-read-it-later-experience",
+    "email_found_on_web": true,
+    "reasoning": "I followed the search strategy by looking for specific roles (CEO, CTO, HR Manager, etc.) and then broadened to press releases and company contact pages. I found three verifiable email addresses for individuals in communications and public relations roles at Rakuten Kobo, explicitly listed on official Rakuten Kobo press release pages hosted on kobo.com. These emails use the @rakuten.com domain, which is expected as Rakuten Kobo is a subsidiary of Rakuten. I did not include emails that were inferred or aggregated by third-party data providers (like Clodura.AI) to adhere to the strict rule of only returning emails 'FOUND EXPLICITLY on a real webpage'. No personal emails for the CEO, CTO, or HR Head were explicitly found on official company or personal websites."
+  },
+  "reonic": {
+    "company_domain": "reonic.com",
+    "contact_email": null,
+    "contacts": [],
+    "email_found_on_web": false,
+    "email_source_url": null,
+    "reasoning": "I do not have any specific, verified email addresses for Reonic (or its founders, CTO, HR, or recruiting) from my training data. Per the critical rules, I will not fabricate or guess any email addresses, so all email fields are set to null."
   }
 }
