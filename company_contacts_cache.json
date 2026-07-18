@@ -4262,5 +4262,36 @@
     "email_found_on_web": false,
     "email_source_url": null,
     "reasoning": "I do not have any specific, verified email addresses for Reonic (or its founders, CTO, HR, or recruiting) from my training data. Per the critical rules, I will not fabricate or guess any email addresses, so all email fields are set to null."
+  },
+  "gharpayy": {
+    "company_domain": "gharpayy.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite a thorough search across LinkedIn, the company's official website (gharpayy.com), Crunchbase, Wellfound/AngelList, GitHub, press releases, and job boards, no explicit, verified personal email addresses for specific individuals (such as CEO, Founder, CTO, or HR Manager) at GharPayy were found. The searches yielded only general company contact email addresses like HEY@GHARPAYY.COM, TEAM@GHARPAYY.COM, and careers@gharpayy.com. The founders, Arpit Ratan and Ashish Goel, were identified, but no associated personal email addresses were publicly listed."
+  },
+  "dhanvin it solutions": {
+    "company_domain": "dhanvinitsolutions.com",
+    "contacts": [
+      {
+        "name": "Pavan Raghav",
+        "title": "Training & Placement Program Coordinator (Inferred)",
+        "email": "pavanraghav@dhanvinitsolutions.com",
+        "source": "https://www.hopin.com/organizations/dhanvinitsolutions/training"
+      }
+    ],
+    "contact_email": "pavanraghav@dhanvinitsolutions.com",
+    "email_source_url": "https://www.hopin.com/organizations/dhanvinitsolutions/training",
+    "email_found_on_web": true,
+    "reasoning": "A verified email address, 'pavanraghav@dhanvinitsolutions.com', was found on a Hopin listing for a 'Training & Placement Program' by Dhanvin IT Solutions. The email address explicitly includes the name 'Pavan Raghav', and the context suggests this individual is involved in recruitment or training coordination. The company domain, 'dhanvinitsolutions.com', is consistently referenced across various online listings and job postings associated with Dhanvin IT Solutions. Searches for other specific individuals (CEO, Founder, CTO, HR Manager) and their direct email addresses on LinkedIn, company websites (other than the identified program email), startup directories, and news articles did not yield explicitly stated personal emails. While another 'Dhanvin' entity (dhanvin.in) listed a generic Gmail address, it was not directly associated with 'Dhanvin IT Solutions' as per the search results."
+  },
+  "orion innovation": {
+    "company_domain": "orioninc.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searches across LinkedIn (simulated via Google), the company's official website (orioninc.com), and various directories, no personal, verified email addresses of specific individuals at Orion Innovation (orioninc.com) were explicitly found on a publicly accessible webpage. Several generic departmental emails such as info@orioninc.com, media@orioninc.com, jobs@orioninc.com, career.india@orioninc.com, and privacyofficer@orioninc.com were identified. Names of key personnel, including CEO Brian Bronson and former CEO Raj Patil, were identified, but their direct personal email addresses were not explicitly listed. Email format information was available (e.g., First.L@orioninc.com), but per the critical rules, these were not used to construct or guess email addresses. Contacts found at 'Orion Innovation Partners' with the domain oip-inc.com were deemed outside the scope of the primary target company 'Orion Innovation' (orioninc.com)."
   }
 }
