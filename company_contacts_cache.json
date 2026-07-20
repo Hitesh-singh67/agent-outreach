@@ -4806,5 +4806,208 @@
     "email_found_on_web": false,
     "email_source_url": null,
     "reasoning": "I do not have any verified email contacts for MAVR (mavr.in) from my training data. Per the critical rules, I will not fabricate or guess any email addresses, and since I am not 100% sure any specific email exists and is active, all email fields are set to null."
+  },
+  "novalyx tech": {
+    "company_domain": "novalyx.tech",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching across LinkedIn, the official company website (novalyx.tech), Wellfound/AngelList, Crunchbase, GitHub, press releases, and blog posts, no verified personal email addresses for specific individuals (CEO, Founder, CTO, HR Manager, etc.) at Novalyx Tech were explicitly found. The novalyx.tech website lists a general contact email, contact@novalyx.mx, but the primary goal was to find actual email addresses of specific people, not generic emails. Several entities with similar names like Novalyxdigital LLC (novalyxweb.com), Novalyx Research (novalyxresearch.com), and Novalix (novalix.com) were identified, each with their own contact information, but these are distinct from 'Novalyx Tech' as indicated by the provided domain hint. No personal emails were found for 'Novalyx Tech'."
+  },
+  "techvaria solution private limited": {
+    "company_domain": "techvaria.com",
+    "contacts": [
+      {
+        "name": "Feroz Ahmed Khan",
+        "title": "Director",
+        "email": "feroz.ind@gmail.com",
+        "source": "https://www.zaubacorp.com/company/TECHVARIA-SOLUTIONS-PRIVATE-LIMITED/U72200KA2016PTC096705, https://easyleadz.com/company/techvaria-solutions-pvt-ltd, https://tracxn.com/d/companies/techvaria-solutions-private-limited"
+      }
+    ],
+    "contact_email": "feroz.ind@gmail.com",
+    "email_source_url": "https://www.zaubacorp.com/company/TECHVARIA-SOLUTIONS-PRIVATE-LIMITED/U72200KA2016PTC096705",
+    "email_found_on_web": true,
+    "reasoning": "I searched various platforms including LinkedIn, the company's official website (techvaria.com), Wellfound, Tracxn, and EasyLeadz. While LinkedIn and the company's website did not yield direct personal email addresses for key personnel, Tracxn and EasyLeadz, which provide company information and contact details, explicitly listed 'feroz.ind@gmail.com' as a contact email for Techvaria Solutions Private Limited. This email is associated with Feroz Ahmed Khan, who is listed as a Director of the company. This meets the criteria of finding an actual email address of a specific person at the company, explicitly found on a real webpage. Other searches for generic emails like info@techvaria.com were found, but the primary goal was to find personal emails of decision-makers. No other personal emails of decision-makers (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition) were explicitly found."
+  },
+  "openleaf": {
+    "company_domain": "openleaf.tech",
+    "contacts": [
+      {
+        "name": null,
+        "title": "Technical/General Inquiries",
+        "email": "tech@openleaf.tech",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiLUhPTbSJaDFgslOaGAdHJZ7sc5PyFmY21QJPh73JSgZK0SnP65UdkGsWeT0LN3evoCeWJwdaCe0TyC_Nl53R6C9wtnPAxNTHXByiHMYM9mlwgvfAbZ1I4KpPxuJc4w=="
+      }
+    ],
+    "contact_email": "tech@openleaf.tech",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGiLUhPTbSJaDFgslOaGAdHJZ7sc5PyFmY21QJPh73JSgZK0SnP65UdkGsWeT0LN3evoCeWJwdaCe0TyC_Nl53R6C9wtnPAxNTHXByiHMYM9mlwgvfAbZ1I4KpPxuJc4w==",
+    "email_found_on_web": true,
+    "reasoning": "I searched various platforms including LinkedIn, the company's official website (openleaf.tech), Wellfound, and GitHub for specific individuals and their email addresses. Multiple entities named 'Openleaf' or 'Open Leaf' were found, but the primary target was 'Openleaf' with the domain hint 'openleaf.tech'. For this specific company, I was unable to find personal, verified email addresses for roles like CEO, Founder, CTO, or HR Manager. The official Privacy Policy page on openleaf.tech explicitly lists 'tech@openleaf.tech' for questions, concerns, and to withdraw consent. This is a generic departmental email, but it is explicitly listed on their verified website and is the only email address found for this specific company. No other individual emails were found that met the strict criteria of being explicitly listed on a webpage."
+  },
+  "codenia technologies llp": {
+    "company_domain": "codeniatechnologies.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite searching LinkedIn, the company's official website (codenia.in), GitHub, Crunchbase, AngelList, Wellfound, press releases, and news articles for key personnel like the CEO, Founder, CTO, or HR Manager, no explicit personal email addresses were found for specific individuals at Codenia Technologies LLP. The company's website lists key team members such as Ashish Kumar (Founder and CEO) and Rupesh Kumar (Founder and CTO), but their individual email addresses are not provided. Generic contact emails like hello@codeniatechnologies.com, sales@codeniatechnologies.com, and careers@codeniatechnologies.com were found, but these do not fulfill the primary goal of finding actual email addresses of specific, real people."
+  },
+  "texport syndicate": {
+    "company_domain": "texportsyndicate.com",
+    "contacts": [
+      {
+        "name": "Ravi Sodhani",
+        "title": "Director",
+        "email": "ravisodhani@texportsyndicate.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWJ8mIh1SGM-Dva4ZF1FEXlGaPBHzlYjh2_Hq_kr54suBfHZxe-A-a-_qWnNDkKqkpS-w2-yVMofewGo42GIveBeAulNtqrO6rtyE1KsUqhB7-Dp-9-EqTX2uNeDkMhQhYoPsUGDNqMt9Tj7uQuO27JQhaEmtmd8XvgrEu7M-CI0Ilr6OdTO8YntiA"
+      },
+      {
+        "name": "Barinder Singh Basan",
+        "title": "CEO and Director",
+        "email": "bsbasan@gmail.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQElh4YPsuyrqHjkHeSLq7PbZDniKPtPgkinKVbepWwjOjbxZ63tkzCrrLCI4z67WM6zABunbnMctFl-MIO6c8Eb__sWodK6g2Dw69lppB06h-1sjuXhkp7J3WjTxRDpZA4Xi9F5zu1_hBblSMVdxVf1g2y_TXrJxw"
+      }
+    ],
+    "contact_email": "ravisodhani@texportsyndicate.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWJ8mIh1SGM-Dva4ZF1FEXlGaPBHzlYjh2_Hq_kr54suBfHZxe-A-a-_qWnNDkKqkpS-w2-yVMofewGo42GIveBeAulNtqrO6rtyE1KsUqhB7-Dp-9-EqTX2uNeDkMhQhYoPsUGDNqMt9Tj7uQuO27JQhaEmtmd8XvgrEu7M-CI0Ilr6OdTO8YntiA",
+    "email_found_on_web": true,
+    "reasoning": "Explicit email addresses for specific individuals at Texport Syndicate were found from business information and professional networking sites. Ravi Sodhani's email address, ravisodhani@texportsyndicate.com, is listed as a contact for TEXPORT SYNDICATE PRIVATE LIMITED, where he is a Director. Barinder Singh Basan's personal email, bsbasan@gmail.com, is also explicitly associated with his role as CEO and Director at Texport Syndicate India Ltd on EasyLeadz and further corroborated by another document. The company domain is consistently referenced as texportsyndicate.com."
+  },
+  "imt (insurancedekho)": {
+    "company_domain": "insurancedekho.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for IMT (InsuranceDekho) were found in training data; domain inferred from the provided hint."
+  },
+  "mindseekers technologies private limited": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about Mindseekers Technologies Private Limited or its email addresses in my training data, so I cannot confidently provide any domain or contact details."
+  },
+  "qurovo": {
+    "company_domain": "qurovo.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain qurovo.com is confirmed as the official website based on prior knowledge, no specific verified email addresses for the requested roles (CEO/Founder, CTO, HR Head, or official careers email) exist in my training data. I cannot fabricate or guess emails, and web access is unavailable to confirm current contact details."
+  },
+  "sahii.in": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about Sahii.in in my training data; therefore cannot confirm domain or any email addresses."
+  },
+  "soranova technologies private limited": {
+    "company_domain": "soranova.tech",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Soranova Technologies Private Limited were found in the training data. The domain is inferred from the provided hint."
+  },
+  "awake india": {
+    "company_domain": "awakeindia.org",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual contact emails (CEO, CTO, HR) for Awake India in my training data. To avoid fabrication, all email fields are set to null."
+  },
+  "crawlii": {
+    "company_domain": "crawl.ee",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified personal or official email addresses for CRAWLII were found in the training data. Only the domain crawl.ee is known."
+  },
+  "fireblaze ai school": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about Fireblaze AI School in my training data; therefore I cannot confirm the domain or any email addresses."
+  },
+  "rocketsdr": {
+    "company_domain": "rocketsdr.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for RocketSDR in my training data; therefore I cannot provide any contacts."
+  },
+  "human archive": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information from my training data about the company Human Archive, its domain, or any employee email addresses. The provided hint is not sufficient to confirm the official website domain, and I cannot fabricate or guess email addresses."
+  },
+  "lighthouz ai": {
+    "company_domain": "lighthouz.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific email addresses for Lighthouz AI in my training data. Following the strict rules to avoid fabrication or guessing, all email fields must be set to null."
+  },
+  "uptern": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified information from my training data about the company Uptern, its domain, or any specific email addresses. The hint provided is not sufficient to confirm the official website or contacts, so I must return null values to avoid fabricating data."
+  },
+  "kukbit sl": {
+    "company_domain": "kukbit.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Kukbit SL in my training data. To avoid providing fabricated or inaccurate information, all email fields are set to null."
+  },
+  "b2world": {
+    "company_domain": "b2world.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for B2World in my training data. To avoid fabrication, all email fields are set to null."
+  },
+  "encrypta in": {
+    "company_domain": "encrypta.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific personal or professional email addresses for the leadership or HR of Encrypta IN in my training data. To avoid providing fabricated or inaccurate information, all email fields are set to null."
+  },
+  "wikasta business and technical solutions pvt. ltd.": {
+    "company_domain": "wikasta.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Wikasta Business and Technical Solutions Pvt. Ltd. in my training data. The domain wikasta.com is inferred from the provided hint, but no contact emails are known."
+  },
+  "phoneme solution pvt ltd": {
+    "company_domain": "phonemesolution.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain phonemesolution.com is confirmed as the official website, specific verified email addresses for Phoneme Solution Pvt Ltd (including CEO/Founder, CTO, or HR contacts) are not present in my training data. I cannot fabricate or guess emails, and must adhere to the rule of returning null for unverified contacts."
   }
 }
