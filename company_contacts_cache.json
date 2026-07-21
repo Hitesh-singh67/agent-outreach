@@ -5009,5 +5009,21 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "While the domain phonemesolution.com is confirmed as the official website, specific verified email addresses for Phoneme Solution Pvt Ltd (including CEO/Founder, CTO, or HR contacts) are not present in my training data. I cannot fabricate or guess emails, and must adhere to the rule of returning null for unverified contacts."
+  },
+  "mercari, inc.": {
+    "company_domain": "mercari.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified email addresses for Mercari, inc. from my training data. I cannot provide any email addresses without risking fabrication. Therefore all email fields are set to null."
+  },
+  "rapsodo": {
+    "company_domain": "rapsodo.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'rapsodo.com' is confirmed as the official website, specific verified email addresses for Rapsodo (CEO/Founder, CTO, HR, or careers) are not present in my training data. I cannot fabricate or guess emails per the critical rules. All contact fields are set to null to avoid returning unverified or potentially invalid addresses."
   }
 }
