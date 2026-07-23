@@ -5509,5 +5509,100 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "I do not have any confirmed email addresses for Streamline AI from my training data. Therefore, all email fields are set to null."
+  },
+  "factryze": {
+    "company_domain": "factryze.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite multiple search attempts, no explicit and verified email addresses of specific individuals at 'Factryze' (factryze.com) could be found. The company website (factryze.com) mentions 'Talk to Founders' and 'Book a call directly with the Factryze founders', suggesting the presence of founders, but their names and direct email addresses are not openly published on the site. Searches on platforms like Wellfound (formerly AngelList) indicated the presence of founder and team information, but the snippets from these searches did not explicitly reveal personal email addresses.\n\nAn email address, raje.jeetali@gmail.com, was found associated with 'FACTRYZE AI PRIVATE LIMITED'. However, this is an Indian company incorporated in March 2026 with different directors (Jeetali Keshav Raje and Akash Pratap Borate), and its business description and registration details suggest it is a distinct entity from the 'Factryze' operating at factryze.com, which focuses on GPU infrastructure and AI agents. Therefore, this email is not considered relevant to the user's primary request for contacts at factryze.com.\n\nNo generic 'careers@' or 'hr@' email addresses were explicitly listed on the factryze.com website based on the conducted searches. As per the critical rules, email addresses cannot be constructed or guessed."
+  },
+  "meta": {
+    "company_domain": "meta.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Meta is a large enterprise that primarily uses official careers portals (like metacareers.com) and structured application processes for recruiting and general inquiries. Extensive searches were conducted for personal, verified email addresses of key personnel such as the CEO (Mark Zuckerberg), CTO (Andrew Bosworth), and Head of People (Lori Goler) on LinkedIn, Meta's official websites (about.meta.com, investor.fb.com, meta.com), press releases, and other public sources. No explicit, personal, and verified email addresses were found for these individuals. While internal emails and memos from Meta leadership are frequently mentioned in news articles, these are internal communications and do not provide publicly accessible contact emails. Furthermore, Meta explicitly warns against recruitment scams and emphasizes that all official job applications are managed through metacareers.com, indicating a clear preference for formal channels over direct email contact. The only generic Meta-related email found was opensource@meta.com, which is a departmental contact for privacy policy questions related to Meta Open Source, not a personal email for a specific decision-maker. Therefore, in adherence to the rule against constructing or guessing email addresses and acknowledging that large enterprises typically do not accept cold emails to decision-makers, no verified personal email addresses could be provided."
+  },
+  "revvity": {
+    "company_domain": "revvity.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching across Revvity's official website, leadership pages, and various public databases, no *personal* verified email addresses for specific individuals such as the CEO, CTO, or HR Manager were explicitly found on a real webpage. The company's website lists a leadership team but does not publish their direct email addresses on their profiles. Several sources indicate that Revvity uses a 'first.last@revvity.com' email format, and some search results imply individuals have `@revvity.com` emails without providing the full address. However, the critical rule states, 'NEVER construct or guess an email address' and 'Only return emails you FOUND EXPLICITLY on a real webpage.' Therefore, I cannot include these inferred addresses. Generic departmental emails like 'contactbod@revvity.com' for the Board of Directors or 'TAEffectiveness@revvity.com' for recruitment inquiries were found, but the primary goal was to find actual email addresses of *specific people*, not generic or departmental contacts. As such, no verified personal email addresses meeting the strict criteria could be identified."
+  },
+  "barclays": {
+    "company_domain": "barclays.com",
+    "contacts": [
+      {
+        "name": "Janice Leung",
+        "title": "Assistant Vice President, Campus Recruitment, Human Resources",
+        "email": "janice.leung@barclays.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2b0YOEjnoB1IwbLMMaheFrVPz9Wujeo-exnXZtyp9AkOIkR1E99o5YOCuh591AIiE9hzaSiSRV5F0iiQgj-jtzv7wlcqiSn8E7bTNfKwjZSR2W21zP4hTx96JbeqNGUTfoFtGhQNRMd9-oibk4-0dezMNXgjqgWhH5y3cfKp-nz23bGQGSG-J_2lA0EmErLDqdoE1C0G-pA=="
+      }
+    ],
+    "contact_email": "janice.leung@barclays.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2b0YOEjnoB1IwbLMMaheFrVPz9Wujeo-exnXZtyp9AkOIkR1E99o5YOCuh591AIiE9hzaSiSRV5F0iiQgj-jtzv7wlcqiSn8E7bTNfKwjZSR2W21zP4hTx96JbeqNGUTfoFtGhQNRMd9-oibk4-0dezMNXgjqgWhH5y3cfKp-nz23bGQGSG-J_2lA0EmErLDqdoE1C0G-pA==",
+    "email_found_on_web": true,
+    "reasoning": "I searched various online sources, including Barclays' official websites, for personal and verified email addresses of key personnel such as the CEO, Founder, CTO, HR Manager, Head of People, or Talent Acquisition. Given Barclays' status as a large enterprise, direct personal emails for decision-makers are rarely published for unsolicited contact. Most contact information on their official site leads to general inquiry forms, customer service, or departmental emails rather than individual contacts. I explicitly avoided constructing or guessing any email addresses.\n\nDuring the search, I found an email address for Janice Leung, identified as an Assistant Vice President in Campus Recruitment within Human Resources for Barclays Asia. This email, 'janice.leung@barclays.com', was explicitly listed in an official document related to campus recruitment events. Her role falls under the 'Talent Acquisition' category as per the search strategy.\n\nWhile other named individuals like Marina Shchukina (Head of Investor Relations) or Paresh Tamhankar (LEA Nodal Officer for India) had associated email addresses, these were either departmental emails or for highly specific, non-recruitment-related inquiries, and thus did not fit the primary goal of finding personal emails for general outreach to decision-makers in HR/Talent Acquisition.\n\nGeneric recruitment-related emails such as 'yourresourcingsupport@barclays.com' (for recruitment process adjustments) and 'Campusonboarding@Barclays.com' (for onboarding queries) were also found, but the primary goal was to find actual email addresses of *specific people*, not generic ones, unless explicitly listed as a last resort. Janice Leung's email is a direct contact for a specific individual in a relevant role."
+  },
+  "susquehanna international group": {
+    "company_domain": "sig.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No confirmed email addresses for Susquehanna International Group were found in the training data. All email fields are set to null to avoid fabricating or guessing addresses."
+  },
+  "epicor": {
+    "company_domain": "epicor.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Domain known from hint; no verified email addresses for executives or recruiting contacts are present in training data with sufficient confidence to avoid fabrication."
+  },
+  "esri": {
+    "company_domain": "esri.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have internet access and cannot confirm any specific email addresses for Esri. Therefore, I set all email fields to null."
+  },
+  "akqa": {
+    "company_domain": "akqa.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a live database of verified individual employee emails for AKQA. While the domain is known, I cannot confirm specific personal or professional email addresses for executives or HR without risking fabrication, which violates the strict instructions provided."
+  },
+  "weaviate": {
+    "company_domain": "weaviate.io",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a verified database of individual employee emails for Weaviate in my training data. To avoid fabricating or guessing emails, I am returning null for all contact information as per the strict instructions."
+  },
+  "pitchmatter": {
+    "company_domain": "pitchmatter.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified email addresses for Pitchmatter in my training data. I only know the official domain. Therefore all email fields are set to null."
+  },
+  "emergent": {
+    "company_domain": "emergent.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Emergent in my training data; therefore I cannot provide any contacts."
   }
 }
