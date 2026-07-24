@@ -5604,5 +5604,258 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "I have no verified email addresses for Emergent in my training data; therefore I cannot provide any contacts."
+  },
+  "artpark - i-hub for robotics and autonomous": {
+    "company_domain": "artpark.in",
+    "contacts": [
+      {
+        "name": "Raghu Dharmaraju",
+        "title": "CEO",
+        "email": "ceo@artpark.in",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqXO-PC_I8A79Gx6TjyrOebSayaqcR-U7rN8j_6IfMDI15_iWu9-He6uVUyzIFn6qDpcO7Rt9_pQKfRMx6GpMwiCsEhuaZCAfwHz-zJtvllELl5r5XpHqNWIdF"
+      }
+    ],
+    "contact_email": "ceo@artpark.in",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqXO-PC_I8A79Gx6TjyrOebSayaqcR-U7rN8j_6IfMDI15_iWu9-He6uVUyzIFn6qDpcO7Rt9_pQKfRMx6GpMwiCsEhuaZCAfwHz-zJtvllELl5r5XpHqNWIdF",
+    "email_found_on_web": true,
+    "reasoning": "The search focused on finding verified email addresses of specific individuals at 'ArtPark - I-Hub for Robotics and Autonomous'. The company's official website, artpark.in, was primarily investigated. While several general contact emails like `office@artpark.in`, `connect@artpark.in`, and `startup@artpark.in` were found on the 'Contact Us' page, these are not associated with specific real people. Corporate information sites also listed `office@artpark.in`.\n\nThrough a comprehensive search of the official website, specifically the 'ARTPARK Dashboard' and 'Executive Team' sections, Raghu Dharmaraju was identified as the CEO. His verified email address, `ceo@artpark.in`, was explicitly listed on the ARTPARK Dashboard page.\n\nNo other explicit personal email addresses for key decision-makers (Founder, CTO, HR Manager, Head of People, Talent Acquisition) were found on LinkedIn, GitHub, or other startup directories for this specific entity. Umakant Soni was mentioned as a Co-founder & CEO in a 2020 press release, but no current, verified email was found for him. Generic career or HR emails were not explicitly listed on the careers page of the website, and the instructions prioritize personal emails over generic departmental ones for the 'contacts' array. Therefore, only the CEO's email is included as a 'contact'."
+  },
+  "vashistha consulting group": {
+    "company_domain": "vashisthagroup.net",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I searched various sources including LinkedIn, the company's official website (vashisthagroup.net), and startup directories like Wellfound for real people and their verified email addresses at VASHISTHA CONSULTING GROUP. While Dhiraj Singh is identified as the Founder of VASHISTHA CONSULTING GROUP, no explicit personal email address for him or any other specific individual at the company was found on publicly accessible web pages. The search queries for 'site:vashisthagroup.net contact', 'site:vashisthagroup.net team', and other similar terms did not yield direct email addresses for individuals. I encountered several other companies with 'Vashistha' in their name (e.g., Vashistha & Associates, Vashishta Associates, VASHISTHA MANAGEMENT CONSULTANCY SERVICES, Vashishtha Software Services), some of which had generic contact emails, but these were for different entities and thus do not meet the criteria. The instructions explicitly forbid constructing or guessing email addresses."
+  },
+  "aureole technologies": {
+    "company_domain": "vegam.co",
+    "contacts": [
+      {
+        "name": "Shyamsundar",
+        "title": "Contact Person (email for company inquiries)",
+        "email": "shyamsundar@vegam.co",
+        "source": "https://www.zaubacorp.com/company/AUREOLE-TECHNOLOGIES-PRIVATE-LIMITED/U72200KA1999PTC026021"
+      }
+    ],
+    "contact_email": "shyamsundar@vegam.co",
+    "email_source_url": "https://www.zaubacorp.com/company/AUREOLE-TECHNOLOGIES-PRIVATE-LIMITED/U72200KA1999PTC026021",
+    "email_found_on_web": true,
+    "reasoning": "I searched for 'Aureole Technologies' and relevant keywords like CEO, Founder, CTO, HR Manager, etc., across various platforms including LinkedIn, company websites, and business directories. I identified 'Aureole Technologies Private Limited' as a primary target company (distinct from other 'Aureole' named entities). While direct personal emails for specific decision-makers like CEO or HR Manager were not explicitly found, a business directory (ZaubaCorp) for 'AUREOLE TECHNOLOGIES PRIVATE LIMITED' explicitly lists 'shyamsundar@vegam.co' as the email address for users to contact the company. Although a full name and specific title for 'Shyamsundar' at Aureole Technologies were not provided, the email contains a name and is not a generic departmental email like 'info@' or 'careers@', making it the most specific contact email found for the company. 'Vegam.co' appears to be a domain associated with Aureole Technologies through mentions of 'Vegam Solutions - AI Intime' in job postings related to Aureole Technologies."
+  },
+  "startup khata": {
+    "company_domain": "startupkhata.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searches on LinkedIn, the company's official website (startupkhata.com), startup directories like YourStory.com and Invstt.com, and other public sources, no verified personal email addresses for specific individuals at 'Startup Khata' were explicitly found. The company website lists generic contact emails such as info@startupkhata.com and support@startupkhata.com, but the critical rules explicitly forbid returning generic emails in the 'contacts' array and require returning only emails explicitly found for 'real people'. While Anzar Ali (also referred to as Mohd Anzar Ali) was identified as the Founder of Startup Khata, his personal email address was not found on any verified public webpage."
+  },
+  "ray iot solutions pvt ltd": {
+    "company_domain": "rayiot.com",
+    "contacts": [
+      {
+        "name": "Sanchi Poovaya",
+        "title": "Founder/Director",
+        "email": "spoovaya@raybaby.us",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4fhrV11AaP0FVAsaFE7w7LEBJlhIOqNe86YxXMTWMZK_qd8iz0SDZvDemxUqALpvwGxCZegj9PovyBG69WLYkDXV2rtfmS3MF23JeuBS_B7cMUmRokVrJbX58yDUCBmjfevtXr-vGvIxm-AYfbnY6yNekE0G46kZ8kdrFBNIZ1waeVJtHptdcT0ij"
+      }
+    ],
+    "contact_email": "spoovaya@raybaby.us",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE4fhrV11AaP0FVAsaFE7w7LEBJlhIOqNe86YxXMTWMZK_qd8iz0SDZvDemxUqALpvwGxCZegj9PovyBG69WLYkDXV2rtfmS3MF23JeuBS_B7cMUmRokVrJbX58yDUCBmjfevtXr-vGvIxm-AYfbnY6yNekE0G46kZ8kdrFBNIZ1waeVJtHptdcT0ij",
+    "email_found_on_web": true,
+    "reasoning": "I followed the search strategy and found an explicit email address for Sanchi Poovaya, a director and founder of Ray IoT Solutions Pvt Ltd (also referred to as RayIoT and Raybaby). The email 'spoovaya@raybaby.us' was listed on ZaubaCorp, a business information website, as a contact email for the company. Wellfound further corroborates Sanchi Poovaya as the founder of RayIoT."
+  },
+  "ataccama": {
+    "company_domain": "ataccama.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Ataccama are known from training data. Without internet access, cannot confirm any email addresses. Therefore all email fields are set to null."
+  },
+  "cloud linux": {
+    "company_domain": "cloudlinux.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified, specific personal or executive email addresses for CloudLinux in my training data. Per the strict instructions to avoid fabrication and only return emails I am 100% confident exist, I am returning null for all contact fields."
+  },
+  "devsinc": {
+    "company_domain": "devsinc.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual or official recruitment email addresses for Devsinc in my training data. Per the strict instructions to avoid fabrication and only provide 100% certain emails, all email fields must be null."
+  },
+  "kms technology": {
+    "company_domain": "kms-technology.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I recall the domain kms-technology.com from training data, but I do not have any specific, verified email addresses for executives, HR, or recruiting contacts in my training data. To avoid fabricating information, I return null for all email fields."
+  },
+  "damen shiprepair harlingen": {
+    "company_domain": "damen.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Damen Shiprepair Harlingen in my training data; therefore I cannot provide any contacts and must set all email fields to null."
+  },
+  "valeo": {
+    "company_domain": "valeo.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a live database of verified individual employee emails for Valeo. While the domain is known, I cannot confirm specific personal or professional email addresses for executives or HR without risking fabrication, which is strictly prohibited by the instructions."
+  },
+  "solar turbines": {
+    "company_domain": "solarturbines.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'solarturbines.com' is confirmed as the official website based on the provided hint and general knowledge, specific verified email addresses for Solar Turbines (CEO/Founder, CTO, HR Head, or careers email) cannot be definitively confirmed from my training data. I cannot fabricate or guess emails, and without explicit evidence of active addresses, all email fields are set to null to comply with safety rules."
+  },
+  "skillsecure x": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about a company named 'SkillSecure X' in my training data, so I cannot provide a domain or any email contacts."
+  },
+  "indecimal": {
+    "company_domain": "indecimal.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Indecimal in my training data. To avoid providing fabricated or unreliable information, all email fields are set to null."
+  },
+  "ai india innovations": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I could not locate any publicly available domain or verified email addresses for Ai India Innovations in my training data."
+  },
+  "spearmint technologies": {
+    "company_domain": "spearmint.tech",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have internet access and I have no verified email addresses for Spearmint Technologies in my training data. The domain spearmint.tech is the most likely official website, but no email addresses could be confirmed."
+  },
+  "poppop labs": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific email addresses for 'PopPop Labs' in my training data. To avoid fabricating information, all email fields are set to null."
+  },
+  "venura tech": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verifiable information about 'Venura Tech' exists in my training data. Without specific, confirmed details about the company's domain or active email addresses, all fields must be set to null to comply with the rules against fabrication or guessing."
+  },
+  "in2peta": {
+    "company_domain": "in2peta.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for In2peta in my training data. To avoid providing fabricated or unreliable information, I am returning null for all contact fields."
+  },
+  "devmani traders": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific contact information or a confirmed official domain for 'Devmani Traders' in my training data. To avoid providing fabricated or inaccurate information, all email and domain fields are set to null."
+  },
+  "qenix labs": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verifiable information about Qenix Labs' domain or email contacts exists in my training data. I cannot fabricate or guess emails, and must adhere strictly to the rule of only returning confirmed details. All fields are set to null to avoid providing inaccurate information."
+  },
+  "aiops community": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I could not find any confirmed official website domain or verified email contacts for AiOps Community in my training data. Therefore all fields are set to null."
+  },
+  "genesys ai labs": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no internet access and I am not aware of any verified email addresses for Genesys Ai Labs from my training data. Therefore I set all email fields to null."
+  },
+  "evolvx labs": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified domain or email contacts for 'Evolvx Labs' exist in my training data. I cannot fabricate or guess emails/domains due to strict verification rules. All fields are set to null to avoid potential inaccuracies."
+  },
+  "silstone group": {
+    "company_domain": "silstone.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified email addresses for Silstone Group from my training data. I cannot confirm any specific email addresses, so all email fields are set to null."
+  },
+  "tamizha media pvt ltd": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No reliable data found in training set for Tamizha Media Pvt Ltd. No verified emails or domain available."
+  },
+  "fobes skill itech pvt. ltd.": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verifiable information exists in my training data about 'Fobes skill Itech Pvt. LTD.' or its official domain/emails. The company name appears non-standard or potentially misspelled, and I cannot confirm any specific contact details without explicit data from my training corpus. All email fields must remain null per strict rules against fabrication."
+  },
+  "augurs technologies pvt. ltd.": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No reliable data in training set for Augurs Technologies Pvt. Ltd. domain or verified email contacts."
+  },
+  "pttr load board": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verifiable information exists in my training data about 'PTTR LOAD BOARD' domain or specific email contacts. All email fields are set to null to comply with the rule of not fabricating or guessing emails. The company domain could not be confirmed without internet access."
   }
 }
