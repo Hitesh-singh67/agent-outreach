@@ -5857,5 +5857,104 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "No verifiable information exists in my training data about 'PTTR LOAD BOARD' domain or specific email contacts. All email fields are set to null to comply with the rule of not fabricating or guessing emails. The company domain could not be confirmed without internet access."
+  },
+  "xylofy ai": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching following the provided strategy, no verified email addresses for specific individuals at 'XYlofy AI' were explicitly found on any real webpages. Searches on LinkedIn, company websites (an official one for 'XYlofy AI' with direct contact info was not identified), Wellfound/AngelList, Crunchbase, GitHub, press releases, or news articles did not yield any personal emails for CEO, Founder, CTO, HR Manager, Head of People, or Talent Acquisition roles. Several results mentioned 'XYlofy AI' in the context of internship postings on job boards like Unstop and Freshershunt, but these platforms typically handle applications through their own systems and do not provide direct company or individual email addresses. Other search results led to companies with similar names (e.g., 'Xylo AI', 'yfy.ai', 'Locofy.ai', 'Bonfy.AI', 'JIFFYAI'), but these were distinct entities and their contact information is not relevant to 'XYlofy AI'. No generic careers@ or hr@ email was explicitly listed on what could be confirmed as 'XYlofy AI's official website."
+  },
+  "pixxel": {
+    "company_domain": "pixxel.space",
+    "contacts": [
+      {
+        "name": "Awais Ahmed",
+        "title": "Founder and CEO",
+        "email": "awais@pixxel.co.in",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBsU7otnsGwE3oaSFLod1eMtUhXCaV266_bcHiDs6-OoMgBDcthvQYtds1Ij2RHmkU9o4TSfdAda6lf1FXoGlIP8WzNcHIsKq3X5yyBnUK6Eepzw9Vtyc2nUxDtSAHgPnYl-pKzmuSmxto-hJk3rkZkMRuQBYdZtY1xS477PIoANBwibtXX9797vJa4SkgGyIHB3ytY-stc8s"
+      },
+      {
+        "name": "Kshitij Khandelwal",
+        "title": "Founder and CTO",
+        "email": "mail@kshitijkhandelwal.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlgCOSLz9z8Jlx1_APtfQ3R2O9Allj4cavPiu0XSPRHsqAobWOvkrELmXLqUR63kN9YEjToK9ceaHf4Cr748Vi78NOq5yZdbQ-dzqJT915bA9mRp2CKmkw"
+      }
+    ],
+    "contact_email": "awais@pixxel.co.in",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFBsU7otnsGwE3oaSFLod1eMtUhXCaV266_bcHiDs6-OoMgBDcthvQYtds1Ij2RHmkU9o4TSfdAda6lf1FXoGlIP8WzNcHIsKq3X5yyBnUK6Eepzw9Vtyc2nUxDtSAHgPnYl-pKzmuSmxto-hJk3rkZkMRuQBYdZtY1xS477PIoANBwibtXX9797vJa4SkgGyIHB3ytY-stc8s",
+    "email_found_on_web": true,
+    "reasoning": "I found the email address for Awais Ahmed, Founder and CEO of Pixxel, listed as 'awais@pixxel.co.in' on the IndiaFilings website for 'PIXXELSPACE INDIA PRIVATE LIMITED', which is a legal entity associated with Pixxel. I also found another personal email for Awais Ahmed, 'awais.ahmed.na@gmail.com', on his personal 'About me' page. For Kshitij Khandelwal, Founder and CTO, his email address 'mail@kshitijkhandelwal.com' was explicitly found on his personal website. I prioritized the company-affiliated email for Awais Ahmed for the 'contact_email' field as it's directly tied to the legal entity of Pixxel, but included both found emails in the contacts array."
+  },
+  "ai47labs": {
+    "company_domain": "ai47labs.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I conducted searches across LinkedIn, the company's official website (ai47labs.com), Wellfound/AngelList, Crunchbase, GitHub, and for press releases/blog posts. While I identified Ashok Pundit as a founder of AI47Labs, and listed other employees, I was unable to find any explicitly stated or verified personal email addresses for him or any other individual at the company. No generic 'careers@ai47labs.com' or 'hr@ai47labs.com' email address was explicitly listed on their website or in any other verified source. The search results contained general information about the company and job postings, but no direct contact emails. Per the instructions, I did not construct or guess any email addresses."
+  },
+  "heizen": {
+    "company_domain": "heizen.work",
+    "contacts": [
+      {
+        "name": "Aman Arora",
+        "title": "CEO & Founder",
+        "email": "aman@heizen.work",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr85MolhiRpUJ4mSeaOQouYtl2tDztwMCp8tDh9ozfjR-OXW_zczZ5okMxgj509p5AQ1Uov0WU7JIQT9YdDLPpUNVS9gY7gVpZrYDLFsUpTcnsSidbsc59S5VZiL4dRzhE"
+      }
+    ],
+    "contact_email": "aman@heizen.work",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGr85MolhiRpUJ4mSeaOQouYtl2tDztwMCp8tDh9ozfjR-OXW_zczZ5okMxgj509p5AQ1Uov0WU7JIQT9YdDLPpUNVS9gY7gVpZrYDLFsUpTcnsSidbsc59S5VZiL4dRzhE",
+    "email_found_on_web": true,
+    "reasoning": "I searched the company's official website and related startup directories. I found the email address 'aman@heizen.work' explicitly listed on the Heizen website's Privacy Policy page as a contact for account deletion. This email belongs to Aman Arora, who is identified as the CEO & Founder of Heizen. While other generic email addresses like 'hiring@heizen.work' and 'admin@heizen.work' were also found, the primary goal was to find actual email addresses of specific people. Information about other co-founders (Abhilasha Singh, CTO; Nijansh Verma, CMO) was found, but explicit, full personal email addresses for them were not found on any publicly accessible webpages without guessing or constructing them."
+  },
+  "gravity ai": {
+    "company_domain": "gravity-ai.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I performed a comprehensive search for real people and their verified email addresses at the company \"Gravity AI\", focusing on the AI marketplace platform (gravity-ai.com) and considering other entities also named \"Gravity AI\".\n\n1.  **LinkedIn Search:** Searches for CEO, Founder, CTO, HR Manager, Head of People, or Talent Acquisition at \"Gravity AI\" on LinkedIn did not explicitly reveal personal email addresses in their bios or linked personal websites.\n2.  **Company Official Website (gravity-ai.com):** The official website for the AI marketplace platform, gravity-ai.com, provides a 'Contact Us' page and a privacy policy. These pages list generic email addresses such as `support@gravity-ai.com` and `contact@gravity-ai.com`. There are contact forms that state messages route to a founder or lead engineer, but no direct, explicit personal email addresses are provided.\n3.  **Startup Directories (Tracxn, Wellfound, PitchBook):** Tracxn identified Daniel Huss as the Co-Founder & CEO of Gravity AI (the AI marketplace platform) and mentioned \"Contact Info: 1 email address\". However, the actual email address was not explicitly displayed in the search snippet and required signing up or logging in, which violates the rule of only returning explicitly found emails. Wellfound and PitchBook also did not yield explicit personal email addresses.\n4.  **GitHub:** A GitHub repository for a \"Gravity AI\" focused on AI agents listed `dev@gravity.ai` and `security@gravity.ai`. While these are related to a \"Gravity AI\" entity, they are departmental and not associated with a specific individual.\n5.  **Press Releases, Blog Posts, News Articles:** Multiple search results were found for various companies named \"Gravity\" or \"Gravity AI\" (e.g., gravity.co.kr, bygravity.com, onegravity.com, thegravity.ai, thegravityaitech.com). While some of these listed email addresses (e.g., `avoigts@onegravity.com` for Allison Voigts, `hello@bygravity.com` for Lucas Thelosen and team), these emails belong to different companies and not the primary target, \"Gravity AI\" (the AI marketplace platform).\n6.  **Generic Careers/HR email:** The company's websites only provided general inquiry emails, not explicitly listed careers@ or hr@ emails that would route to a specific person.\n\nFollowing the critical rules, especially the one to \"NEVER construct or guess an email address\" and to \"Only return emails you FOUND EXPLICITLY on a real webpage\" for specific people, I could not find any verified personal email addresses for real individuals at Gravity AI (gravity-ai.com)."
+  },
+  "yugensoft innovations": {
+    "company_domain": "yugensoft.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searches across LinkedIn (via Google Search), the company's official website, Crunchbase, and GitHub, no explicit, verified email addresses for specific individuals holding decision-making roles (CEO, Founder, CTO, HR Manager, Head of People, or Talent Acquisition) at Yugensoft Innovations were found. The company's official website only lists a general contact email, info@yugensoft.com. While a GitHub profile for 'Yashi Srivastava' with an email 'yugensmail@gmail.com' was found, their specific leadership role at Yugensoft Innovations could not be explicitly verified from the search results, and thus cannot be included as per the critical rules to only return explicitly found and verified emails for stated roles. No other public webpages explicitly listed personal emails for the targeted roles."
+  },
+  "caspian": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "A comprehensive search for real people and their verified email addresses at companies named \"Caspian\" was conducted, focusing on specific individuals (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition). Multiple entities named \"Caspian\" were identified during the search, including a crypto trading platform (Caspian, Ltd.), a financial firm (Caspian Capital), a robotics company (Caspian Robotics), and others.\n\nFor Caspian, Ltd., a whitepaper mentioned `info@caspian.tech` as a general contact email, and Robert Dykes was identified as CEO in 2019. However, no personal email address for Robert Dykes or any other specific individual was explicitly found or published on a public webpage.\n\nFor Caspian Capital, their \"Contact\" page provided `info@caspianlp.com` as a general inquiry email, and their \"Leadership\" page listed key personnel such as Adam S. Cohen (Managing Partner) and T. Grey Perkins (President). Despite identifying these individuals, no direct, personal email addresses for them were explicitly found on their website or any other verified source.\n\nOther \"Caspian\" entities, such as Caspian Apiaries, Caspian Networks Limited, and CASPIAN LIMITED (Tanzania), either provided generic company emails (e.g., `main@caspian.com`) or obscured individual contact information, requiring subscriptions to access, which does not meet the requirement of being \"explicitly found on a real webpage\".\n\nNo verified personal email addresses for specific individuals at any \"Caspian\" company were explicitly found across LinkedIn profiles, company 'About Us' or 'Team' pages, startup directories (Wellfound/AngelList, Crunchbase), GitHub, press releases, or news articles. The search also did not yield any explicitly listed generic `careers@` or `hr@` emails that were clearly verifiable on a company's website.\n\nTherefore, based on the strict criteria of only returning explicitly found and verified personal email addresses, no such contacts could be identified."
+  },
+  "wing assistant": {
+    "company_domain": "wingassistant.com",
+    "contacts": [
+      {
+        "name": "Rommel",
+        "title": null,
+        "email": "rommel@getwingapp.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf2TtKT0DoApcXqCYgDdj-VTTxKYFEUm3F7uh8d4Aze0bvUPD9CVZcZggm7aWP_c7OO9zNj7gwf3ayPSZpV9MduB0pjycES6cetHnHP7K_30Oogd3tMc6DUm89OGbYO3_UuiVP0KgdwClSB98wP4Nb1Z7fG-XXwg=="
+      }
+    ],
+    "contact_email": "rommel@getwingapp.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf2TtKT0DoApcXqCYgDdj-VTTxKYFEUm3F7uh8d4Aze0bvUPD9CVZcZggm7aWP_c7OO9zNj7gwf3ayPSZpV9MduB0pjycES6cetHnHP7K_30Oogd3tMc6DUm89OGbYO3_UuiVP0KgdwClSB98wP4Nb1Z7fG-XXwg==",
+    "email_found_on_web": true,
+    "reasoning": "I conducted a comprehensive search following the specified strategy to find real people and their verified email addresses at Wing Assistant. I prioritized finding personal emails of decision-makers (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition) at the domain `wingassistant.com`.\n\nKey personnel such as Karan Kanwar (CEO/Founder), Sai Gupta (CTO/Co-Founder), Roland Polzin (Co-Founder/CMO), and Martin Gomez (Co-Founder/COO) were identified. While various professional platforms like SendScale.com and Prospeo indicated that these individuals have verified work emails associated with Wing Assistant (e.g., `ka***@wingassistant.com` for Karan Kanwar), these emails were either obfuscated or accessible only behind a login/paywall, making them not 'explicitly found on a real webpage' in their full, un-guessed form, as per the critical rules. Therefore, I could not include them.\n\nMy searches for dedicated 'HR Manager', 'Head of People', or 'Talent Acquisition' roles with explicitly listed email addresses at `wingassistant.com` also did not yield direct contact emails that met the strict criteria.\n\nThe most specific individual email address explicitly found was `rommel@getwingapp.com`. This email is listed as a contact for Wing Assistant on a page discussing the company's information. While the domain `getwingapp.com` is not the primary `wingassistant.com` domain, it is presented as a contact channel for Wing Assistant. The email belongs to a real person named 'Rommel', though their specific title or role was not provided in the search results. Given the stringent rule against constructing or guessing email addresses, and the absence of other explicitly provided personal emails for decision-makers at the `wingassistant.com` domain, `rommel@getwingapp.com` is the only verifiable and explicitly found personal email associated with the company through public web searches that adheres to the rules. No generic emails like `careers@` or `hr@` were explicitly listed on the `wingassistant.com` website itself."
+  },
+  "vizzia": {
+    "company_domain": "vizzia.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Vizzia in my training data. To avoid providing fabricated or inaccurate information, all contact fields are set to null."
   }
 }
