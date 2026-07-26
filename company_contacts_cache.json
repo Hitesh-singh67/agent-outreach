@@ -5956,5 +5956,154 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "I do not have any verified, specific individual email addresses for Vizzia in my training data. To avoid providing fabricated or inaccurate information, all contact fields are set to null."
+  },
+  "pgagi": {
+    "company_domain": "pgagi.com",
+    "contacts": [
+      {
+        "name": "Shibajyoti Bhowmik",
+        "title": "Director",
+        "email": "shibajyoti1921998@gmail.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSu9lOysRoRQMhMSnNz5uwfK_IUfu9GsPeP_fcX0zqm3VRFQjJeKU1Cu6fBZwRp8l6YPfJovB7oyMKIn8jo0OcHNnr0l_GjaS8dqzL8fgk-Teou_OWGwB_GuuvnwixjI6NACyOQvvJEDl7OozZOGNkhQA69546ruT8Xg=="
+      }
+    ],
+    "contact_email": "shibajyoti1921998@gmail.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSu9lOysRoRQMhMSnNz5uwfK_IUfu9GsPeP_fcX0zqm3VRFQjJeKU1Cu6fBZwRp8l6YPfJovB7oyMKIn8jo0OcHNnr0l_GjaS8dqzL8fgk-Teou_OWGwB_GuuvnwixjI6NACyOQvvJEDl7OozZOGNkhQA69546ruT8Xg==",
+    "email_found_on_web": true,
+    "reasoning": "After searching LinkedIn, the company's official website, startup directories, GitHub, press releases, blog posts, and news articles, two explicitly listed email addresses were found. Shibajyoti Bhowmik is identified as a Director at PGAGI Consultancy Private Limited. His email, 'shibajyoti1921998@gmail.com', was found in a public document associated with his name. Additionally, 'contact@toingg.com' is explicitly listed in the Privacy Policy of Toingg, a company operated by PGAGI Consultancy Pvt. Ltd.. While Vivekjyoti Bhowmik was identified as a founder, no personal email address for him was explicitly found on publicly accessible webpages that met the strict criteria. The email for Shibajyoti Bhowmik is chosen as the best single contact because it is associated with a real person and was explicitly found."
+  },
+  "vedanta mobility": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I was unable to find any verified email addresses for specific individuals at VEDANTA MOBILITY. My search attempts focused on LinkedIn for key personnel (CEO, Founder, CTO, HR Manager), the company's official website (vedantamobility.com) for team/about/contact pages, Wellfound/AngelList, Crunchbase, GitHub, and press releases/news articles. While job postings for 'Founder Intern' roles at VEDANTA MOBILITY were found on platforms like Indeed and BeBee, no direct personal email addresses were explicitly listed or could be verified. The search results contained contact information for the larger 'Vedanta Limited' group, but these were generic departmental emails (e.g., investor relations, company secretarial, sustainability) or for a different entity (Vedanta Aluminium Metal Limited), not specific to VEDANTA MOBILITY's leadership or HR, and therefore did not meet the criteria of being personal, verified emails for the target company. I did not find any explicitly listed careers@ or hr@ emails on the VEDANTA MOBILITY website or in the broader search results."
+  },
+  "newspace": {
+    "company_domain": "newspace.co.in",
+    "contacts": [
+      {
+        "name": "Sarath Kumar",
+        "title": "Senior Manager IT Infrastructure & Security (ISO)",
+        "email": "sarath.k@newspace.co.in",
+        "source": "https://newspace.co.in/privacy-policy/"
+      }
+    ],
+    "contact_email": "sarath.k@newspace.co.in",
+    "email_source_url": "https://newspace.co.in/privacy-policy/",
+    "email_found_on_web": true,
+    "reasoning": "I searched LinkedIn, the company's official website (newspace.co.in), and other startup directories. On the official company website, specifically on their privacy policy page, I found the explicit email address for Sarath Kumar, who is listed as the Senior Manager IT Infrastructure & Security (ISO) and the appointed grievance officer. The company's 'Contact Us' page lists general inquiry and customer support emails (info@newspace.co.in and customer.support@newspace.co.in respectively) and names the co-founders (Sameer Joshi and Julius Amrit) but does not provide their direct personal email addresses. Other third-party sites like Growjo and RecruiterContacts showed masked email addresses for other individuals, which could not be explicitly verified without guessing or signing up, violating the strict rules provided. Therefore, only Sarath Kumar's email could be explicitly verified and returned."
+  },
+  "kramah software india pvt. ltd.": {
+    "company_domain": "kramah.com",
+    "contacts": [
+      {
+        "name": "Dr. Rajeev C. Raghunath",
+        "title": "Founder & CEO",
+        "email": "rajeev.raghunath@kramah.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4fFg1LHaOJSLTi-Cxz8JCKx3SVFeq1J1AowI5_JIzTqPDxDAs9AfaL6anrY-QTBImTdTAHsdxGBMDLiaQsW-E7amRWoiMocyYsg-rut80ajP6eqqqMkPzCH2fz2T5hII="
+      },
+      {
+        "name": "Madhumathi",
+        "title": "Talent Acquisition/HR (Implied)",
+        "email": "madhumathi@kramah.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyLLP0i0BO4gZ11wWsRBLGe5ydnH3EwEgXGtToQfEf5BfjxkuHan1H92Gw3_dx0BS89CGqnVgpVqZo4hQ10pUW8T8vCk3YWGcjgN-MqXNuRc3-sI3b6JIp"
+      }
+    ],
+    "contact_email": "rajeev.raghunath@kramah.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4fFg1LHaOJSLTi-Cxz8JCKx3SVFeq1J1AowI5_JIzTqPDxDAs9AfaL6anrY-QTBImTdTAHsdxGBMDLiaQsW-E7amRWoiMocyYsg-rut80ajP6eqqqMkPzCH2fz2T5hII=",
+    "email_found_on_web": true,
+    "reasoning": "I found the company domain to be kramah.com. For specific individuals, I identified Dr. Rajeev C. Raghunath as the Founder & CEO and his verified email address, rajeev.raghunath@kramah.com, was explicitly listed in the company's Privacy Policy. Additionally, for HR/Talent Acquisition, I found an email address, madhumathi@kramah.com, listed in job application instructions alongside the generic hr@kramah.com. While Madhumathi's specific title wasn't provided, the context of the email for sending resumes strongly indicates she is a real person involved in talent acquisition. I prioritized these specific individual emails over generic departmental ones as per the instructions."
+  },
+  "neoteric analytics": {
+    "company_domain": "neotericanalytics.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://neotericanalytics.com/contact-us",
+    "email_found_on_web": true,
+    "reasoning": "The search for 'REAL PEOPLE and their VERIFIED email addresses' at Neoteric Analytics involved multiple strategies. The company's official website, neotericanalytics.com, prominently features a 'Contact Us' page where the generic email address 'contact@neotericanalytics.com' is explicitly listed.\n\nExtensive searches were conducted on LinkedIn, Crunchbase, Wellfound (formerly AngelList), and GitHub for individuals holding key positions such as CEO, Founder, CTO, HR Manager, Head of People, or Talent Acquisition at 'Neoteric Analytics'. These searches did not yield any specific personal email addresses associated with individuals at this particular company. While one search result mentioned 'CEO Matt Kurleto' in the context of 'Neoteric', it was unclear if this was for 'Neoteric Analytics' given that another source for 'Neoteric Analytics' on Jobaaj stated 'CEO, Not Available' and 'Founders, Not Available'. Other 'Neoteric' entities on GitHub and other domains were identified but were not 'Neoteric Analytics'.\n\nThe company's website does not feature a dedicated 'team' or 'about us' page listing individual employees and their contact information. Therefore, based on the stringent rule of only returning explicitly found and verified email addresses of specific people, no personal emails could be identified."
+  },
+  "connectixx technology solutions": {
+    "company_domain": "connectixx.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I searched LinkedIn, the company's official website (connectixx.com), startup directories, GitHub, press releases, and job boards for 'Connectixx Technology Solutions'. On the official website, connectixx.com, I found two individuals: Patrick Pollemans (Founder, Managing Director) and Kevin Pollemans (Digital) Media Advisor. However, their email addresses were presented as clickable 'Reach me by e-mail' links and were not explicitly visible or written out on the webpage. According to the critical rules, I am strictly prohibited from constructing or guessing email addresses, and must only return emails explicitly found on a real webpage. No other search results provided explicit email addresses for specific individuals at 'Connectixx Technology Solutions'. Therefore, no verified email addresses could be found for real people at this company."
+  },
+  "kodo technologies": {
+    "company_domain": "kodo.com",
+    "contacts": [
+      {
+        "name": "Deepti Sanghi",
+        "title": "Founder and CEO",
+        "email": "deepti@kodo.in",
+        "source": "https://www.tofler.in/kodo-technologies-private-limited/company/U72900MH2019PTC330611"
+      },
+      {
+        "name": "Deepti Sanghi",
+        "title": "Director",
+        "email": "deepti@kodo.in",
+        "source": "https://www.zaubacorp.com/company/KODO-TECHNOLOGIES-PRIVATE-LIMITED/U72900MH2019PTC330611"
+      },
+      {
+        "name": "Deepti Sanghi",
+        "title": "Director",
+        "email": "deepti@kodo.in",
+        "source": "https://www.insiderbiz.in/company/kodo-technologies-private-limited-MH400030"
+      }
+    ],
+    "contact_email": "deepti@kodo.in",
+    "email_source_url": "https://www.tofler.in/kodo-technologies-private-limited/company/U72900MH2019PTC330611",
+    "email_found_on_web": true,
+    "reasoning": "I performed searches on LinkedIn, the company's official website (which redirects from kodotechnologies.com to kodo.com), and various startup directories like Tofler, ZaubaCorp, and Tracxn. While direct individual emails were not found on LinkedIn profiles or the main company website, Deepti Sanghi, identified as a Founder and CEO, had her email address 'deepti@kodo.in' explicitly listed as the 'Company Email' on multiple reputable company information platforms (Tofler, ZaubaCorp, InsiderBiz), which also list her as a director or founder. This email is associated with a specific decision-maker rather than being a generic departmental address. Although Gaurav Thapa is listed as a Co-founder and CTO, his direct personal email was not explicitly found. The Australian entity 'Kodo Technologies' (kodotech.com.au) also appeared in searches, but the user's domain hint pointed to the Indian fintech company."
+  },
+  "constems-ai": {
+    "company_domain": "constems-ai.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching across LinkedIn, the company's official website, Crunchbase, and news articles, no explicit, full email addresses for specific individuals at Constems-AI were found without any form of obscuring or requiring inference. While platforms like Prospectoo listed partially obscured email addresses (e.g., A****@constems-ai.com) for key personnel such as Amit Singh (Co-Founder & CEO) and Amit Srivastava (Co-Founder & CTO), the instructions explicitly forbid constructing or guessing email addresses. The official company website (constems-ai.com) provides a generic contact email, info@constems-ai.com, but the primary goal was to find real people's verified email addresses, not generic departmental emails."
+  },
+  "the smartbridge": {
+    "company_domain": "thesmartbridge.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The search was conducted for 'The SmartBridge', prioritizing the domain 'thesmartbridge.com' as per the user's hint. While individuals like Amarender Katkam (CEO & Founder) and Suman Akula (Co-Founder) were identified at this company, no explicitly listed, verified personal email addresses for them were found on the company's website or other publicly accessible web pages. The website 'thesmartbridge.com' lists a generic contact email, info@thesmartbridge.com, but the instructions explicitly state not to return generic emails. It's important to note that another company named 'Smartbridge' (smartbridge.com), which is a separate entity, had personal emails available, but these are not relevant to the user's request for 'The SmartBridge'."
+  },
+  "data channel": {
+    "company_domain": "datachannel.co",
+    "contacts": [
+      {
+        "name": null,
+        "title": "Sales",
+        "email": "sales@datachannel.co",
+        "source": "https://datachannel.co/pricing"
+      }
+    ],
+    "contact_email": "sales@datachannel.co",
+    "email_source_url": "https://datachannel.co/pricing",
+    "email_found_on_web": true,
+    "reasoning": "My search strategy included looking for specific people (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition) and their personal emails on LinkedIn, the company's official website, startup directories (Wellfound/AngelList, Crunchbase), GitHub, press releases, and blog posts. I also checked for generic careers@ or hr@ emails as a last resort. \n\nI extensively searched the domain datachannel.co and related platforms. While I found a GitHub profile with an email (ganeshrvel@outlook.com), it was for a 'Data Channel' Dart utility and not explicitly associated with the target company datachannel.co.\n\nOn the official website, datachannel.co, the pricing page explicitly lists 'sales@datachannel.co' as a contact point for sales inquiries and booking calls with specialists. This is a verified, operational email address directly from the company's website. However, no personal email addresses for specific individuals at Data Channel (such as CEO, CTO, or HR roles) were explicitly found or verified on any of the checked web pages. Therefore, the only email that meets the criteria of being explicitly found on a real webpage and is associated with the company is the departmental sales email."
+  },
+  "coreslash technologies": {
+    "company_domain": "coreslash.com",
+    "contacts": [],
+    "contact_email": "coreslashtechnologies@gmail.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEF04dLiMpQGk_yVoOKC2Ml1ZUKbA4le8hXDDZ3ros18Uh11-McGGjzjA-yJpFPWynt_Gjeu1Fd5Z0KcJogQ-aDfvbkXBY8CF3lQOjqz9E2k5_UJCiHua-y_vt_7J4H3x55uvNWnlQ=",
+    "email_found_on_web": true,
+    "reasoning": "I conducted searches on LinkedIn, the company's official website (coreslash.com), Wellfound/AngelList, Crunchbase, GitHub, press releases, and blog posts to find verified email addresses of specific people at CoreSlash Technologies. While the company's website lists a general contact email, 'coreslashtechnologies@gmail.com', I could not find any explicit, verified personal email addresses for individuals holding titles such as CEO, Founder, CTO, or HR Manager. The search results did not yield any personal emails in LinkedIn bios, linked personal websites, or on any other platforms. Therefore, only the generic contact email found on the company's website is provided, as per the rule to only return explicitly found and verified email addresses and to never construct or guess emails."
+  },
+  "techinsights": {
+    "company_domain": "techinsights.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Domain known from provided hint; no verified personal or role-specific email addresses for CEO, CTO, HR Head, or careers email are present in my training data, so all email fields are set to null per instructions."
   }
 }
