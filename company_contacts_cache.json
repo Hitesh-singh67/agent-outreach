@@ -6105,5 +6105,13 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "Domain known from provided hint; no verified personal or role-specific email addresses for CEO, CTO, HR Head, or careers email are present in my training data, so all email fields are set to null per instructions."
+  },
+  "red hat": {
+    "company_domain": "redhat.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching across LinkedIn (via Google), Red Hat's official website leadership pages, press releases, and other business directories, no personal, unmasked, and explicitly verified email addresses for specific individuals at Red Hat (such as CEO, CTO, HR Manager, Head of People, or Talent Acquisition) were found. Several platforms like Growjo and RecruiterContacts showed masked email addresses (e.g., m*****@redhat.com, a\u2022\u2022\u2022\u2022\u2022@redhat.com) which require a sign-in to reveal, thus not meeting the 'explicitly found on a real webpage' criterion. The official Red Hat leadership page lists key personnel but does not provide their email addresses. Similarly, articles discussing emails from Red Hat executives contained the content of internal emails but not their direct contact information. Some regional general contact emails were found (e.g., apac@redhat.com, europe@redhat.com), but these are not personal emails of decision-makers as per the primary goal. As Red Hat is a large enterprise, and no explicit personal emails were found, it's consistent with companies that primarily use ATS portals for recruitment, indicating cold emails to specific individuals are not accepted or publicly provided."
   }
 }
