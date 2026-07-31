@@ -7505,5 +7505,504 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "Based on training data, there are no verified email addresses for GRADION's leadership, HR, or careers team. The domain 'gradion.com' is confirmed as the official website from contextual knowledge, but no specific email contacts could be validated without web access. All email fields are set to null to comply with the requirement of not fabricating or guessing addresses."
+  },
+  "vishvena techno solutions pvt. ltd.": {
+    "company_domain": "vishvena.com",
+    "contacts": [
+      {
+        "name": "Venkata Ravi Teja Villa",
+        "title": "Director",
+        "email": "teja.iitkgp@gmail.com",
+        "source": "https://www.zaubacorp.com/company/VISHVENA-TECHNO-SOLUTIONS-PRIVATE-LIMITED/U72900TG2022PTC169083"
+      }
+    ],
+    "contact_email": "teja.iitkgp@gmail.com",
+    "email_source_url": "https://www.zaubacorp.com/company/VISHVENA-TECHNO-SOLUTIONS-PRIVATE-LIMITED/U72900TG2022PTC169083",
+    "email_found_on_web": true,
+    "reasoning": "The search for 'Vishvena Techno Solutions Pvt. Ltd.' revealed several company directory listings that explicitly provide a contact email address. The email 'teja.iitkgp@gmail.com' is consistently listed as a contact email for the company across multiple sources. Directors of the company are identified as Vijaysekar Varma Ellanti and Venkata Ravi Teja Villa. Given the inclusion of 'teja' in the email address, it is strongly associated with Venkata Ravi Teja Villa, a director of the company. No other specific, individual, non-generic email addresses for other key personnel (CEO, Founder, CTO, HR Manager) were explicitly found on public webpages adhering to the critical rule of not constructing or guessing email addresses."
+  },
+  "lotuspay": {
+    "company_domain": "lotuspay.com",
+    "contacts": [
+      {
+        "name": "Atma Krishna",
+        "title": "Co-Founder & CEO",
+        "email": "atma@lotuspay.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6Z9YvhOFPSk3FcGhhmap2XJw0DgX10qkKOwnz6Nd5KaynIcRlGom9LePFuJ5iwnwEyFQttwymOQf7Hu8UWoiMBCk1aBfwTfbGWnGvOFGm28B2YNDHQNq3xKpisw5nUS31G9gqpI01iHW24i1ei0oSSqpRYLDf45N7-weBTWqNzblV7L0jkDx9HLB1fgv2REV9Xgg="
+      }
+    ],
+    "contact_email": "atma@lotuspay.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6Z9YvhOFPSk3FcGhhmap2XJw0DgX10qkKOwnz6Nd5KaynIcRlGom9LePFuJ5iwnwEyFQttwymOQf7Hu8UWoiMBCk1aBfwTfbGWnGvOFGm28B2YNDHQNq3xKpisw5nUS31G9gqpI01iHW24i1ei0oSSqpRYLDf45N7-weBTWqNzblV7L0jkDx9HLB1fgv2REV9Xgg=",
+    "email_found_on_web": true,
+    "reasoning": "The email addresses for Atma Krishna (Co-Founder & CEO) and a general contact email for LotusPay Solutions Private Limited were explicitly found in a Delhi High Court document. Atma Krishna's role as Co-Founder & CEO was confirmed through multiple sources."
+  },
+  "hupo": {
+    "company_domain": "hupo.co",
+    "contacts": [
+      {
+        "name": "Gessica",
+        "title": "Marketing Lead (Privacy Contact)",
+        "email": "gessica@hupo.co",
+        "source": "https://hupo.co/careers/marketing-lead"
+      }
+    ],
+    "contact_email": "gessica@hupo.co",
+    "email_source_url": "https://hupo.co/careers/marketing-lead",
+    "email_found_on_web": true,
+    "reasoning": "The company 'Hupo' (an AI-native sales enablement startup based in Singapore) was identified, with its primary domain being hupo.co. The search for specific individuals and their verified email addresses followed the outlined strategy. An email address, gessica@hupo.co, was explicitly found on the company's official careers page for a 'Marketing Lead' position. This email is provided for inquiries related to personal data and exercising data rights. While it serves a specific function, it is explicitly listed on the company's domain and is associated with a named individual within the context of a job role. Other searches for founders (Justin Kim, Bek Abdik, Jean Neo, Beknazar A) on platforms like Tracxn indicated '1 email address' for each, but this information was behind a paywall and not explicitly accessible. Therefore, these could not be included based on the critical rule of only returning explicitly found emails. Other 'Hupo' entities found (e.g., Human Proteome Organization, hu-po on GitHub) were determined to be distinct from the target company based on their domain, location, and business description."
+  },
+  "unilock (on wellfound as unilock solutions)": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "A comprehensive search was conducted for 'UniLock (on Wellfound as UniLock Solutions)' using various platforms, including LinkedIn, Wellfound (AngelList), Crunchbase, and general web searches. The provided domain hint, 'https://www.unilock.in', did not yield an active website or any company explicitly matching 'UniLock Solutions' on Wellfound. The search results were heavily dominated by 'Unilock', a large North American hardscaping manufacturer (unilock.com). While this larger company has a CEO (David McIntyre) and provides some regional representative emails (e.g., daniel.neviackas@unilock.com) and generic customer service emails (customerservice@unilock.com), these do not align with the user's specific request for 'UniLock (on Wellfound as UniLock Solutions)'. No direct evidence of a company named 'UniLock Solutions' on Wellfound, or associated with the .in domain, could be found, nor were any verified personal email addresses of decision-makers for such a company explicitly listed on any real webpage. Therefore, no verified personal emails could be identified for the specified company."
+  },
+  "kawa space (on wellfound)": {
+    "company_domain": "kawa.space",
+    "contacts": [],
+    "contact_email": "missions@kawa.space",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGoV-XuGYAAVEWKY6cOPSr6MKTSU6ruyoEdY-f5NLzgng5l2yFHRLHgVdUFotpn2OdJRotfnK05m4Nd_O9otlPmaQSbVAsrgceFEpt6yRHQ_4MSsV4=",
+    "email_found_on_web": true,
+    "reasoning": "Despite extensive searching across LinkedIn, the company's official website, Wellfound, Crunchbase, GitHub, and other relevant platforms for key personnel like the Founder (Kris Nair) and Head of Talent (Kalpana Sumanth), no verified personal email addresses were explicitly found and cited on publicly accessible web pages. The company's 'Our Story' page indicates that they do not use traditional titles and individuals are defined by their work, which may contribute to the lack of publicly listed personal work emails. A generic contact email, missions@kawa.space, was explicitly found on the official Kawa Space website's contact page."
+  },
+  "easeops (on wellfound)": {
+    "company_domain": "easeops.io",
+    "contacts": [
+      {
+        "name": "Lalit Lakhchaura",
+        "title": "Head of Sales and Marketing",
+        "email": "lalit@easeops.io",
+        "source": "https://wellfound.com/jobs/6340579-business-development-intern"
+      }
+    ],
+    "contact_email": "lalit@easeops.io",
+    "email_source_url": "https://wellfound.com/jobs/6340579-business-development-intern",
+    "email_found_on_web": true,
+    "reasoning": "The search for 'EaseOps (on Wellfound)' led to their Wellfound profile and job postings. A job listing for a 'Business Development Intern' explicitly provided an email address for the hiring contact, Lalit Lakhchaura, who is listed as the Head of Sales and Marketing. The instruction stated: 'If you're ready to build your career in business development, we'd love to hear from you! Send your resume to [email protected]'. The company's official website, as listed on Wellfound and found via direct search, is www.easeops.io."
+  },
+  "privasapien (on wellfound)": {
+    "company_domain": "privasapien.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://privasapien.com/",
+    "email_found_on_web": true,
+    "reasoning": "I searched for specific individuals (CEO, Founder, CTO, HR Manager, Head of People, Talent Acquisition) at PrivaSapien across LinkedIn, their official website (privasapien.com), Wellfound, Crunchbase, GitHub, press releases, and blog posts. While Abilash Soundararajan was identified as the CEO and Co-Founder, no personal, verified email addresses for him or any other specific individual were found through the searches. The company's official website explicitly lists a general contact email address: contact@privasapien.com. As per the instructions, this generic but explicitly found email is returned as a last resort since no personal emails were verified."
+  },
+  "cravv (on wellfound)": {
+    "company_domain": "cravv.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://cravv.com",
+    "email_found_on_web": true,
+    "reasoning": "The official website for Cravv is cravv.com. The website explicitly lists 'More questions? Write to support@cravv.in'. This is a verified generic email address for the company. Searches on Wellfound and other startup directories identified Manthan Desai as the CEO and Co-Founder and Prithvi Shetty as the CTO and Co-Founder of Cravv. While a personal website for Prithvi Shetty was found listing an email (prithvi1@uw.edu), this email is associated with his academic background and a previous role at SAP, not directly with Cravv. No other verified personal email addresses for either founder directly associated with Cravv were found after extensive searching of LinkedIn profiles and general web searches. Therefore, the only explicitly verified email directly linked to the company is the generic support email."
+  },
+  "cybrilla technologies (on wellfound)": {
+    "company_domain": "cybrilla.com",
+    "contacts": [
+      {
+        "name": "Satish Kumar Perala",
+        "title": "Co-founder & CEO",
+        "email": "satish@cybrilla.com",
+        "source": "https://www.zaubacorp.com/company/CYBRILLA-TECHNOLOGIES-PRIVATE-LIMITED/U66190KA2010PTC054206"
+      }
+    ],
+    "contact_email": "satish@cybrilla.com",
+    "email_source_url": "https://www.zaubacorp.com/company/CYBRILLA-TECHNOLOGIES-PRIVATE-LIMITED/U66190KA2010PTC054206",
+    "email_found_on_web": true,
+    "reasoning": "I initiated a search for 'Cybrilla Technologies' leadership and HR emails on LinkedIn, company websites, and corporate directories. The ZaubaCorp website for 'CYBRILLA TECHNOLOGIES PRIVATE LIMITED' explicitly listed 'satish@cybrilla.com' as the email ID for contacting the company, and also listed 'SATISH KUMAR PERALA' as one of the directors. Further searches confirmed Satish Perala as a Co-founder and CEO of Cybrilla Technologies. While other generic contact emails like 'contact@cybrilla.com' were found on the company's official website and other sources, 'satish@cybrilla.com' is directly associated with a specific individual (the CEO/Co-founder) in a leadership role. No other explicitly stated personal email addresses for other key personnel (like HR Manager, CTO, or other founders) were found on publicly accessible webpages following the search strategy."
+  },
+  "klap.ai (yc s23)": {
+    "company_domain": "null",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "null",
+    "email_found_on_web": false,
+    "reasoning": "The search was conducted for 'Klap.ai (YC S23)' to find verified email addresses of specific individuals. Multiple search attempts, including queries on LinkedIn, Y Combinator S23 company lists, and general web searches, did not yield a company explicitly named 'Klap.ai' that is also identified as a YC S23 company. While 'Klap.app' (domain: klap.app) was frequently found, offering AI video services, there was no verifiable information linking it to Y Combinator's S23 batch. A generic email address, team@klap.app, was found for Klap.app. However, this is a generic email and not for a specific person. Another YC S23 company, 'kapa.ai', was identified with its co-founders Emil Soerensen (CEO) and Finn Bauer (CTO). Despite identifying real people at a YC S23 company, no explicit, verifiable email addresses for these individuals were found on any public webpages. Therefore, adhering to the critical rules of only returning explicitly found and verified email addresses and never constructing or guessing them, no specific personal email addresses for 'Klap.ai (YC S23)' could be identified."
+  },
+  "wizemen (yc w22)": {
+    "company_domain": "null",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "null",
+    "email_found_on_web": false,
+    "reasoning": "Despite multiple search attempts across LinkedIn, company website (wizemen.com), Wellfound, and Crunchbase for 'Wizemen (YC W22)', no verified email addresses for specific individuals were found. The domain 'wizemen.com' did not yield any relevant pages containing team or contact information. Mentions of 'YC W22' were found in relation to other companies (e.g., 'Complete (YC W22)', 'Apollo (YC W22)') or generic YC founder descriptions, but not specifically for 'Wizemen'. A Twitter shortened URL (https://t.co/0UQAAqAfoR) associated with 'founder & ceo at (yc w22)' was identified, but direct resolution of this URL was not possible with the current tools, and even if resolved, it's not confirmed to be 'Wizemen (YC W22)'. Therefore, no explicit and verified email addresses could be found for real people at the company 'Wizemen (YC W22)'."
+  },
+  "plural (yc w22)": {
+    "company_domain": "pluralonline.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Multiple companies named 'Plural' were identified in the search results. These include 'Plural by Pine Labs' (a payments infrastructure company associated with pluralonline.com), a venture capital firm called 'Plural' (also referred to as 'Plural Platform'), a Kubernetes management platform called 'Plural' (associated with plural.com and plural.sh), and 'Plural AI'.\n\nThe user's request specifically mentions 'Plural (YC W22)' and provides a domain hint 'https://pluralonline.com'. While 'pluralonline.com' is associated with 'Plural by Pine Labs', none of the search results explicitly state that 'Plural by Pine Labs' or any other 'Plural' entity is a 'YC W22' company. The only direct mention of 'YC W22' in the results refers to 'Complete (YC W22)', which is a different company name.\n\nDespite extensive searching for 'Plural (YC W22)' combined with terms like 'CEO', 'Founder', 'CTO', 'HR Manager', 'Head of People', or 'Talent Acquisition' on LinkedIn, company websites, and startup directories, no verified personal email addresses of specific individuals at a company explicitly identified as 'Plural (YC W22)' were found. Generic contact emails like 'pgsupport@pinelabs.com' for 'Plural by Pine Labs' and 'hello@plural.com' for the Kubernetes management platform were found, but these are not personal email addresses of decision-makers and do not meet the primary goal of the request. Therefore, no actual email addresses of specific people at 'Plural (YC W22)' could be explicitly found and verified on a webpage."
+  },
+  "rephrase.ai (yc s21)": {
+    "company_domain": "rephrase.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I know the domain rephrase.ai from the hint, but I have no verified email addresses for Rephrase.ai in my training data, so I cannot provide any contacts."
+  },
+  "sprinto (yc s21)": {
+    "company_domain": "sprinto.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No specific verified email addresses for Sprinto (YC S21) contacts exist in my training data. Following strict rules, I cannot fabricate or guess emails. The domain 'sprinto.com' is confirmed as official based on prior knowledge, but no active email contacts could be validated without web access."
+  },
+  "flint (yc w21)": {
+    "company_domain": "flint.money",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on training data, the official domain for Flint (YC W21) is flint.money. No verified personal or official email addresses for key personnel are present in the training data. Therefore, all email fields are set to null."
+  },
+  "suki (yc w17)": {
+    "company_domain": "suki.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I know the official domain is suki.ai from the provided hint and general knowledge of the company. However, I do not have any verified email addresses for executives, HR, or recruiting contacts in my training data that I can confirm with certainty. To avoid fabricating information, I leave all email fields null."
+  },
+  "kula (yc w21)": {
+    "company_domain": "kula.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on available training data, no verified email addresses for Kula (YC W21) are known. The official domain is kula.ai."
+  },
+  "threado (yc s21)": {
+    "company_domain": "threado.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No confirmed email addresses for Threado are present in the training data. Therefore all email fields are set to null."
+  },
+  "vernacular.ai (yc s19)": {
+    "company_domain": "vernacular.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No specific verified email addresses for Vernacular.ai (YC S19) were found in my training data. While the domain 'vernacular.ai' is confirmed via the provided hint, no official contact emails (CEO/Founder, CTO, HR, or careers) could be reliably identified without web access or explicit data. All emails are set to null to comply with the rule against fabrication."
+  },
+  "poshvine (acquired by razorpay, but still operates)": {
+    "company_domain": "poshvine.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for PoshVine in my training data; therefore I cannot provide any contacts and must set them to null to avoid fabricating information."
+  },
+  "uniqode (yc w20)": {
+    "company_domain": "uniqode.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Uniqode (YC W20) are present in the training data. Therefore all email fields are set to null."
+  },
+  "apna (yc s20)": {
+    "company_domain": "apna.co",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for the founders or executives of Apna in my training data. Per the strict instructions to avoid fabrication and only provide emails I am 100% confident exist, I am returning null for all contact fields."
+  },
+  "khatabook (yc s19)": {
+    "company_domain": "khatabook.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a verified database of personal or professional email addresses for Khatabook's executives or HR staff in my training data. To avoid providing fabricated or unverified information, I am returning null for all contact fields."
+  },
+  "frontrow (yc w20)": {
+    "company_domain": "frontrow.co",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Without internet access, I cannot verify the official domain or specific email addresses for FrontRow (YC W20). The domain 'frontrow.co' is provided as a hint but cannot be confirmed as 100% accurate. No verified email contacts exist in my training data for this company."
+  },
+  "genie (yc w21)": {
+    "company_domain": "genie.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific personal or professional email addresses for the founders or employees of Genie (YC W21) in my training data. To avoid providing fabricated or unreliable information, all email fields are set to null."
+  },
+  "innoviti technologies (on startupjobs.com)": {
+    "company_domain": "innoviti.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Innoviti Technologies are present in the training data. The domain is inferred from the provided hint."
+  },
+  "cuemath (on startupjobs.com)": {
+    "company_domain": "cuemath.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While I know the domain cuemath.com from training data, I do not have any verified email addresses for executives or recruiting contacts in my training data, so I cannot provide any contacts without risking fabrication."
+  },
+  "rupeek (on startupjobs.com)": {
+    "company_domain": "rupeek.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Without internet access, I cannot verify specific email addresses for Rupeek. My training data does not contain confirmed emails for this company. The domain 'rupeek.com' is based on the provided hint, but I cannot confirm its official status without web access. All email fields are set to null to comply with the rule of not fabricating or guessing."
+  },
+  "wysa (on wellfound)": {
+    "company_domain": "wysa.io",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have identified the company domain as wysa.io, but I do not have any verified, specific personal or professional email addresses for the company's executives or HR in my training data. To avoid providing fabricated or unreliable information, I am returning null for all contact fields."
+  },
+  "newton school (on wellfound)": {
+    "company_domain": "newtonschool.co",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'newtonschool.co' matches the provided hint, I cannot verify specific email addresses for Newton School (on Wellfound) from my training data. No confirmed, real, and verified email contacts exist in my knowledge base. Fabricating or guessing emails violates the critical rules."
+  },
+  "interviewbit (on wellfound)": {
+    "company_domain": "interviewbit.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain interviewbit.com is known from the provided hint, I do not have any verified email addresses for CEO, CTO, HR, or recruiting contacts in my training data. To avoid fabricating information, I return null for all email fields."
+  },
+  "smallcase (on wellfound)": {
+    "company_domain": "smallcase.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain smallcase.com is confirmed via the provided hint, there is no verified email contact data in my training for Smallcase (on Wellfound). I cannot fabricate or guess emails, and no specific verified contacts (CEO, CTO, HR, careers) exist in my knowledge base. All email fields must remain null to comply with strict verification rules."
+  },
+  "slice (on wellfound)": {
+    "company_domain": "sliceit.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Slice (on Wellfound) are present in the training data."
+  },
+  "ultimz technology (on wellfound)": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified information about Ultimz Technology's domain or email contacts in my training data, and I must not guess or fabricate any details."
+  },
+  "docsumo (yc s20)": {
+    "company_domain": "docsumo.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified email addresses for Docsumo in my training data. Therefore all email fields are set to null."
+  },
+  "recur club (yc w22)": {
+    "company_domain": "recur.club",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email contacts for Recur Club (YC W22) exist in my training data. While the domain 'recur.club' aligns with the provided hint, I cannot confirm specific active email addresses without explicit evidence. All email fields are set to null to comply with the requirement of returning only 100% verified contacts."
+  },
+  "zinghr (yc w21)": {
+    "company_domain": "zinghr.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain zinghr.com is confirmed as the official website, I cannot verify specific email addresses for ZingHR (YC W21) from my training data. No concrete, real, and verified email contacts exist in my knowledge base for this company. Fabricating or guessing emails violates the critical rules provided."
+  },
+  "fynd (yc s15)": {
+    "company_domain": "fynd.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Domain fynd.com is known from the hint; however, no verified email addresses for executives or recruiting are present in my training data, so email fields are left null to avoid fabricating information."
+  },
+  "fashinza (on startupjobs.com)": {
+    "company_domain": "fashinza.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have internet access and I have no knowledge of any verified email addresses for Fashinza from my training data. Therefore all email fields are set to null."
+  },
+  "questt (on wellfound)": {
+    "company_domain": "questt.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Questt in my training data. Following the strict rules to avoid fabrication or guessing, all email fields must be set to null."
+  },
+  "klassroom edutech (on wellfound)": {
+    "company_domain": "klassroom.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Klassroom Edutech are present in my training data. Therefore all email fields are set to null."
+  },
+  "danamojo (on wellfound)": {
+    "company_domain": "danamojo.org",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Danamojo found in training data. Domain inferred from hint."
+  },
+  "simplismart": {
+    "company_domain": "simplismart.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Simplismart in my training data; therefore I cannot provide any contacts."
+  },
+  "vagmine tech it pty": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about Vagmine Tech IT Pty or its email addresses in my training data, so I cannot confidently provide any domain or contact details."
+  },
+  "leap (on wellfound)": {
+    "company_domain": "leap.club",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Leap (leap.club) in my training data. Per the strict instructions to avoid fabrication and only return emails I am 100% confident exist, all email fields must be null."
+  },
+  "gyrus.ai (on wellfound)": {
+    "company_domain": "gyrus.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I recall seeing the domain gyrus.ai in training data as the likely website for Gyrus.AI, but I have no verified email addresses for any personnel (CEO, CTO, HR, or recruiting) in my training data. To avoid fabricating contacts, I return an empty contacts list and null for email fields."
+  },
+  "bluesapling - intelligence served (on wellfound)": {
+    "company_domain": "bluesapling.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain bluesapling.com is consistent with the hint, specific verified email addresses for BlueSapling - Intelligence Served (on Wellfound) are not present in my training data. I cannot fabricate or guess emails, and without explicit confirmation of active addresses (e.g., from official sources or prior verified data), all email fields must be set to null per the critical rules."
+  },
+  "perfx (on wellfound)": {
+    "company_domain": "perfx.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Perfx (on Wellfound) exist in my training data. The domain 'perfx.ai' is used based on the provided hint, but all email contacts must be set to null due to lack of confirmed information. Fabricating or guessing emails violates the critical rules."
+  },
+  "betacrew labs (on wellfound)": {
+    "company_domain": "betacrew.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'betacrew.in' matches the provided hint, there is no verifiable data in my training set confirming specific email addresses for BetaCrew Labs (e.g., CEO, CTO, HR, or careers contacts). All email fields must remain null to comply with the rule against fabrication or guessing."
+  },
+  "byepo technologies (on wellfound)": {
+    "company_domain": "byepo.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have identified the domain byepo.com, but I do not have any verified, specific individual email addresses for the founders or employees in my training data. To avoid fabrication, all email fields are set to null."
+  },
+  "noviga automations (on wellfound)": {
+    "company_domain": "noviga.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on training data, no verified email addresses for Noviga Automations were found. The domain is inferred from the provided hint."
+  },
+  "bitkraft technologies (on wellfound)": {
+    "company_domain": "bitkraft.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on training data, no verified email addresses for Bitkraft Technologies were found. The domain bitkraft.in is known as the company's website. No reliable contact emails are available."
+  },
+  "quicksync (on wellfound)": {
+    "company_domain": "quicksync.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Without internet access, I cannot verify the existence of specific email addresses or confirm the official domain for QuickSync (on Wellfound). The provided domain hint (quicksync.ai) is used, but I cannot confirm its validity or the accuracy of any contact information. All email fields are set to null to comply with the rule of not fabricating or guessing emails."
+  },
+  "adsquaretech solutions (on indeed)": {
+    "company_domain": "adsquaretech.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual or official recruitment email addresses for Adsquaretech Solutions in my training data. Per the strict instructions to avoid fabrication and only provide 100% certain emails, all email fields must be null."
+  },
+  "truvant consulting private limited (on indeed)": {
+    "company_domain": "truvant.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email contacts found in training data for Truvant Consulting Private Limited."
+  },
+  "alphabytecore pvt ltd (on indeed)": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about Alphabytecore Pvt Ltd in my training data, so I cannot confirm the domain or any email addresses."
+  },
+  "jebi softech services pvt ltd (on indeed)": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information in my training data about Jebi Softech Services Pvt Ltd, its domain, or any specific email addresses for its employees. The hinted domain https://jebisoftech.com cannot be confirmed without internet access, and I must not fabricate contacts. Therefore all fields are set to null or empty."
+  },
+  "ventura securities (on indeed)": {
+    "company_domain": "ventura1.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on available training data, no verified email addresses for Ventura Securities were identified. The domain ventura1.com is a likely official website, but specific contact emails are not confirmed."
   }
 }
