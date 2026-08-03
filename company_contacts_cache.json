@@ -8785,5 +8785,119 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "I have no verifiable information about ARKMINDS INFOTECH PRIVATE LIMITED or its email addresses in my training data, and cannot access the web to confirm the domain or contacts."
+  },
+  "shoppeal tech (boundrix platform)": {
+    "company_domain": "shoppeal.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I performed a comprehensive search following the specified strategy, including LinkedIn, the company's hinted domain (shoppeal.com), startup directories like Wellfound, GitHub, and general web searches for press releases or explicitly listed HR/careers emails. I identified Sudhanshu Singh as the CEO of Shoppeal Tech. While Wellfound listed Shoppeal Tech, it did not provide specific email addresses for individuals. Despite identifying key personnel, no verified email addresses were explicitly found on any real webpage. I strictly adhered to the rule of not constructing or guessing email addresses."
+  },
+  "aalteon": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching across LinkedIn, company websites, startup directories (Wellfound/AngelList, Crunchbase), GitHub, press releases, blog posts, and news articles, no verified email addresses for specific individuals at the company 'Aalteon' were found. The provided URL hint 'https://aalteon.com' did not lead to an active website with contact information. Search results did mention 'Aalteon' in the context of internship postings on platforms like Unstop, but these listings did not include individual names or their email addresses. Multiple similarly named companies (e.g., Alteon.io, Alteon AI, Alteon Health, Alteon Solutions) were identified, but efforts were made to distinguish 'Aalteon' as per the user's request. No explicit, verifiable email addresses of real people at 'Aalteon' were found that adhere to the strict rule of only returning emails explicitly found on a real webpage."
+  },
+  "optimspace": {
+    "company_domain": "optimspace.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite searching LinkedIn for key personnel like CEO, Founder, CTO, HR Manager, Head of People, or Talent Acquisition at Optimspace, and reviewing the company's official website (optimspace.in), startup directories (YourStory.com, Wellfound/AngelList, Crunchbase), GitHub, press releases, blog posts, and news articles, no explicit or verified email addresses for specific individuals were found. The YourStory.com profile mentions Swaraj Phatangade as part of the 'Core Team' of Optimspace with a LinkedIn icon, but no email address was provided in the search result snippet. No generic careers@ or hr@ emails explicitly listed on the Optimspace website were found either. All found information pertains to job postings or general company descriptions without direct contact information for individuals."
+  },
+  "pranishka technologies": {
+    "company_domain": "pranishkatechnologies.com",
+    "contacts": [
+      {
+        "name": "Prabhakara Rao Parisipogu",
+        "title": "Director",
+        "email": "prabhakararao11@gmail.com",
+        "source": "https://www.indiafilings.com/company/pranishka-technologies-private-limited-U72900TG2018PTC128552, https://www.zaubacorp.com/company/PRANISHKA-TECHNOLOGIES-PRIVATE-LIMITED/U72900TG2018PTC128552, https://www.tofler.in/pranishka-technologies-private-limited/company/U72900TG2018PTC128552"
+      },
+      {
+        "name": null,
+        "title": "General Company Contact",
+        "email": "pranishkatechnologies@gmail.com",
+        "source": "https://www.simplyhired.co.in/job/q7v3HhD6k5k1M1L-0M3e0s5R4n0s4A1n4?q=Pranishka+Technologies"
+      }
+    ],
+    "contact_email": "prabhakararao11@gmail.com",
+    "email_source_url": "https://www.indiafilings.com/company/pranishka-technologies-private-limited-U72900TG2018PTC128552",
+    "email_found_on_web": true,
+    "reasoning": "The email address 'prabhakararao11@gmail.com' was explicitly found on multiple corporate directory websites (IndiaFilings, ZaubaCorp, Tofler) as the official email for 'PRANISHKA TECHNOLOGIES PRIVATE LIMITED'. These sources also list Prabhakara Rao Parisipogu as a director of the company. Additionally, a SimplyHired job posting for 'Pranishka Technologies Pvt. Ltd.' with the domain 'https://pranishkatechnologies.com/' provided 'pranishkatechnologies@gmail.com' as a contact email. The email associated with a named director ('prabhakararao11@gmail.com') is preferred as it aligns with the goal of finding real people's emails."
+  },
+  "sszone technologies": {
+    "company_domain": "sszonetechnologies.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "My primary goal was to find actual, verified email addresses of specific people (like CEO, Founder, CTO, HR Manager) at SSzone Technologies, not generic departmental emails. I followed the prescribed search strategy, including searching LinkedIn, the company's presumed website (sszonetechnologies.com), Wellfound/AngelList, Crunchbase, GitHub, press releases, blog posts, and news articles.\n\nWhile I found several job postings from SSzone Technologies across various platforms, none of these explicitly listed the personal email addresses of specific individuals. One internship report mentioned a generic company email, 'info@sszonetechnologies.com', and a job posting on BeBee mentioned 'hr@nnhire.com', which appears to be a recruiting platform's email rather than a direct email from SSzone Technologies' domain. However, both of these are generic contact points and not personal emails of specific decision-makers, which was the primary objective. The search for individuals' emails in LinkedIn bios or linked personal websites did not yield results. Therefore, I was unable to find and verify any personal email addresses of specific people at SSzone Technologies."
+  },
+  "quillance infotech pvt ltd": {
+    "company_domain": "quillance.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://quillance.com/",
+    "email_found_on_web": true,
+    "reasoning": "Despite searching LinkedIn for key personnel like Ignesh Kumar Sahoo (Director) and Roja Priya Sahoo (Director) at Quillance Infotech Pvt Ltd, no personal or verified email addresses for specific individuals were explicitly found. The company's official website (quillance.com) lists general contact emails. The Tracxn and ZaubaCorp company profiles also listed a generic Gmail address for the company. Prioritizing emails explicitly found on the company's official domain, 'info@quillance.com' and 'support@quillance.com' were found on the 'Contact Info' section of their website. As per the instructions, 'info@quillance.com' is selected as the best single email as it is a general inquiry email directly from the company's website and is more suitable for initial contact than a support email."
+  },
+  "zenotalent": {
+    "company_domain": "zeno-talent.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRSE8402aZh95YyT5k8vQwvKkPjr9aRw6M3-I8KQq1lkzvBiGX0iE0vn_0DdkdNrC6JCdpxbIlimT-eUgHGrCjdKMgyz9r63rcWwB7u00E6_OStlHt_3tvEksls-h6ya0FRT98JNb7ytK4NwL",
+    "email_found_on_web": true,
+    "reasoning": "The search results revealed two distinct entities that could be referred to as 'Zenotalent'. One is 'ZenoTalent AI' operating at zenotalent.com, which offers AI automation for healthcare and business and lists 'support@zenotalent.com'. However, no specific individuals were named for this entity. The other is 'ZenoTalent' (workflow optimization, engineering, talent sourcing) operating under the domain zeno-talent.com. The privacy policy on zeno-talent.com explicitly states: 'This website is operated under the brand ZenoTalent, a commercial name used by Ignacio Vilas Eguileta, an independent professional based in Portugal.'. This identifies a 'real person' as requested by the prompt. The website consistently lists 'info@zeno-talent.com' as the primary contact for all queries, including those related to personal data and privacy, making it the verifiable business contact for Ignacio Vilas Eguileta's operation. Given that Ignacio Vilas Eguileta is an independent professional operating this brand, 'info@zeno-talent.com' serves as his direct business email for 'ZenoTalent'."
+  },
+  "prepelo ai": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite multiple searches for 'Prepelo AI' and its potential domain 'prepelo.ai' on the web, including LinkedIn, no official company website was found that provided contact information for specific individuals (CEO, Founder, CTO, HR Manager, etc.) or generic departmental emails. The company 'Prepelo AI' was identified in several internship postings on platforms like Unstop and the Trident Group of Institutions' placement notice. However, these listings only provided application links and did not contain explicit email addresses for the company or its personnel. Per the critical rules, email addresses cannot be constructed or guessed, and only explicitly found and verified emails from real webpages can be returned."
+  },
+  "airwallex": {
+    "company_domain": "airwallex.com",
+    "contacts": [
+      {
+        "name": "Jack Zhang",
+        "title": "Co-Founder & CEO",
+        "email": "jack@airwallex.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHELeIN_rm5HMW71ZQRz7Zw2G9tEqe_l522wS7ElI-1MmkN6QoIS3qe4-VwodM-Rf_28Cq9tUjPD4FqjhehKa4z0ZJ3VuoMlq5Y_vEUAZKPohuvzsS71acvZCvOS1yOyrsQ-3zVlg=="
+      },
+      {
+        "name": "Jacob Dai",
+        "title": "Co-Founder & CTO",
+        "email": "xijing@airwallex.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-9sFXKyCHn_xKZMBDcWHI-UC9md8Xa3RT3I5hMyWNfAAJSfCdVU583TGh0sz0jS8rALiOmWWSydHMxfd1r4wD8aIS_A-zgV7UtvTsmFfvGMDBv0g1bEj6AhKLG_7YmjzOB3Esgg=="
+      }
+    ],
+    "contact_email": "jack@airwallex.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHELeIN_rm5HMW71ZQRz7Zw2G9tEqe_l522wS7ElI-1MmkN6QoIS3qe4-VwodM-Rf_28Cq9tUjPD4FqjhehKa4z0ZJ3VuoMlq5Y_vEUAZKPohuvzsS71acvZCvOS1yOyrsQ-3zVlg==",
+    "email_found_on_web": true,
+    "reasoning": "I explicitly found the email addresses for Jack Zhang, Co-Founder & CEO, and Jacob Dai, Co-Founder & CTO, on Clay.com, which states these emails are 'Verified'. Clay.com is a business contact data platform. I prioritized these personal emails of decision-makers as per the instructions."
+  },
+  "tecsys": {
+    "company_domain": "tecsys.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a verified database of individual executive or HR emails for Tecsys in my training data. To avoid providing fabricated or unverified email addresses, I am returning null for all contact fields as per the strict instructions."
+  },
+  "enpal": {
+    "company_domain": "enpal.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I know the company's domain is enpal.com from general knowledge, but I do not have any verified email addresses for Enpal's CEO, CTO, HR, or recruiting contacts in my training data. To avoid fabricating information, I have left all email fields null."
   }
 }
