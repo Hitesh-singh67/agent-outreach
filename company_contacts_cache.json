@@ -9018,5 +9018,324 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "Identified Krrish Dholakia as CEO and Ishaan Jaffer as CTO of LiteLLM through the company's official 'Authors' page (litellm.ai/docs/authors) and Y Combinator profiles. Despite extensive searching across LinkedIn, LiteLLM's official website, startup directories (Wellfound/AngelList, Crunchbase), and GitHub, no verified personal email addresses for these individuals were explicitly found on any public webpages. Generic departmental emails such as support@berri.ai and sales@berri.ai were found on LiteLLM's 'Contact Us' page and 'Email Notifications' page. However, these do not meet the primary goal of finding actual email addresses of specific people, and therefore, no personal emails are provided."
+  },
+  "fuze": {
+    "company_domain": "fuze.finance",
+    "contacts": [],
+    "contact_email": "engineering@fuze.finance",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxAetvF5jcOwDmV1HoyVAAi2ibTst4DROpX18e9sC-jH5qrOMBZPRoSlq7LZ037HKZoFLzEcIRCe22cN8rEM7Vx-YLJVcID0qNarGF_FJorpsxKKM=",
+    "email_found_on_web": true,
+    "reasoning": "The initial search for email addresses on fuze.co.in did not yield any results for team or contact pages. Further investigation using various search strategies revealed a company named 'Fuze' that is a digital assets infrastructure provider, primarily operating in the MENA region with co-founders Mohammed Ali Yusuf (CEO), Arpit Mehta (COO), and Srijan R Shetty (CTO). This company appears to be distinct from any entity primarily using the fuze.co.in domain. The most relevant and verified email address found was a departmental email, `engineering@fuze.finance`, explicitly listed on the official GitHub profile for 'Fuze HQ' (github.com/fuzehq). No personal, verified email addresses for specific individuals were found on any publicly accessible webpages, adhering to the critical rule of not constructing or guessing email addresses."
+  },
+  "singlestore": {
+    "company_domain": "singlestore.com",
+    "contacts": [
+      {
+        "name": "Raj Verma",
+        "title": "CEO",
+        "email": "raj@singlestore.com",
+        "source": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPXCJWhYQaklIfFCfuD4uNAWpWrEYmn2IHET7WIWe1foFyNnoFEtb-KrJahr86neF3FZgRdYrP4yu6Gz67lo33ArQQ_oNPF6t0_4ebasObZkGmiZKVcLOd5zh70fXipGtnpvFzfX6"
+      }
+    ],
+    "contact_email": "raj@singlestore.com",
+    "email_source_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPXCJWhYQaklIfFCfuD4uNAWpWrEYmn2IHET7WIWe1foFyNnoFEtb-KrJahr86neF3FZgRdYrP4yu6Gz67lo33ArQQ_oNPF6t0_4ebasObZkGmiZKVcLOd5zh70fXipGtnpvFzfX6",
+    "email_found_on_web": true,
+    "reasoning": "I searched the web for key personnel at SingleStore, including the CEO, CTO, and HR-related roles. An explicit email address for the CEO, Raj Verma (raj@singlestore.com), was found on Clay.com, a platform that provides contact and company details. This email was directly stated and not constructed or guessed. While other executive names were found (e.g., Nikita Shamgunov, co-founder; Madhu Rajeurs, Chief People Officer), no explicit current email addresses associated with SingleStore were found for them that met the strict criteria of being directly listed on a webpage."
+  },
+  "emplay": {
+    "company_domain": "emplay.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific personal or professional email addresses for Emplay's executives or HR in my training data. To avoid providing fabricated or unreliable information, all email fields are set to null."
+  },
+  "scispace": {
+    "company_domain": "typeset.io",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific personal or professional email addresses for the founders or executives of SciSpace (typeset.io) in my training data. To avoid providing fabricated or unverified information, all email fields are set to null."
+  },
+  "facets.cloud": {
+    "company_domain": "facets.cloud",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified email addresses for Facets.Cloud in my training data; therefore I cannot provide any contacts with confidence."
+  },
+  "digit88": {
+    "company_domain": "digit88.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Digit88 in my training data. To avoid providing fabricated or non-functional emails, I am returning null for all contact fields."
+  },
+  "cognite": {
+    "company_domain": "cognite.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a verified database of individual employee emails for Cognite and cannot guarantee the validity of any specific personal or professional email addresses. To avoid providing fabricated or inaccurate information, I am returning null for all contact fields."
+  },
+  "azira page": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about a company named 'Azira Page' or its domain azirapage.com in my training data, and therefore cannot confirm any email addresses or the official website domain with certainty."
+  },
+  "xohani solutions": {
+    "company_domain": "xohani.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for Xohani Solutions in my training data. To avoid fabrication, all email fields are set to null."
+  },
+  "applied retention": {
+    "company_domain": "appliedretention.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific personal or professional email addresses for the individuals at Applied Retention in my training data. To avoid providing fabricated or inaccurate information, all email fields are set to null."
+  },
+  "cypherock wallet": {
+    "company_domain": "cypherock.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I know the domain cypherock.com from the hint, but I have no verified personal or professional email addresses for Cypherock's CEO, CTO, HR, or recruiting contacts in my training data. To avoid fabricating information, I return null for all email fields."
+  },
+  "eccentric engine": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verifiable information exists in my training data about 'Eccentric Engine' or its official contacts. The provided URL hint (eccentricengine.com) cannot be confirmed as official without internet access. All email addresses must be explicitly known from training data to comply with rules against fabrication or guessing."
+  },
+  "sparxit solutions": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Without internet access, I cannot verify the official domain or specific email addresses for Sparxit Solutions. All email fields are set to null to comply with the requirement of only returning confirmed, real emails from training data. No fabricated or guessed emails are provided."
+  },
+  "orgzit": {
+    "company_domain": "orgzit.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I recall the domain orgzit.com from training data as the official website of Orgzit, but I do not have any verified email addresses for executives or HR in my training data, so I cannot provide any contacts."
+  },
+  "omnifi": {
+    "company_domain": "omnifi.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'omnifi.ai' is confirmed based on the provided hint and existing knowledge, no specific verified email addresses for Omnifi's leadership (CEO/Founder, CTO, HR) or official careers email could be retrieved from training data. Fabricating or guessing emails violates the critical rules, so all contact fields are set to null."
+  },
+  "vame": {
+    "company_domain": "vame.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on training data, no verified email addresses for Vame were found. The domain is inferred from the provided hint."
+  },
+  "deaimer": {
+    "company_domain": "deaimer.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no confirmed email addresses for Deaimer in my training data. I cannot provide any verified contact emails without risking misinformation. Therefore all email fields are set to null."
+  },
+  "evam labs": {
+    "company_domain": "evam.io",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verified email addresses for Evam Labs in my training data; while the domain evam.io is suggested, I cannot confirm any specific email addresses without external verification."
+  },
+  "xeliport": {
+    "company_domain": "xeliport.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified email addresses for Xeliport in my training data, so all email fields are set to null."
+  },
+  "azodha": {
+    "company_domain": "azodha.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain azodha.com is suggested as the company's website, I have no verified email addresses for Azodha in my training data. To comply with the rule against fabricating emails, I return null for all email fields."
+  },
+  "technoscien": {
+    "company_domain": "technoscien.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for 'Technoscien' in my training data. To avoid providing fabricated or inaccurate information, all email fields are set to null."
+  },
+  "smaranai.in": {
+    "company_domain": "smaranai.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for SmaranAI.in exist in my training data. I cannot fabricate or guess emails, and the provided URL hint does not confirm specific contact details. All email fields are set to null to comply with safety rules."
+  },
+  "arkham archives": {
+    "company_domain": "arkhamarchives.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, real email addresses for 'Arkham Archives' in my training data. To avoid fabrication, all email fields are set to null."
+  },
+  "truesun energy solutions pvt. ltd.": {
+    "company_domain": "truesunenergy.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual contact emails (CEO, CTO, HR) for TrueSun Energy Solutions Pvt. Ltd. in my training data. To avoid fabrication, all email fields are set to null."
+  },
+  "ecofi ventures": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have verified information about ECOFI Ventures' domain or email addresses in my training data, and I cannot guess or fabricate contacts per the rules."
+  },
+  "appfoster india": {
+    "company_domain": "appfoster.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified email contacts for Appfoster India exist in my training data. The domain 'appfoster.com' is used based on the provided hint, but no specific emails (CEO/Founder, CTO, HR, or careers) can be confirmed without web access or explicit data from training. All email fields are set to null to comply with the rule against fabrication."
+  },
+  "vested finance": {
+    "company_domain": "vested.co.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on available training data, no verified email addresses for Vested Finance were identified. The official domain is likely vested.co.in, but specific contact emails are not confirmed."
+  },
+  "patronus": {
+    "company_domain": "patronus.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for the company Patronus (patronus.ai) in my training data. To avoid fabricating or guessing emails, I am returning null for all contact fields."
+  },
+  "maxhome.ai": {
+    "company_domain": "maxhome.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Based on training data, no verified email addresses for MaxHome.ai were found. The domain is known from the provided hint."
+  },
+  "flynapse ai": {
+    "company_domain": "flynapse.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'flynapse.ai' matches the provided hint, I cannot verify its official status without internet access. No specific email addresses for Flynapse AI (CEO, CTO, HR, or careers) exist in my training data, so all contact fields are set to null to comply with the rule against fabrication. The company domain is retained based on the hint but marked as unverified due to lack of confirmation."
+  },
+  "tiktikshop": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "No verified information exists in my training data about 'TIKTIKSHOP' or its official domain/emails. The suggested domain 'tiktikshop.com' cannot be confirmed without web access. All email fields must remain null per strict rules against fabrication or guesswork."
+  },
+  "ethos": {
+    "company_domain": "ethoslife.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://www.ethoslife.com/",
+    "email_found_on_web": false,
+    "reasoning": "Based on the provided domain hint (ethoslife.com), I am confident this is the official domain. However, my training data does not contain specific verified email addresses for Ethos (CEO/Founder, CTO, HR, or careers contacts). To comply with strict verification rules, all email fields are set to null. The domain was inferred from the hint but not cross-verified via web access."
+  },
+  "fictiv": {
+    "company_domain": "fictiv.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'fictiv.com' is confirmed as the official website based on prior knowledge, no specific verified email addresses for Fictiv's leadership (CEO/Founder, CTO, HR Head) or official careers/recruiting contact could be retrieved from my training data. All email fields are set to null to comply with the rule of not fabricating or guessing unverified contacts."
+  },
+  "bdiplus": {
+    "company_domain": "bdiplus.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain 'bdiplus.com' aligns with the provided hint, I cannot verify its official status or specific email addresses without internet access. My training data does not contain confirmed, real, and verified email contacts for BDIPlus in the requested roles (CEO/Founder, CTO, HR Head, careers). To comply with strict rules, all email fields are set to null to avoid fabrication."
+  },
+  "nprep": {
+    "company_domain": "nprep.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "The domain nprep.in is provided as a hint in the user prompt and is taken as the official website. No verified email addresses for Nprep (CEO, CTO, HR, or careers) are present in my training data, so all email fields are set to null to avoid fabricating information."
+  },
+  "freightfox": {
+    "company_domain": "freightfox.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain freightfox.in is indicated by the provided hint, I do not have any verified email addresses for executives, HR, or recruiting contacts in my training data. To avoid fabricating information, all email fields are set to null."
+  },
+  "loyalty juggernaut": {
+    "company_domain": null,
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I have no verifiable information about a company named 'Loyalty Juggernaut' in my training data, so I cannot confirm the domain or any email addresses. To avoid fabricating information, I return null values."
+  },
+  "karnival": {
+    "company_domain": "karnival.io",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any verified, specific individual email addresses for the company Karnival in my training data. To comply with the strict rule against fabricating or guessing emails, all email fields are set to null."
+  },
+  "pdi technologies": {
+    "company_domain": "pdi360.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the domain pdi360.com is provided as a hint and is likely correct, I have no verified email addresses for PDI Technologies (CEO, CTO, HR, or recruiting) in my training data. To adhere to the rule of not fabricating emails, I return null for all email fields."
   }
 }
