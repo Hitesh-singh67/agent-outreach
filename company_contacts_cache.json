@@ -9337,5 +9337,161 @@
     "email_source_url": null,
     "email_found_on_web": false,
     "reasoning": "While the domain pdi360.com is provided as a hint and is likely correct, I have no verified email addresses for PDI Technologies (CEO, CTO, HR, or recruiting) in my training data. To adhere to the rule of not fabricating emails, I return null for all email fields."
+  },
+  "archle labs": {
+    "company_domain": "archlelabs.com",
+    "contacts": [
+      {
+        "name": "Alois Sajo Devasagayam",
+        "title": "Director",
+        "email": "alois.strategy@gmail.com",
+        "source": "https://www.tofler.in/archle-labs-private-limited/company/U72100KA2024PTC189316, https://www.indiafilings.com/company/archle-labs-private-limited-U72100KA2024PTC189316"
+      }
+    ],
+    "contact_email": "alois.strategy@gmail.com",
+    "email_source_url": "https://www.tofler.in/archle-labs-private-limited/company/U72100KA2024PTC189316, https://www.indiafilings.com/company/archle-labs-private-limited-U72100KA2024PTC189316",
+    "email_found_on_web": true,
+    "reasoning": "The email 'alois.strategy@gmail.com' was found explicitly listed as the 'Company Email' for ARCHLE LABS PRIVATE LIMITED on financial and company registration platforms like Tofler and IndiaFilings. These sources also identify Alois Sajo Devasagayam as a Director of the company. Tracxn further confirms ARCHLE LABS PRIVATE LIMITED as the legal entity behind the brand 'Archle Labs'. While 'alois.strategy@gmail.com' is a Gmail address, it is presented as the official company contact and is directly associated with one of the directors, thus meeting the criteria for a verified email of a real person at the company. No other specific, non-generic personal emails for decision-makers were found on the company's website (archlelabs.com) or other public sources following the specified search strategy."
+  },
+  "signoz": {
+    "company_domain": "signoz.io",
+    "contacts": [
+      {
+        "name": "Pranay Prateek",
+        "title": "Co-founder & CEO",
+        "email": "pranay@signoz.io",
+        "source": "https://signoz.io/about"
+      },
+      {
+        "name": "Ankit Nayan",
+        "title": "Co-Founder & CTO",
+        "email": "ankit@signoz.io",
+        "source": "https://signoz.io/about"
+      }
+    ],
+    "contact_email": "pranay@signoz.io",
+    "email_source_url": "https://signoz.io/about",
+    "email_found_on_web": true,
+    "reasoning": "I found the names, titles, and explicitly listed email addresses for the co-founders, Pranay Prateek (CEO) and Ankit Nayan (CTO), on the official SigNoz 'About Us' page (signoz.io/about). The emails were presented in a human-readable format ('pranay at signoz dot io' and 'ankit at signoz dot io') which I then converted to the standard email format."
+  },
+  "cyble": {
+    "company_domain": "cyble.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "https://github.com/Cyble, https://www.facebook.com/cybleglobal",
+    "email_found_on_web": true,
+    "reasoning": "A comprehensive search was conducted across LinkedIn, Cyble's official website (cyble.com), startup directories (Crunchbase, AngelList, Wellfound), GitHub, press releases, and news articles to find real people and their verified email addresses at Cyble. Key individuals such as Beenu Arora (Co-founder, CEO), Manish Chachada (Co-founder, COO), Ernest Fung (CFO), Kaustubh Medhe (Chief Product Officer), and others were identified. However, despite reviewing various profiles and company pages, no explicit, personal email addresses for these individuals were found. The company's website typically uses contact forms or requests for 'work email' in demo/contact inquiries, rather than listing direct email addresses for employees. Generic email formats (e.g., firstname.lastname@cyble.com) were noted from some sources like LeadIQ, but these were explicitly stated as *formats* or *patterns* and not verified individual email addresses found on a real webpage, thus violating the critical rule against constructing or guessing emails. The only explicitly verified email address found on a real webpage for the company 'Cyble' is the generic 'contact@cyble.com', listed on their GitHub page and Facebook page. While the primary goal was to find personal emails of specific people, none were explicitly published and verifiable according to the defined rules."
+  },
+  "myhealthspace": {
+    "company_domain": "myhealthspace.in",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching across LinkedIn, the company's hinted domain (myhealthspace.co.in), its actual domain (myhealthspace.in), Wellfound (AngelList), and Tracxn, no verified email addresses for specific individuals at MyHealthSpace (the Indian healthcare technology company) were explicitly found on public webpages. Shallabh Mittal is identified as the Founder and CEO of MyHealthSpace (also referred to as Healthspace). While Tracxn indicated '1 email address and 1 phone number' for Shallabh Mittal, the email itself was not directly displayed in the search snippet and was behind a 'View details' link which is inaccessible. Wellfound also listed Shallabh Mittal as a hiring contact but did not provide an email address. Many search results for 'MyHealthSpace' pertained to a patient portal used by the University of South Carolina, which is a different entity. Furthermore, Tracxn reports that MyHealthSpace is a 'deadpooled company', meaning it is no longer active, which significantly reduces the likelihood of finding current and monitored contact information."
+  },
+  "craze": {
+    "company_domain": "craze.ai",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searching for individuals at Craze (craze.ai), including co-founders Kabir Nagral (CEO) and Deepit Patil (CTO), no explicit and verified email addresses were found in LinkedIn profiles, personal websites, the company's official website, startup directories like Y Combinator, GitHub, press releases, blog posts, or news articles. The search results identified multiple individuals and their titles at craze.ai, but none of the snippets provided their direct email addresses. One search result from 'FindMeMail' indicated 'Email not verified' for founders and no company email. An email address (jennifer@crazemgmt.com) was found for a 'Craze Communications Manager', but this pertains to a different company, 'Craze Management' (crazemgmt.com), which is a digital marketing agency, not the AI video maker at craze.ai. Therefore, no verified email addresses for real people at craze.ai could be explicitly found according to the specified rules."
+  },
+  "poolit": {
+    "company_domain": "poolit.org",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "Despite extensive searches across LinkedIn, the company's official website (poolit.org), Wellfound/AngelList, Crunchbase, GitHub, and press releases, no verified personal email addresses for individuals at POOLit (poolit.org) were explicitly found. Craft.co and Greenwich Economic Forum identify Dakotah Rice as the Founder & CEO of 'Poolit,' and Tracxn lists Deepak Goel as the founder of 'POOLit' (www.poolit.org). However, no explicit email addresses were provided for either individual on these platforms or any others. A partially redacted company email, '*****@poolit.org,' was found on Tracxn, but this does not meet the requirement for a fully visible, verified email address of a specific person. The company's website (poolit.org) itself does not feature a team or contact page with direct email listings for individuals."
+  },
+  "aadya builders and estates": {
+    "company_domain": "aadyabuilders.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have internet access and cannot verify the existence of any email addresses for Aadya Builders and Estates. The domain aadyabuilders.com is provided as a hint, but I cannot confirm its validity or any associated email contacts. Therefore, all email fields are set to null."
+  },
+  "arlo": {
+    "company_domain": "arlo.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have any confirmed email addresses for Arlo\u2019s executives or HR from my training data. Therefore all email fields are set to null to avoid providing unverified or fabricated contact information."
+  },
+  "branch international": {
+    "company_domain": "branch.co",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": "http://branch.co/",
+    "email_found_on_web": false,
+    "reasoning": "No verified email addresses for Branch International are present in the training data. The domain is inferred from the provided hint. All email fields are set to null to avoid fabricating contact information."
+  },
+  "rocket lab": {
+    "company_domain": "rocketlab.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I cannot verify specific email addresses for Rocket Lab without internet access. My training data does not include confirmed, active email contacts for the company. All email fields are set to null to comply with the rule of not fabricating or guessing emails. The domain 'rocketlab.com' is used as the official website based on general knowledge, but this cannot be confirmed without web access."
+  },
+  "brown brothers harriman": {
+    "company_domain": "bbh.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a verified, live database of individual employee email addresses for Brown Brothers Harriman. While the domain is known, I cannot confirm specific personal or professional email addresses for executives or HR without risking fabrication, which violates the strict instructions provided."
+  },
+  "alida": {
+    "company_domain": "alida.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While I am aware that Alida is a real company with a website at alida.com, my training data does not contain any specific, verifiable email addresses for individuals such as the CEO, CTO, HR Head, or official recruiting contacts. I have not encountered confirmed email addresses like those of Andrea Fiumicelli (CEO) or other executives in my training data, nor do I have verified information about generic but confirmed addresses such as careers@alida.com. To adhere strictly to the rule of not fabricating or guessing emails, I must return null for all email fields."
+  },
+  "plexus": {
+    "company_domain": "plexus.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a live database of verified individual employee emails for Plexus. While the domain is known, I cannot confirm specific personal or professional email addresses for executives or HR without risking fabrication, which violates the strict instructions provided."
+  },
+  "chanel": {
+    "company_domain": "chanel.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While chanel.com is the confirmed official domain, specific verified email addresses for Chanel executives (CEO/Founder, CTO, HR Head) or official careers email are not present in my training data. I cannot fabricate or guess emails, as per the critical rules. All email fields are set to null to avoid returning unverified or potentially invalid addresses."
+  },
+  "pluxee": {
+    "company_domain": "pluxeegroup.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have access to a verified, live database of individual employee emails for Pluxee, and I cannot find any specific, high-confidence personal or official recruitment emails in my training data that meet the strict verification criteria required."
+  },
+  "clerkie": {
+    "company_domain": "clerkie.io",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "I do not have sufficient verified information from my training data about Clerkie's official email contacts. While the domain clerkie.io is provided as a hint and appears plausible, I cannot confirm the existence of any specific email addresses (such as those for CEO, CTO, HR, or recruiting) without direct verification from reliable sources in my training data. Since I am not 100% certain of any active, verified email addresses for Clerkie, and to adhere strictly to the rule against fabricating or guessing emails, all contact fields are set to null. No emails are returned to avoid the risk of providing inaccurate or non-functional addresses."
+  },
+  "alquimie advisors llp": {
+    "company_domain": "alquimie.com",
+    "contacts": [],
+    "contact_email": null,
+    "email_source_url": null,
+    "email_found_on_web": false,
+    "reasoning": "While the provided URL hint (alquimie.com) suggests a possible domain, I cannot verify its official status or active email contacts without internet access. My training data does not contain specific, confirmed email addresses for Alquimie Advisors LLP. All email fields are set to null to comply with the requirement of returning only verified contacts."
   }
 }
